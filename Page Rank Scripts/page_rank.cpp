@@ -10,7 +10,20 @@ using namespace std;
 
 vector<vector<int>> loadLinkDataFile(string& file_path){
     ifstream file(file_path);
-    vector<vector<int>> adjList (102354); 
+    vector<vector<int>> adjList (102354);
+    
+    /*
+        We have allcoated 102354 size for adjList because we know that the maximum id assigned earlier
+        to any domain was 102353. The number was setted to 3582476 while computing page ranks for URLs.
+        This was done because of the limited memory available on our machines and the code would crash otherwise, if 
+        vector had to keep resizing itself.
+
+        Notes:
+        - The ids assigned to each domain are available at Data/Page_rank_files/id_to_domain.json
+        - The ids assigned to each URL are available at Data/Page_rank_files/id_to_url.json
+        
+        The code for assiging the ids is available at Notebooks/preprocess_data.ipynb
+    */
     
     if (!file.is_open()){
         cout << "Couldn't open the file" << endl;
@@ -97,6 +110,8 @@ int main() {
     auto domain_output_path = cwd / "Page Rank Results" / "domain_rank_output.csv";
 
 
+    // Uncomment the following block to compute PageRank for URLs
+
     // string file_path_pages = page_rank_link_path.string();
     // vector<vector<int>> adjList = loadLinkDataFile(file_path_pages);
     // cout << "Loaded adjacency list with " << adjList.size() << " nodes." << endl;
@@ -104,6 +119,7 @@ int main() {
     // vector<double> pageRank = calculatePageRank(adjList, 1e-8);
     // writePageRankToFile(pageRank, output_path.string());
     // cout << "PageRank calculation completed and written to " << output_path.string() << endl;
+
 
     string file_path_domains = domain_rank_link_path.string();
     vector<vector<int>> adjListDomains = loadLinkDataFile(file_path_domains);

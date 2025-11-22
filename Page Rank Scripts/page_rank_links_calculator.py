@@ -108,7 +108,7 @@ def extract_links_for_page(args):
     return page_to_page_links, domain_to_domain_links
 
 def main():
-    data_dir = os.path.join(os.getcwd(), "Data")
+    data_dir = os.path.join("..\\Data")
     html_files_dir = os.path.join(data_dir, "Files", "raw")
     page_rank_data_dir = os.path.join(data_dir, "Page_rank_files")
     os.makedirs(page_rank_data_dir, exist_ok=True)

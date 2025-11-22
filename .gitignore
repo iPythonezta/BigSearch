@@ -1,9 +1,11 @@
 Data/
 Data.7z
 *.ipynb
+!rename.ipynb
 logs/
 !pre_process_data.ipynb
 *.exe
 !results_analyzer.ipynb
 Page Rank Results/
 Encodings/
+Page Rank Results.7z
