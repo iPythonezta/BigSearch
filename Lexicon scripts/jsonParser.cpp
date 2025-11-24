@@ -38,7 +38,6 @@ void extractWords(const std::string &text, std::unordered_set<std::string> &lex)
     processWord(w);
 }
 
-
 void parseJsonFile(const fs::path &path, unordered_set<string> &lex) {
     ifstream in(path);
     if (!in) {
@@ -50,7 +49,8 @@ void parseJsonFile(const fs::path &path, unordered_set<string> &lex) {
     try {
         in >> j;
     } catch (const std::exception &e) {
-        cerr << "[WARN] Invalid JSON in file: " << path << " (" << e.what() << ")" << endl;
+        cerr << "[WARN] Invalid JSON in file: " << path 
+             << " (" << e.what() << ")" << endl;
         return;
     }
 
@@ -79,6 +79,22 @@ void parseJsonFile(const fs::path &path, unordered_set<string> &lex) {
         for (auto &[key, entry] : j["bib_entries"].items()) {
             if (entry.contains("title"))
                 extractWords(entry["title"].get<string>(), lex);
+        }
+    }
+
+    // --- ref_entries (figures, tables, extra sections) ---
+    if (j.contains("ref_entries")) {
+        for (auto &[key, entry] : j["ref_entries"].items()) {
+            if (entry.contains("text"))
+                extractWords(entry["text"].get<string>(), lex);
+        }
+    }
+
+    // --- back_matter ---
+    if (j.contains("back_matter")) {
+        for (auto &obj : j["back_matter"]) {
+            if (obj.contains("text"))
+                extractWords(obj["text"].get<string>(), lex);
         }
     }
 }
@@ -139,7 +155,7 @@ int main() {
         return 0;
     }
 
-    fs::path output = "words.txt";
+    fs::path output = "Lexicon\\words.txt";
     writeWords(lex, output);
 
     cout << "Done. Total unique words: " << lex.size() << endl;
