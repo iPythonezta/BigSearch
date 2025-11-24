@@ -150,7 +150,7 @@ void writeLexiconTxt(const vector<string> &words, const fs::path &path) {
 // MAIN
 // -----------------------------------------------------------
 int main() {
-    fs::path rawFolder = "Data\\Files\\raw";
+    fs::path rawFolder = "..\\Data\\Files\\raw";
     fs::path lexFile = "lexicon.txt";
 
     unordered_set<string> lexicon = buildLexicon(rawFolder);

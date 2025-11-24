@@ -24,8 +24,6 @@ void extractWords(const string &text, unordered_set<string> &lex) {
                 // FILTER STEP
                 bool keep = true;
 
-                // Skip very long words (>20 chars)
-                if (w.length() > 20) keep = false;
 
                 // Skip words mostly repeated letters (>80% same)
                 if (keep) {
@@ -34,8 +32,7 @@ void extractWords(const string &text, unordered_set<string> &lex) {
                         int count = count_if(w.begin(), w.end(), [ch](char c){ return c == ch; });
                         if (count > max_count) max_count = count;
                     }
-                    if ((double)max_count / w.size() > 0.8)
-                        keep = false;
+
                 }
 
                 // Skip words with very unusual patterns (optional)
@@ -55,14 +52,12 @@ void extractWords(const string &text, unordered_set<string> &lex) {
     // Check last word
     if (!w.empty()) {
         bool keep = true;
-        if (w.length() > 20) keep = false;
 
         int max_count = 0;
         for (char ch = 'a'; ch <= 'z'; ++ch) {
             int count = count_if(w.begin(), w.end(), [ch](char c){ return c == ch; });
             if (count > max_count) max_count = count;
         }
-        if ((double)max_count / w.size() > 0.8) keep = false;
         if (keep) lex.insert(w);
     }
 }
