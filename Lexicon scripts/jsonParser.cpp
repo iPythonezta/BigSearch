@@ -5,66 +5,40 @@
 #include <unordered_set>
 #include <filesystem>
 #include <algorithm>
-#include <nlohmann/json.hpp>
+// #include <nlohmann/json.hpp>
+#include "json.hpp"
+#include <locale>
+
 
 using json = nlohmann::json;
 using namespace std;
 namespace fs = std::filesystem;
 
-// -----------------------------------------------------------
-// Split arbitrary text into lowercase words
-// -----------------------------------------------------------
-void extractWords(const string &text, unordered_set<string> &lex) {
-    string w;
-    for (char c : text) {
-        if (isalpha(c)) {
-            w.push_back(tolower(c));
+void extractWords(const std::string &text, std::unordered_set<std::string> &lex) {
+    std::string w;
+
+    auto processWord = [&lex](std::string &word) {
+        if (!word.empty()) {
+            lex.insert(word);
+            word.clear();
+        }
+    };
+
+    for (unsigned char c : text) {
+        if (std::isalnum(c) || c >= 128) {
+            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+                w.push_back(std::tolower(c));
+            else
+                w.push_back(c);  // numbers and non-ASCII
         } else {
-            if (!w.empty()) {
-                // FILTER STEP
-                bool keep = true;
-
-
-                // Skip words mostly repeated letters (>80% same)
-                if (keep) {
-                    int max_count = 0;
-                    for (char ch = 'a'; ch <= 'z'; ++ch) {
-                        int count = count_if(w.begin(), w.end(), [ch](char c){ return c == ch; });
-                        if (count > max_count) max_count = count;
-                    }
-
-                }
-
-                // Skip words with very unusual patterns (optional)
-                if (keep && w.find('u') != string::npos) {
-                    // treat 'u' in long words as RNA sequence indicator
-                    if (w.length() > 5) keep = false;
-                }
-
-                if (keep)
-                    lex.insert(w);
-
-                w.clear();
-            }
+            processWord(w);
         }
     }
 
-    // Check last word
-    if (!w.empty()) {
-        bool keep = true;
-
-        int max_count = 0;
-        for (char ch = 'a'; ch <= 'z'; ++ch) {
-            int count = count_if(w.begin(), w.end(), [ch](char c){ return c == ch; });
-            if (count > max_count) max_count = count;
-        }
-        if (keep) lex.insert(w);
-    }
+    processWord(w);
 }
 
-// -----------------------------------------------------------
-// Parse a single JSON file safely
-// -----------------------------------------------------------
+
 void parseJsonFile(const fs::path &path, unordered_set<string> &lex) {
     ifstream in(path);
     if (!in) {
@@ -154,7 +128,7 @@ void writeWords(const unordered_set<string> &lex, const fs::path &out) {
 // MAIN
 // -----------------------------------------------------------
 int main() {
-    fs::path folder_path = "Data\\cord-19_2020-05-12\\2020-05-12\\document_parses\\pdf_json";
+    fs::path folder_path = "..\\Data\\Cord 19\\document_parses\\pdf_json";
     
     fs::path folder(folder_path);
 
@@ -165,7 +139,7 @@ int main() {
         return 0;
     }
 
-    fs::path output = "Data\\Lexicon\\words.txt";
+    fs::path output = "words.txt";
     writeWords(lex, output);
 
     cout << "Done. Total unique words: " << lex.size() << endl;
