@@ -10,7 +10,7 @@ using namespace std;
 
 vector<vector<int>> loadLinkDataFile(string& file_path){
     ifstream file(file_path);
-    vector<vector<int>> adjList (102354);
+    vector<vector<int>> adjList (960890);
     
     /*
         We have allcoated 102354 size for adjList because we know that the maximum id assigned earlier
@@ -23,6 +23,12 @@ vector<vector<int>> loadLinkDataFile(string& file_path){
         - The ids assigned to each URL are available at Data/Page_rank_files/id_to_url.json
         
         The code for assiging the ids is available at Notebooks/preprocess_data.ipynb
+    */
+
+    /*
+        We are using the same code to compute the page rank/ citation rank for our research paper dataset..
+        First we calculated the citation link between papers and assigned each paper an id.
+        The we are using the same page rank code to compute citation rank for the papers.
     */
     
     if (!file.is_open()){
@@ -104,11 +110,12 @@ void writePageRankToFile(const vector<double>& pageRank, const string& file_path
 int main() {
     namespace fs = std::filesystem;
     auto cwd = fs::current_path();
-    auto page_rank_link_path = cwd / "Data" / "Page_rank_files" / "page_rank_links_ids.csv";
-    auto domain_rank_link_path = cwd / "Data" / "Page_rank_files" / "domain_rank_links_ids.csv";
-    auto output_path = cwd / "Page Rank Results" / "page_rank_output.csv";
-    auto domain_output_path = cwd / "Page Rank Results" / "domain_rank_output.csv";
-
+    auto page_rank_link_path = cwd.parent_path() / "Data" / "Page_rank_files" / "page_rank_links_ids.csv";
+    auto domain_rank_link_path = cwd.parent_path() / "Data" / "Page_rank_files" / "domain_rank_links_ids.csv";
+    auto output_path = cwd.parent_path() / "Page Rank Results" / "page_rank_output.csv";
+    auto domain_output_path = cwd.parent_path() / "Page Rank Results" / "domain_rank_output.csv";
+    auto citation_rank_link_path = cwd.parent_path() / "Encodings" / "Research Paper Encodings" / "id_based_references_map.csv";
+    auto citation_output_path = cwd.parent_path() / "Page Rank Results" / "citation_rank_output.csv";
 
     // Uncomment the following block to compute PageRank for URLs
 
@@ -121,13 +128,20 @@ int main() {
     // cout << "PageRank calculation completed and written to " << output_path.string() << endl;
 
 
-    string file_path_domains = domain_rank_link_path.string();
-    vector<vector<int>> adjListDomains = loadLinkDataFile(file_path_domains);
+    // string file_path_domains = domain_rank_link_path.string();
+    // vector<vector<int>> adjListDomains = loadLinkDataFile(file_path_domains);
     
-    cout << "Loaded domain adjacency list with " << adjListDomains.size() << " nodes." << endl;
-    vector<double> domainPageRank = calculatePageRank(adjListDomains, 1e-8);
-    writePageRankToFile(domainPageRank, domain_output_path.string());
-    cout << "Domain PageRank calculation completed and written to " << domain_output_path.string() << endl;
+    // cout << "Loaded domain adjacency list with " << adjListDomains.size() << " nodes." << endl;
+    // vector<double> domainPageRank = calculatePageRank(adjListDomains, 1e-8);
+    // writePageRankToFile(domainPageRank, domain_output_path.string());
+    // cout << "Domain PageRank calculation completed and written to " << domain_output_path.string() << endl;
+
+    string file_path_citations = citation_rank_link_path.string();
+    vector<vector<int>> adjListCitations = loadLinkDataFile(file_path_citations);
+    cout << "Loaded citation adjacency list with " << adjListCitations.size() << " nodes." << endl;
+    vector<double> citationPageRank = calculatePageRank(adjListCitations, 1e-8);
+    writePageRankToFile(citationPageRank, citation_output_path.string());
+    cout << "Citation Rank calculation completed and written to " << citation_output_path.string() << endl;
 
     return 0;
 }
