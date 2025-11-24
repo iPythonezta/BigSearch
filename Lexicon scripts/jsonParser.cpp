@@ -58,6 +58,21 @@ void parseJsonFile(const fs::path &path, unordered_set<string> &lex) {
     if (j.contains("metadata") && j["metadata"].contains("title"))
         extractWords(j["metadata"]["title"].get<string>(), lex);
 
+    // --- authors ---
+    if (j.contains("metadata") && j["metadata"].contains("authors")) {
+        for (auto &author : j["metadata"]["authors"]) {
+            if (author.is_string()){
+                extractWords(author.get<string>(), lex);
+                continue;
+            }
+            // On all attributes of author object
+            for (auto &[key, value] : author.items()) {
+                if (value.is_string())
+                    extractWords(value.get<string>(), lex);
+            }
+        }
+    }
+
     // --- abstract ---
     if (j.contains("abstract")) {
         for (auto &obj : j["abstract"]) {
@@ -155,7 +170,7 @@ int main() {
         return 0;
     }
 
-    fs::path output = "Lexicon\\words.txt";
+    fs::path output = "..\\Lexicon\\words.txt";
     writeWords(lex, output);
 
     cout << "Done. Total unique words: " << lex.size() << endl;
