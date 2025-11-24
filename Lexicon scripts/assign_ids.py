@@ -10,5 +10,5 @@ def assign_ids_to_words(input_file, output_file):
 
 
 if __name__ == "__main__":
-    assign_ids_to_words('final_words_lexicon.txt', 'lexicons_ids.json')
+    assign_ids_to_words('..\\Lexicon\\final_words_lexicon.txt', '..\\Lexicon\\lexicons_ids.json')
 
