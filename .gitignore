@@ -11,4 +11,4 @@ Page Rank Results.7z
 *.hpp
 Forward Index/forward_index_html_files.json
 !cord_19_map_gen.ipynb
-!page_rank_results_with_urls.csv
+page_rank_results_with_urls.csv
