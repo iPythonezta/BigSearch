@@ -9,6 +9,10 @@ logs/
 Encodings/
 Page Rank Results.7z
 *.hpp
+<<<<<<< HEAD
 Forward Index/forward_index_html_files.json
 !cord_19_map_gen.ipynb
 page_rank_results_with_urls.csv
+=======
+Forward Index/forward_index_html_files.json
+>>>>>>> 2d147aed7e403e8d37c0bd2408faba5918e77840
