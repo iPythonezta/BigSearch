@@ -1,4 +1,4 @@
-Data/
+Data/*
 Data.7z
 *.ipynb
 !rename.ipynb
@@ -9,3 +9,4 @@ logs/
 Page Rank Results/
 Encodings/
 Page Rank Results.7z
+*.hpp
