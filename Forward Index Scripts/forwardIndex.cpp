@@ -7,7 +7,6 @@
 #include <filesystem>
 #include <algorithm>
 #include <nlohmann/json.hpp>
-// #include "json.hpp"
 
 using namespace std;
 using json = nlohmann::json;
@@ -50,7 +49,6 @@ unordered_set<string> parseJsonFile(const fs::path &path) {
         return words;
     }
 
-    // --- reuse of previous sections ---
     if (j.contains("metadata") && j["metadata"].contains("title"))
         extractWords(j["metadata"]["title"].get<string>(), words);
 
@@ -68,38 +66,28 @@ unordered_set<string> parseJsonFile(const fs::path &path) {
     }
 
     if (j.contains("abstract")) {
-        for (auto &obj : j["abstract"]) {
-            if (obj.contains("text"))
-                extractWords(obj["text"].get<string>(), words);
-        }
+        for (auto &obj : j["abstract"])
+            if (obj.contains("text")) extractWords(obj["text"].get<string>(), words);
     }
 
     if (j.contains("body_text")) {
-        for (auto &obj : j["body_text"]) {
-            if (obj.contains("text"))
-                extractWords(obj["text"].get<string>(), words);
-        }
+        for (auto &obj : j["body_text"])
+            if (obj.contains("text")) extractWords(obj["text"].get<string>(), words);
     }
 
     if (j.contains("bib_entries")) {
-        for (auto &[key, entry] : j["bib_entries"].items()) {
-            if (entry.contains("title"))
-                extractWords(entry["title"].get<string>(), words);
-        }
+        for (auto &[key, entry] : j["bib_entries"].items())
+            if (entry.contains("title")) extractWords(entry["title"].get<string>(), words);
     }
 
     if (j.contains("ref_entries")) {
-        for (auto &[key, entry] : j["ref_entries"].items()) {
-            if (entry.contains("text"))
-                extractWords(entry["text"].get<string>(), words);
-        }
+        for (auto &[key, entry] : j["ref_entries"].items())
+            if (entry.contains("text")) extractWords(entry["text"].get<string>(), words);
     }
 
     if (j.contains("back_matter")) {
-        for (auto &obj : j["back_matter"]) {
-            if (obj.contains("text"))
-                extractWords(obj["text"].get<string>(), words);
-        }
+        for (auto &obj : j["back_matter"])
+            if (obj.contains("text")) extractWords(obj["text"].get<string>(), words);
     }
 
     return words;
@@ -122,43 +110,9 @@ unordered_map<string, int> loadLexicon(const fs::path &lexiconPath) {
     return lexiconMap;
 }
 
-// ----------------- Build Forward Index -----------------
-unordered_map<string, vector<int>> buildForwardIndexFromFolder(
-    const fs::path &folder,
-    const unordered_map<string, int> &lexiconMap
-) {
-    unordered_map<string, vector<int>> forwardIndex;
-    int count = 0;
-
-    for (auto &entry : fs::directory_iterator(folder)) {
-        if (entry.is_regular_file() && entry.path().extension() == ".json") {
-            string docId = entry.path().stem().string();
-            unordered_set<string> words = parseJsonFile(entry.path());
-
-            vector<int> wordIds;
-            for (const string &w : words) {
-                if (lexiconMap.count(w))
-                    wordIds.push_back(lexiconMap.at(w));
-            }
-
-            forwardIndex[docId] = wordIds;
-            count++;
-
-            if (count % 100 == 0) // print every 100 files
-                cout << "[INFO] Processed " << count << " files. Last doc: " << docId << endl;
-        }
-    }
-
-    cout << "[INFO] Finished processing " << count << " files." << endl;
-    return forwardIndex;
-}
-
-
 // ----------------- Save Forward Index -----------------
-void saveForwardIndexToFile(
-    const unordered_map<string, vector<int>> &forwardIndex,
-    const fs::path &outPath
-) {
+void saveForwardIndexToFile(const unordered_map<string, vector<int>> &forwardIndex,
+                            const fs::path &outPath) {
     json j;
     for (auto &[docId, wordIds] : forwardIndex)
         j[docId] = wordIds;
@@ -171,22 +125,58 @@ void saveForwardIndexToFile(
     f << setw(2) << j << endl;
 }
 
+// ----------------- Build Forward Index in Batches -----------------
+void buildForwardIndexFromFolderBatched(const fs::path &folder,
+                                       const unordered_map<string, int> &lexiconMap,
+                                       const fs::path &outputPath,
+                                       size_t batchSize = 3000) {
+    unordered_map<string, vector<int>> forwardIndex;
+    int count = 0;
+    int batchNum = 1;
+
+    for (auto &entry : fs::directory_iterator(folder)) {
+        if (entry.is_regular_file() && entry.path().extension() == ".json") {
+            string docId = entry.path().stem().string();
+            unordered_set<string> words = parseJsonFile(entry.path());
+
+            vector<int> wordIds;
+            for (const string &w : words)
+                if (lexiconMap.count(w))
+                    wordIds.push_back(lexiconMap.at(w));
+
+            forwardIndex[docId] = wordIds;
+            count++;
+
+            if (count % batchSize == 0) {
+                fs::path batchFile = outputPath.parent_path() /
+                                     ("forward_index_batch_" + to_string(batchNum) + ".json");
+                saveForwardIndexToFile(forwardIndex, batchFile);
+                cout << "[INFO] Saved batch " << batchNum << " (" << count << " files processed)" << endl;
+                forwardIndex.clear();
+                batchNum++;
+            }
+        }
+    }
+
+    if (!forwardIndex.empty()) {
+        fs::path batchFile = outputPath.parent_path() /
+                             ("forward_index_batch_" + to_string(batchNum) + ".json");
+        saveForwardIndexToFile(forwardIndex, batchFile);
+        cout << "[INFO] Saved final batch " << batchNum << " (" << count << " files total)" << endl;
+    }
+}
+
 // ----------------- MAIN -----------------
 int main() {
     fs::path folderPath = "../Data/Cord 19/document_parses/pdf_json";
     fs::path lexiconPath = "../Lexicon/lexicons_ids.json";
     fs::path outputPath = "../Forward Index/forward_index_json_files.json";
 
-    // Load lexicon
     auto lexiconMap = loadLexicon(lexiconPath);
     if (lexiconMap.empty()) return 1;
 
-    // Build forward index
-    auto forwardIndex = buildForwardIndexFromFolder(folderPath, lexiconMap);
+    buildForwardIndexFromFolderBatched(folderPath, lexiconMap, outputPath, 3000);
 
-    // Save forward index
-    saveForwardIndexToFile(forwardIndex, outputPath);
-
-    cout << "Forward index built. Total documents: " << forwardIndex.size() << endl;
+    cout << "[INFO] Forward index building complete." << endl;
     return 0;
 }
