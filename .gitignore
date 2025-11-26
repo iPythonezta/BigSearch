@@ -10,5 +10,8 @@ Encodings/
 Page Rank Results.7z
 *.hpp
 Forward Index/forward_index_html_files.json
+Forward Index/forward_index_pdf_files.json
 !cord_19_map_gen.ipynb
 page_rank_results_with_urls.csv
+Forward Index.7z
+Inverted Index/
