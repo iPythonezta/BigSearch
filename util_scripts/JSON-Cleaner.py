@@ -1,4 +1,6 @@
-This code Converts and removes the unwanted data from the JSON files and converts them into the desired schema.
+"""This code Converts and removes the
+ unwanted data from the JSON files and 
+ converts them into the desired schema"""
 
 import json
 import re
@@ -78,11 +80,11 @@ def process_single_file(input_json_path):
     with open(output_json_path, "w", encoding="utf-8") as f:
         json.dump(new_json, f, indent=4)
 
-    print(f"✔ Saved: {output_json_path}")
+    print(f"Saved: {output_json_path}")
 
     # DELETE ORIGINAL FILE
     os.remove(input_json_path)
-    print(f"🗑️ Deleted original: {input_json_path}")
+    print(f"Deleted original: {input_json_path}")
 
 
 
@@ -91,7 +93,7 @@ def process_folder(folder_path):
     folder_path = os.path.abspath(folder_path)
 
     if not os.path.isdir(folder_path):
-        print("❌ Error: Provided path is not a folder.")
+        print("Error: Provided path is not a folder.")
         sys.exit(1)
 
     files = [f for f in os.listdir(folder_path) if f.lower().endswith(".json")]
