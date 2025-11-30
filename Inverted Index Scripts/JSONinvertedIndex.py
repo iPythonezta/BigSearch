@@ -15,7 +15,6 @@ Build Inverted Index from JSON documents using multiprocessing.
 ]
 """
 
-
 import json
 from collections import defaultdict, Counter
 from multiprocessing import Pool, cpu_count
@@ -24,24 +23,7 @@ import re
 import os
 
 MAX_POS = 15
-BATCH_SIZE = 5000  # Adjustable
-
-# ------------------ Utilities ------------------
-def normalize_and_tokenize(text):
-    """Lowercase, remove excess whitespace, and split into words."""
-    text = re.sub(r"\s+", " ", text).strip()
-    return [w.lower() for w in text.split() if w]
-
-import json
-from collections import defaultdict, Counter
-from multiprocessing import Pool, cpu_count
-from tqdm import tqdm
-import re
-import os
-
-MAX_POS = 15
-BATCH_SIZE = 5000   # you asked to reduce from 10k → 5k
-
+BATCH_SIZE = 5000 
 
 # ------------------ Utilities ------------------
 def normalize_and_tokenize(text):
