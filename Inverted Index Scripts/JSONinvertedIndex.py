@@ -23,14 +23,33 @@ import re
 import os
 
 MAX_POS = 15
-BATCH_SIZE = 5000 
 
 # ------------------ Utilities ------------------
 def normalize_and_tokenize(text):
+    """
+    Tokenize text to match the C++ lexicon extraction logic.
+    Extracts alphanumeric tokens, preserving unicode characters.
+    """
     if not isinstance(text, str):
         return []
-    text = re.sub(r"\s+", " ", text).strip()
-    return [w.lower() for w in text.split() if w]
+    
+    tokens = []
+    word = []
+    
+    for c in text:
+        # Match C++ logic: isalnum(c) || c >= 128 (unicode)
+        if c.isalnum() or ord(c) >= 128:
+            word.append(c.lower())
+        else:
+            if word:
+                tokens.append(''.join(word))
+                word = []
+    
+    # Don't forget the last word
+    if word:
+        tokens.append(''.join(word))
+    
+    return tokens
 
 
 # ------------------ Process One File ------------------
@@ -40,8 +59,8 @@ def process_json_file(args):
     with open(file_path, 'r', encoding='utf-8') as f:
         doc = json.load(f)
 
-    # Fix docid source
-    docid = os.path.basename(file_path).replace(".json", "")
+    # Fix docid source - add P prefix for research papers
+    docid = "P" + os.path.basename(file_path).replace(".json", "")
     positions_map = defaultdict(list)
 
     # Section group counters:
@@ -68,13 +87,24 @@ def process_json_file(args):
             pos += 1
 
     # ----- AUTHORS -----
+    # Match C++ logic: extract ALL fields from author objects
     for author in doc.get("metadata", {}).get("authors", []):
-        fullname = f"{author.get('first', '')} {author.get('last', '')}"
-        for tok in normalize_and_tokenize(fullname):
-            if len(positions_map[tok]) < MAX_POS:
-                positions_map[tok].append(pos)
-            group1[tok] += 1
-            pos += 1
+        if isinstance(author, str):
+            # If author is a plain string
+            for tok in normalize_and_tokenize(author):
+                if len(positions_map[tok]) < MAX_POS:
+                    positions_map[tok].append(pos)
+                group1[tok] += 1
+                pos += 1
+        elif isinstance(author, dict):
+            # Extract all string fields from author object (first, last, middle, suffix, affiliation, email, etc.)
+            for key, value in author.items():
+                if isinstance(value, str):
+                    for tok in normalize_and_tokenize(value):
+                        if len(positions_map[tok]) < MAX_POS:
+                            positions_map[tok].append(pos)
+                        group1[tok] += 1
+                        pos += 1
 
     # ----- BODY TEXT -----
     for item in doc.get("body_text", []):
@@ -139,10 +169,10 @@ def process_json_file(args):
 
 # ------------------ MAIN ------------------
 def main():
-    lexicon_path = r"C:\Users\windows10\Lexicon\BigSearch\Lexicon\lexicons_ids.json"
-    forward_index_path = r"C:\Users\windows10\Lexicon\BigSearch\Forward Index\forward_index_json.json"
-    json_files_dir = r"C:\Users\windows10\Lexicon\BigSearch\Data\Cord 19\document_parses\pdf_json"
-    inverted_index_dir = r"C:\Users\windows10\Lexicon\BigSearch\Inverted Index"
+    lexicon_path = r"..\Lexicon\lexicons_ids.json"
+    forward_index_path = r"..\Forward Index\forward_index_pdf_files.json"
+    json_files_dir = r"..\Data\Cord 19\document_parses\pdf_json"
+    inverted_index_dir = r"..\Inverted Index\JsonBatches"
 
     os.makedirs(inverted_index_dir, exist_ok=True)
 
@@ -163,31 +193,37 @@ def main():
         file_path = os.path.join(json_files_dir, f"{file_id}.json")
         args.append((file_path, words))
 
-    # Process in batches
-    for i in range(0, len(args), BATCH_SIZE):
-        batch_args = args[i:i+BATCH_SIZE]
+    # Free memory before processing
+    del forward_index
 
-        inverted_index = {word_id: [] for word_id in lexicon.values()}
-
+    # Process in batches (similar to HTML inverted index)
+    batch_size = 10000
+    for i in range(0, len(args), batch_size):
+        inverted_index = {}
+        for word, word_id in lexicon.items():
+            inverted_index[word_id] = []
+        
+        batch_args = args[i:i + batch_size]
+        
         with Pool(cpu_count()) as pool:
             results = list(
                 tqdm(
                     pool.imap(process_json_file, batch_args),
                     total=len(batch_args),
-                    desc=f"Batch {i//BATCH_SIZE + 1}"
+                    desc=f"Processing files {i+1} to {min(i+batch_size, len(args))}"
                 )
             )
 
-        # Merge
+        # Merge batch results
         for hitlists in results:
             for word, entry in hitlists.items():
-                wid = lexicon[word]
-                inverted_index[wid].append(entry)
+                word_id = lexicon[word]
+                inverted_index[word_id].append(entry)
 
-        # Output file
+        # Output batch file
         out_file = os.path.join(
             inverted_index_dir,
-            f"inverted_index_batch_{i//BATCH_SIZE + 1}.json"
+            f"inverted_index_json_part_{i//batch_size + 1}.json"
         )
 
         with open(out_file, 'w', encoding='utf-8') as f:
@@ -196,6 +232,9 @@ def main():
         del inverted_index
         del results
         del batch_args
+
+    del args
+    del lexicon
 
     print("Done building inverted index")
 
