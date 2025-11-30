@@ -1,0 +1,1814 @@
+{
+    "paper_id": "e59a011ddbbf94c65b86c37b90620b8a8c3c8ed2",
+    "metadata": {
+        "title": "Escape from Human Monoclonal Antibody Neutralization Affects In Vitro and In Vivo Fitness of Severe Acute Respiratory Syndrome Coronavirus",
+        "authors": [
+            {
+                "first": "Barry",
+                "middle": [],
+                "last": "Rockx",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "National Institutes of Health",
+                    "location": {
+                        "settlement": "Hamilton",
+                        "region": "Montana"
+                    }
+                },
+                "email": ""
+            },
+            {
+                "first": "Eric",
+                "middle": [],
+                "last": "Donaldson",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Matthew",
+                "middle": [],
+                "last": "Frieman",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Timothy",
+                "middle": [],
+                "last": "Sheahan",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Davide",
+                "middle": [],
+                "last": "Corti",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Antonio",
+                "middle": [],
+                "last": "Lanzavecchia",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "Ralph",
+                "middle": [
+                    "S"
+                ],
+                "last": "Baric",
+                "suffix": "",
+                "affiliation": {
+                    "laboratory": "",
+                    "institution": "University of North Carolina",
+                    "location": {
+                        "settlement": "Chapel Hill"
+                    }
+                },
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Severe acute respiratory syndrome (SARS) emerged as a human disease in 2002. Detailed phylogenetic analysis and epidemiologic studies have suggested that the SARS coronavirus (SARS-CoV) originated from animals. The spike (S) glycoprotein has been identified as a major target of protective immunity and contains у3 regions that are targeted by neutralizing antibodies in the S1 and S2 domains. We previously characterized a panel of neutralizing human monoclonal antibodies (MAbs), but the majority of epitopes recognized by the MAbs remain unknown.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Methods. In the present study, we generated neutralization escape mutants and studied the effect of these neutralization escape mutations on human and animal receptor usage as well as on in vitro and in vivo fitness.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Results. Distinct but partially overlapping sets of amino acids were identified that are critical to the binding of MAbs with differential neutralization profiles. We also identified possible interactions between the S1 and S2 domains of the SARS-CoV S glycoprotein. Finally, we showed that escape from neutralization usually attenuates SARS-CoV infection.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        },
+        {
+            "text": "Conclusions. These data provide a mechanism for overcoming neutralization escape by use of broadly crossreactive cocktails of cross-neutralizing MAbs that recognize residues within the receptor-binding domain that are critical for virus replication and virulence.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "Several studies have shown that the SARS-CoV spike (S) glycoprotein binds the angiotensin-converting enzyme 2 (ACE2) receptor and is a major component of protective immunity. It contains у3 domains that are targeted by neutralizing antibodies. In a previous study, we generated and characterized a panel of 23 human monoclonal antibodies (MAbs) that neutralized one or multiple homologous and heterologous SARS-CoV S glycoprotein variants [2] . These MAbs could be categorized into 6 different neutralization profiles, on the basis of their ability to neutralize isogenic SARS-CoVs bearing different human and zoonotic S glycoproteins [2] . MAbs in groups I-III neutralized only human strains, not zoonotic strains, and group VI was comprised of 4 MAbs that could neutralize all human and zoonotic SARS-CoV strains tested in vitro and in vivo. We demonstrated that these MAbs are attractive candidates for prophylactic treatment for the prevention of laboratory-acquired infections as well as zoonotic introductions [2] . However, escape from neutraliza- tion is a concern when developing these MAbs for therapeutic purposes.",
+            "cite_spans": [
+                {
+                    "start": 439,
+                    "end": 442,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 635,
+                    "end": 638,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1016,
+                    "end": 1019,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "In the present study, we generated neutralization escape mutants for a panel of 11 human MAbs. By use of structural analysis and cross-neutralization assays, several distinct sets of residues critical for neutralization were identified, as was a novel site outside the receptor-binding domain (RBD) that is likely involved in receptor interaction. In addition, the effects of these mutations on the fitness and virulence of SARS-CoV were determined in vitro and in vivo. These data identify subsets of compatible cocktails of human MAbs that could serve as potential therapeutic agents in laboratory exposures and/or in new SARS-CoV outbreak settings.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Recombinant icUrbani, icGZ02, and icHC/ SZ/61/03 and all derived escape mutants were propagated on Vero E6 cells, as described elsewhere [2] [3] . Delayed brain tumor (DBT) cells stably expressing human (h) or civet (c) ACE2 were isolated by flow cytometry, as described elsewhere [3] .",
+            "cite_spans": [
+                {
+                    "start": 137,
+                    "end": 140,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 141,
+                    "end": 144,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 281,
+                    "end": 284,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Viruses and cells."
+        },
+        {
+            "text": "Growth curves were performed by inoculating Vero E6, DBT-hACE2, and DBT-cACE2 cell cultures with the different viruses at a multiplicity of infection (MOI) of 0.1 for 1 h, after which the cells were overlaid with medium. Virus samples were obtained at various time points after infection and stored at Ϫ70ЊC until viral titers were determined by plaque assay, as described elsewhere [2, 3] .",
+            "cite_spans": [
+                {
+                    "start": 383,
+                    "end": 386,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 387,
+                    "end": 389,
+                    "text": "3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Viruses and cells."
+        },
+        {
+            "text": "Escape mutant analysis. Human MAbs against SARS-CoV were generated as described elsewhere [4] . Neutralization-resistant SARS-CoV mutants were generated as described elsewhere [2] . In brief, pfu of icUrbani were incubated 6 1 ϫ 10 with 30 mg of a neutralizing MAb in 100 mL of media at 37ЊC for 1 h and then inoculated onto Vero E6 cells in the 6 10 presence of the respective MAb at the same concentration. The icHC/SZ/61/03 isolate was used to generate a neutralization escape mutant for MAb S227.14, because several attempts to generate escape mutants from this antibody with the use of icUrbani and icGZ02 proved unsuccessful. The development of cytopathic effect was monitored over 72 h, and progeny viruses were harvested. MAb treatment was repeated 2 additional passages, passage 3 viruses were plaque purified in the presence of MAb, and neutralization-resistant viruses were isolated. Experiments were performed in duplicate, and the S glycoprotein gene of individual plaques from each experiment was sequenced as described elsewhere [2] . The neutralization titers of wild-type and MAb-resistant viruses were determined as described elsewhere [2] .",
+            "cite_spans": [
+                {
+                    "start": 90,
+                    "end": 93,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 176,
+                    "end": 179,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 223,
+                    "end": 224,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 346,
+                    "end": 347,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1044,
+                    "end": 1047,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1154,
+                    "end": 1157,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Viruses and cells."
+        },
+        {
+            "text": "Computer modeling of RBD interactions with hACE2, mACE2, and cACE2. The crystal structure coordinates of SARS-CoV RBD interacting with the hACE2 receptor (Protein Data Bank code 2AJF, chain A, and chain E) were used as a template to map the location of the amino acid changes identified in the escape mutants.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Viruses and cells."
+        },
+        {
+            "text": "Mouse infection. Female BALB/cBy mice (age, 12 months; obtained from the National Institute on Aging) were intranasally inoculated with pfu (icUrbani and its escape 5 5.0 ϫ 10 mutants) or pfu (icGZ02, icHC/SZ/61/03, and their re- 5 10 spective escape mutants) of virus in a 500-mL volume, as described elsewhere [2, 3, 5] . Mice were weighed daily, and at 4 or 5 days after infection, lungs were removed and frozen at Ϫ70ЊC for determination of viral titers and histopathologic changes, as described elsewhere [2, 3] . Experimental protocols were reviewed and approved by the institutional animal care and use committee at the University of North Carolina, Chapel Hill.",
+            "cite_spans": [
+                {
+                    "start": 165,
+                    "end": 166,
+                    "text": "5",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 230,
+                    "end": 231,
+                    "text": "5",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 312,
+                    "end": 315,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 316,
+                    "end": 318,
+                    "text": "3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 319,
+                    "end": 321,
+                    "text": "5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 510,
+                    "end": 513,
+                    "text": "[2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 514,
+                    "end": 516,
+                    "text": "3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Viruses and cells."
+        },
+        {
+            "text": "The icUrbani isolate was used to generate neutralization escape mutants. On the basis of neutralization patterns across the groups, we selected the group I MAb S228.11, 2 group II MAbs (S111.7 and S224.17), 2 group III MAbs (S3.1 and S127.6), 2 group IV MAbs (S110.4 and S231. 19) , and all 4 group VI broadly cross-neutralizing MAbs (S109.8, S215.17, S227.14, and S230.15).",
+            "cite_spans": [
+                {
+                    "start": 277,
+                    "end": 280,
+                    "text": "19)",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "Of importance, 10 of 11 escape mutants contained single amino acid changes, whereas the S3.1 escape mutant contained 2 amino acid changes at positions L443R and Y777D ( Table  1 ). The S109.8 escape mutant contained a single T332I change, whereas the S230.15 escape mutant contained a L443R change identical to what was previously shown using the S glycoprotein from the early-phase icGZ02 isolate [2] . Of interest, several MAb escape mutants from different neutralization groups had amino acid changes in common ( Table 1 ). The amino acid change associated with neutralization escape from S127.6 was a D480Y mutation, which was previously shown to decrease the neutralization efficacy of the 80R MAb [6] . The group I MAb S228.11, group IV MAb S110.4, and group VI MAb S215.17 were all selected for escape mutant viruses with an amino acid change at position 462. Finally, the generation of a MAb neutralization escape variant using MAb S227.14 was unsuccessful even after several attempts using both the icGZ02 [2] and the icUrbani isolate. However, with the use of the icHC/ SZ/61/03 isolate, 2 MAb neutralization escape mutants were isolated, both of which contained a single amino acid mutation at position 390, resulting in either a K390Q or K390E change.",
+            "cite_spans": [
+                {
+                    "start": 398,
+                    "end": 401,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 703,
+                    "end": 706,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1015,
+                    "end": 1018,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 169,
+                    "end": 177,
+                    "text": "Table  1",
+                    "ref_id": "TABREF0"
+                },
+                {
+                    "start": 516,
+                    "end": 523,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "Cross-neutralization of MAb neutralization escape mutants. Identification of mutations associated with neutralization escape yielded a complex set of overlapping or nearly overlapping mutations within the RBD, suggesting that escape mutants selected with 1 antibody may provide resistance to neutralization using other human MAbs. Consequently, we examined the cross-neutralization patterns of the escape mutants by use of a panel of select MAbs ( Figure 1 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 448,
+                    "end": 456,
+                    "text": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "The neutralization efficacy of the group I MAb S228.11 was not only ablated by the P462A change present in its respective escape mutant, but it also could not neutralize viruses containing mutations at L443R, F460C, P462H, and Y777D ( Figure 1A ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 235,
+                    "end": 244,
+                    "text": "Figure 1A",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "The neutralization efficacy of the 2 group II MAbs S111.7 and S224.1 was ablated for all other escape mutants, with the exception of the T332I and D480Y mutants ( Figure 1B) .",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 163,
+                    "end": 173,
+                    "text": "Figure 1B)",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "The neutralization efficacy of the group III MAb S127.6 was not affected by any amino acid change other than the D480Y change that was selected for in its respective escape mutant. In contrast, neutralization by the other group III MAb (S3.1) was ablated by its respective escape mutations L443R and Y777D, as well as by mutations F460C and P462H ( Figure 1C ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 349,
+                    "end": 358,
+                    "text": "Figure 1C",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "MAb neutralization escape mutants generated against the group IV MAbs (S110.4 and S231.2) contained 2 amino acid changes located closely together (F460C and P462H). Not surprisingly, the neutralization efficacies of these 2 MAbs were very similar ( Figure 1D ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 249,
+                    "end": 258,
+                    "text": "Figure 1D",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "Finally, the group VI MAbs were previously identified as cross-neutralizing all human and zoonotic SARS-CoV isolates unaffected by the amino acid changes naturally occurring during the SARS-CoV epidemic [2] . MAbs S109.8 and S230.15 were only affected by the mutations that were present in their respective neutralization escape mutants (eg, T332I and L443R) ( Figure 1E ). Neutralization by S215.17 was affected by amino acid changes L443R, F460C, and P462H but not by Y777D. This was surprising, because MAb S110.4, which selected for the identical P462H mutant, as well as MAb 228.11, which selected for mutation P462A, were both affected by all 4 amino acid changes (L443R, F460C, P462H, and Y777D). None of the amino acid changes generated in the other escape mutants affected the neutralization efficacy of S227.14.",
+            "cite_spans": [
+                {
+                    "start": 203,
+                    "end": 206,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 361,
+                    "end": 370,
+                    "text": "Figure 1E",
+                    "ref_id": "FIGREF0"
+                }
+            ],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "Structural mapping of amino acids critical for neutralization. The structure of the SARS-CoV RBD complexed with ACE2 was recently resolved, allowing us to map the locations of the amino acid changes onto the RBD structure [7] . As previously shown, amino acid 332 of the RBD is critical for neutralization by MAb S109.8 and is located on the side of the RBD in a loop that is not in direct contact with the receptor ACE2 ( Figure 2 ). Of interest, although MAbs S228.1, S224.17, S3.1, S110.4, S231.9, S215.17, and S230.15 recognize distinct antigenic groups based on their neutralizing profiles of isogenic viruses with variant S glycoproteins, the locations of the amino acid changes associated with the neutralization escape map were within 4 ångstroms of each other ( Figure 2 ). Unfortunately the location of the amino acid 777 alteration is downstream of the RBD and upstream of the heptad repeat region; therefore, no structural information was available. The D480Y change is likely part of or is influencing presentation of a distinct epitope recognized by MAb S127.6 and belonging to group III ( Figure  2 ). Neutralization by the cross-neutralizing MAb S227.14 was not affected by any of the mutations generated by the other MAbs. The cross-neutralization data suggest that the amino acid change K390Q/E associated with MAb neutralization escape from S227.14 is uniquely separate from other escape mutants ( Figure 2 ).",
+            "cite_spans": [
+                {
+                    "start": 222,
+                    "end": 225,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 423,
+                    "end": 431,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 771,
+                    "end": 779,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1104,
+                    "end": 1113,
+                    "text": "Figure  2",
+                    "ref_id": "FIGREF1"
+                },
+                {
+                    "start": 1417,
+                    "end": 1425,
+                    "text": "Figure 2",
+                    "ref_id": "FIGREF1"
+                }
+            ],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "Effect of S glycoprotein mutations on in vitro growth. The Urbani S glycoprotein RBD is critical for docking and entry and engages both hACE2 and cACE2 receptors [8, 9] . All but one (D463G) of the neutralization escape mutations are either directly adjacent (L443R) or within 4 ångstroms (K390Q/E, F460C, P462A/H, D463G, and D480Y) of key contact residue sites encoded in the RBD at positions 436, 442, 473, 475, 479, and 491 [7] , which may interfere with binding to hACE2 or cACE2. All neutralization escape viruses grew efficiently in Vero E6 cells, reaching comparable peak titers of between and 7 10 pfu/mL by 36 h after infection ( Figure 3A ). Replication of 8 10 all viruses was delayed early in infection, as shown by a 1-to 2-log reduction in titer at 12 h after infection, compared with the wild-type icUrbani, with the exception of the escape mutant with a P462H change ( , by 2-way analysis of variance). P ! .05 A similar trend was seen in DBT cells expressing the hACE2 molecule ( Figure 3B ). Growth in DBT cells expressing the cACE2 molecule was affected by all amino acid changes tested. All viruses, with the exception of the F460C mutant, reached , and VI (E) were tested for their ability to neutralize escape mutants [2] . Starting concentrations of MAbs were selected to show a reduction in neutralization of at least 6 dilutions (1/32). The MAbs (starting concentrations) used were as follows: S228.1 (6 mg/mL), S111.7 (20 mg/mL), S224.1 (12 mg/mL), S3.1 (2 mg/mL), S127.6 (6 mg/mL), S110.4 (6 mg/mL), S231.2 (20 mg/mL), S215.17 (12 mg/mL), S109.8 (12 mg/mL), S227.14 (40 mg/mL), and S230.15 (12 mg/mL), as described in Materials and Methods. MAb dilution at which 50% of the virus was neutralized is plotted. Error bars denote standard deviations. * , P ! .05 compared with the icUrbani WT, by 2-way analysis of variance. peak titers of ∼ pfu/mL but were delayed 12 h after infection 7 10 in replication, compared with icUrbani ( Figure 3C ). Of importance, at 36 h after infection, the escape mutant virus with a change at F460C showed a 2-log reduction in titer, compared with icUrbani ( , by 2-way analysis of variance), sug-P ! .01 gesting that some escape mutations may alter virus fitness in DBT cells expressing cACE2, potentially hampering virus persistence in animal reservoirs.",
+            "cite_spans": [
+                {
+                    "start": 162,
+                    "end": 165,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 166,
+                    "end": 168,
+                    "text": "9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 427,
+                    "end": 430,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 667,
+                    "end": 668,
+                    "text": "8",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1240,
+                    "end": 1243,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1910,
+                    "end": 1911,
+                    "text": "7",
+                    "ref_id": "BIBREF6"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 639,
+                    "end": 648,
+                    "text": "Figure 3A",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 997,
+                    "end": 1006,
+                    "text": "Figure 3B",
+                    "ref_id": "FIGREF2"
+                },
+                {
+                    "start": 1956,
+                    "end": 1965,
+                    "text": "Figure 3C",
+                    "ref_id": "FIGREF2"
+                }
+            ],
+            "section": "Identification of amino acids critical for virus neutralization."
+        },
+        {
+            "text": "Mutations within the S glycoprotein of SARS-CoV can potentially alter morbidity and mortality [3] . To test this possibility, 12month-old BALB/c mice were inoculated with either wild-type icUrbani, icGZ02, or icHC/SZ/61/03 and each of their respective neutralization escape mutants. Under these conditions, icUrbani resulted in a phenotype of ∼15% weight loss. Of interest, although the Y777D change had an attenuating effect on in vitro growth, no difference could be detected between weight loss associated with the Y777D change and that associated with the icUrbani isolate ( Figure 4A ). In contrast, neutralization escape viruses with a D480Y or D463G change were attenuated, with infected mice losing only 5% of their weight by day 4 after infection, whereas viruses with a T332I, L443R, F460C, or P462H amino acid change were completely attenuated in aged animals ( Figure 4A ). Viral titers in the lungs of infected animals at day 5 after infection did not completely correlate with weight loss, as observed elsewhere [5] . The P462H mutant virus grew to titers comparable to those of icUrbani ( pfu/g) ( Figure 4B ). However, T332I, F460C, and 6 10 L443R mutant virus titers were significantly reduced by 1, 2, and 4 logs, respectively, compared with icUrbani titers. In agreement with these data, the T332I and L443R mutations previously generated in icGZ02 [2] were also completely attenuated in aged mice (data not shown). The K390E/Q mutants using the icHC/SZ/61/03 strain associated with neutralization escape from MAb S227.14 were completely attenuated in aged mice with no loss of weight, whereas the wild-type icHC/SZ/61/03infected mice lost up to 20% of their weight by day 4 after infection, and 2 of 5 mice died ( Figure 4C ). Of interest, no difference in virus titers was observed at day 4 after infection between the wild-type and neutralization escape mutants of icHC/SZ/61/03 ( Figure 4D ).",
+            "cite_spans": [
+                {
+                    "start": 94,
+                    "end": 97,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 1026,
+                    "end": 1029,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1153,
+                    "end": 1154,
+                    "text": "6",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1368,
+                    "end": 1371,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 579,
+                    "end": 588,
+                    "text": "Figure 4A",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 873,
+                    "end": 882,
+                    "text": "Figure 4A",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1113,
+                    "end": 1122,
+                    "text": "Figure 4B",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1734,
+                    "end": 1743,
+                    "text": "Figure 4C",
+                    "ref_id": "FIGREF3"
+                },
+                {
+                    "start": 1903,
+                    "end": 1912,
+                    "text": "Figure 4D",
+                    "ref_id": "FIGREF3"
+                }
+            ],
+            "section": "Effect of S glycoprotein mutations on in vivo growth."
+        },
+        {
+            "text": "In agreement with the observed weight loss in animals in- fected with the 2 lethal strains (icGZ02 and icHC/SZ/61/03), by 4 days after infection, necrotizing bronchiolitis could be observed in the lungs of these 12-month-old mice, with marked loss and/or attenuation of the bronchiolar epithelium also noted ( Figure 5 ). These findings were accompanied by widespread injury of the alveolar parenchyma. The histopathology of this injury to the gas-exchange region of the lung consisted of diffuse alveolar damage, interstitial edema, and hyaline membrane formation. Of interest, animals infected with the neutralization escape mutants generated against the cross-neutralizing MAbs S109.8, S230.15, and S227.14 had minimal or no alveolitis present in the pulmonary parenchyma at 4 days after infection, and no hyaline membranes were observed ( Figure 5 ).",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 310,
+                    "end": 318,
+                    "text": "Figure 5",
+                    "ref_id": null
+                },
+                {
+                    "start": 843,
+                    "end": 851,
+                    "text": "Figure 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "Effect of S glycoprotein mutations on in vivo growth."
+        },
+        {
+            "text": "Neutralizing antibodies have been shown to be important in recovery from and protection against infectious diseases [10] . However, the high mutation rate and heterogeneity of viruses are major problems in the development of therapeutic MAbs, especially MAbs against human viruses that emerge from heterogeneous pools circulating in animal reservoirs. To our knowledge, the effects of escape mutations of human MAbs after acute infection with human epidemic and zoonotic strains of an emerging virus have not been rigorously investigated.",
+            "cite_spans": [
+                {
+                    "start": 116,
+                    "end": 120,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "The goal of the present study was to characterize the antibody-targeting specificity of a large panel of neutralizing human MAbs and identify residues that are critical to neutralization of SARS-CoV through isolation of escape mutants. The effects of these mutations on cross-neutralization, receptor usage, and in vitro and in vivo replication were determined with the goal of identifying compatible candidate cocktails of broad-spectrum neutralizing antibody therapeutics for the treatment of future SARS-CoV epidemics. We identified the presence of several critical residues associated with neutralization escape from 11 MAbs that showed overlap. In addition, we showed that mutations associated with MAb neutralization escape also affected the kinetics of replication in vitro and the degree of pathogenicity in mice. 2), P462H (S228.11, S110.4, and S215.17), D463G (S224.1), D480Y (S127.6), and Y777D (S111.7). Mice were intranasally inoculated with pfu of the 5 5 ϫ 10 icUrbani strain and its neutralization escape mutants (A and B ) or pfu of the icHC/SZ/61/03 strain and its neutralization escape mutants (C and 5 10 D) in 50 mL of phosphate-buffered saline (PBS). A and C, Body weights of infected mice were measured on a daily basis ( per group). Weight n p 5 changes are expressed as the mean percentage changes for infected animals relative to the initial weights at day 0. B and D, Lung tissues were harvested from infected mice on day 5 (B) or 4 (D) after infection and were assayed for infectious virus as described in Materials and Methods. Tissue samples from 5 mice were analyzed at each time point. Error bars denote standard deviations. * , compared with the icUrbani wild type P ! .01 (WT), by 2-way analysis of variance. MAb, monoclonal antibody. SARS-CoV is an excellent model system with which to study the development of therapeutic antibodies against an emerging virus. SARS-CoV, like other RNA viruses, has a high mutation rate, which is important for adapting to changing environments, such as those created by cross-species transmission [8, 11] . Using a panel of recombinant viruses bearing different S glycoproteins from human epidemic and animal strains, We previously characterized a panel of human MAbs and described 6 distinct neutralization profiles suggesting the presence of several putative conformational epitopes [2] .",
+            "cite_spans": [
+                {
+                    "start": 1120,
+                    "end": 1121,
+                    "text": "5",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 2066,
+                    "end": 2069,
+                    "text": "[8,",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 2070,
+                    "end": 2073,
+                    "text": "11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 2354,
+                    "end": 2357,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In this study, we performed a detailed analysis of the residues critical for neutralization by 11 different human MAbs that differentially neutralized animal and human strains. Four of these residues (at positions 443, 460, 462, and 463) map within 5 ångstroms in the RBD structure and were associated with escape from neutralization with MAbs from the 5 different neutralization profiles, suggesting overlapping antigenic sites. Although MAb-RBD cocrystallization studies will be necessary to determine the complex architecture and orientation of the RBD-neutralizing epitopes, our data suggest that subtle changes in and around the escape mutation site can affect antibody binding and neutralization. In fact, experimental and structural data are available that support our hypothesis of overlapping epitopes on the SARS-CoV RBD, recognized by MAbs that display distinct neutralization profiles [12] [13] [14] [15] [16] .",
+            "cite_spans": [
+                {
+                    "start": 897,
+                    "end": 901,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 902,
+                    "end": 906,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 907,
+                    "end": 911,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 912,
+                    "end": 916,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 917,
+                    "end": 921,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Escape mutant analysis has assisted in the identification of Figure 5 . Lung pathologic findings in 12-month-old BALB/c mice infected with wild-type (WT) and escape mutants of icHC/SZ/61/03 and icGZ02 and killed 5 days after inoculation. Signs of inflammation and virus-induced lung pathologic findings are evident in WT-infected mice on day 4 after infection with necrotizing bronchiolitis. This was accompanied by widespread injury of the alveolar parenchyma consisting of diffuse acute alveolitis, interstitial edema, congestion in the alveolar septa and around small blood vessels, scattered microthrombi in septal capillaries, and hyaline membrane formation. In contrast, mice infected with icGZ02 or icHC/SZ/61/03 neutralization escape mutants showed no inflammation or hyaline membrane formation.",
+            "cite_spans": [],
+            "ref_spans": [
+                {
+                    "start": 61,
+                    "end": 69,
+                    "text": "Figure 5",
+                    "ref_id": null
+                }
+            ],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "antigenic sites for several viruses, including rhinovirus and SARS-CoV [17] [18] [19] [20] [21] , and it previously has been used to identify the importance of P462 in the neutralization of SARS-CoV by MAb CR3014 [21] . The structures of 2 MAbs complexed with the SARS-CoV RBD have been described elsewhere [15, 16] . The MAb m396 mainly recognizes a 10-residue (482-491) loop that protrudes from the RBD surface and competes with S230.15 for binding to the RBD [22] . Because the S230.15 epitope includes the amino acid 443 residue that is distant from the m396 epitope, competition likely occurs through steric hindrance between the 2 MAbs. The 80R MAb was found to interact with 29 residues between 426 and 492 on the SARS-CoV RBD. The D480 residue was of particular interest, because mutations at this residue completely abolished binding to 80R. Of interest, a mutation at residue 480 was also found to affect the neutralization efficacy of one of the group III MAbs described in the present study (S127.6), suggesting that these MAbs recognize an identical or overlapping epitope, as hypothesized elsewhere [18] . The cross-neutralization data suggested an association between residue Y777 and у1 group of residues at locations L443, F460, P462, and D463. Recently, another study [17] demonstrated an association between amino acid changes in the S1 and S2 domains of SARS-CoV, affecting neutralization. Cur-rently, the structure of the complete SARS-CoV S glycoprotein bound to its receptor ACE2 has not been elucidated, and, therefore, mapping the effects of long-range amino acid changes outside the RBD on the global S glycoprotein structure is not possible. However, these data suggest that the S1 and S2 domains of the S glycoprotein communicate with the RBD and may even interact physically in the higher-order structure of the S glycoprotein, as has been shown for other coronaviruses [23, 24] . Of importance, other domains outside the RBD have been targeted by neutralizing MAbs, including amino acids 130-140 and HR-2 [25] . Although it is not clear whether these domains are associated with the RBD, our previous work also implicated changes at positions 77 and 244 as affecting neutralization of MAbs S132 and S228.11 after RBD binding [2] .",
+            "cite_spans": [
+                {
+                    "start": 71,
+                    "end": 75,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 76,
+                    "end": 80,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 81,
+                    "end": 85,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 86,
+                    "end": 90,
+                    "text": "[20]",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 91,
+                    "end": 95,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 213,
+                    "end": 217,
+                    "text": "[21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 307,
+                    "end": 311,
+                    "text": "[15,",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 312,
+                    "end": 315,
+                    "text": "16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 462,
+                    "end": 466,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1113,
+                    "end": 1117,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1286,
+                    "end": 1290,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1899,
+                    "end": 1903,
+                    "text": "[23,",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1904,
+                    "end": 1907,
+                    "text": "24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 2035,
+                    "end": 2039,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 2255,
+                    "end": 2258,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Although the generation of neutralization escape mutants can be a very helpful tool in the identification of the residues critical for neutralization, it generally compromises the use of these single MAbs as prophylaxis or treatment. However, amino acid changes within the SARS-CoV S glycoprotein not only affect neutralization but also have dramatic effects on the fitness and virulence of the virus.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In a previous study, we showed that a single mutation at position 577 or 578 outside the RBD in some zoonotic S glycoprotein genes was associated with the development of cytopathic effect in cell culture [3] . In addition, the introduction of 6 amino acid changes in the SARS-CoV S glycoprotein resulted in lethal infection in aged mice [3] .",
+            "cite_spans": [
+                {
+                    "start": 204,
+                    "end": 207,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 337,
+                    "end": 340,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In the current study, we showed a clear effect on in vitro replication by several different escape amino acid mutations. Because many of the escape mutants grew to similar titers after an initial delay in growth, the observed mutations likely mediate a reduced affinity of RBD for the hACE2 receptor, resulting in a delay in entry. Some escape mutants also influenced the ability of virus to grow in cells expressing cACE2, suggesting that these escape viruses may be inefficiently maintained in animal reservoirs.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "Encouragingly, many escape mutations also had a clear effect on in vivo pathogenesis using an aged mouse model. Although a mutation at residue 777 did not affect in vivo pathogenesis, all other mutations either partially or completely attenuated SARS-CoV infection in aged mice. A decrease in virulence of neutralization escape mutants has also been observed with H5 and H9 influenza viruses and has coincided with reduced affinity of the mutant HA for its receptor [26, 27] . Given the delayed growth of many of these escape mutants on cells expressing hACE2, we anticipate that they would be attenuated in humans. In addition, we were unsuccessful in isolating mutants resistant to the sequential generation of escape variants using different MAbs. Several attempts to rescue virus from escape mutants that were incubated with other neutralizing MAbs in the presence of the original MAb were unsuccessful (unpublished data). Therefore a cocktail of potent, broadly cross-neutralizing MAbs, like the one described elsewhere [2] , will overcome neutralization escape and provide protection from disease after laboratory accidents, zoonotic introductions, or focal outbreaks of disease [18, 28] .",
+            "cite_spans": [
+                {
+                    "start": 466,
+                    "end": 470,
+                    "text": "[26,",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 471,
+                    "end": 474,
+                    "text": "27]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1025,
+                    "end": 1028,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 1185,
+                    "end": 1189,
+                    "text": "[18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1190,
+                    "end": 1193,
+                    "text": "28]",
+                    "ref_id": "BIBREF27"
+                }
+            ],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        },
+        {
+            "text": "In conclusion, our data support the hypothesis that multiple overlapping neutralizing epitopes exist within the RBD of the SARS-CoV S glycoprotein, with clusters of escape mutations affecting neutralization by MAbs with different neutralization profiles. A residue at location 777, associated with epitopes involving residues 443, 460, 462, and 463, suggests long-range interactions within the SARS-CoV S glycoprotein. We showed that neutralization escape comes with the cost of reduced viral fitness and propose the development of a broadly cross-neutralizing MAb cocktail to overcome the generation of escape variants. We propose that a cocktail of MAbs S227.14 and S230.15 is particularly robust, because these MAbs individually neutralize a broad panel of human and zoonotic SARS-CoV variants and select for escape mutations at different sites in the RBD, and because escape mutants are severely attenuated in aged animals.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "DISCUSSION"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Structural basis for potent crossneutralizing human monoclonal antibody protection against lethal human and zoonotic severe acute respiratory syndrome coronavirus challenge",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rockx",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Corti",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Donaldson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J Virol",
+            "volume": "82",
+            "issn": "",
+            "pages": "3220--3255",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Synthetic reconstruction of zoonotic and early human severe acute respiratory syndrome coronavirus isolates that produce fatal disease in aged mice",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rockx",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sheahan",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Donaldson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "J Virol",
+            "volume": "81",
+            "issn": "",
+            "pages": "7410--7433",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "An efficient method to make human monoclonal antibodies from memory B cells: potent neutralization of SARS coronavirus",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Traggiai",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Becker",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Subbarao",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Nat Med",
+            "volume": "10",
+            "issn": "",
+            "pages": "871--876",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Early upregulation of acute respiratory distress syndrome-associated cytokines promotes lethal disease in an aged-mouse model of severe acute respiratory distress syndrome coronavirus infection infection",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rockx",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Baas",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Zornetzer",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Virol",
+            "volume": "83",
+            "issn": "",
+            "pages": "7062--74",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Evaluation of human monoclonal antibody 80R for immunoprophylaxis of severe acute respiratory syndrome by an animal study, epitope mapping, and analysis of spike variants",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sui",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Roberts",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Virol",
+            "volume": "79",
+            "issn": "",
+            "pages": "5900--5906",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Structure of SARS coronavirus spike receptor-binding domain complexed with receptor",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Farzan",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Harrison",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Science",
+            "volume": "309",
+            "issn": "",
+            "pages": "1864--1872",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Receptor and viral determinants of SARScoronavirus adaptation to human ACE2",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "EMBO J",
+            "volume": "24",
+            "issn": "",
+            "pages": "1634--1677",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Pathways of crossspecies transmission of synthetically reconstructed zoonotic severe acute respiratory syndrome coronavirus",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Sheahan",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Rockx",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Donaldson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Corti",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Baric",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J Virol",
+            "volume": "82",
+            "issn": "",
+            "pages": "8721--8753",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Prophylactic administration of respiratory syncytial virus immune globulin to high-risk infants and young children. The Respiratory Syncytial Virus Immune Globulin Study Group",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Groothuis",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Simoes",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Levin",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "N Engl J Med",
+            "volume": "329",
+            "issn": "",
+            "pages": "1524--1554",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Molecular evolution analysis and geographic investigation of severe acute respiratory syndrome coronavirus-like virus in palm civets at an animal market and on farms",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Kan",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Jing",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Virol",
+            "volume": "79",
+            "issn": "11",
+            "pages": "92--900",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Structural insights into immune recognition of the severe acute respiratory syndrome coronavirus S protein receptor binding domain",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Pak",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Sharon",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Satkunarajah",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Mol Biol",
+            "volume": "388",
+            "issn": "",
+            "pages": "815--838",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Conserved amino acids W423 and N424 in receptor-binding domain of SARS-CoV are potential targets for therapeutic monoclonal antibody",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Bian",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Cai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Virology",
+            "volume": "383",
+            "issn": "",
+            "pages": "39--46",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Receptor-binding domain of severe acute respiratory syndrome coronavirus spike protein contains multiple conformation-dependent epitopes that induce highly potent neutralizing antibodies",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Lu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Siddiqui",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Jiang",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Immunol",
+            "volume": "174",
+            "issn": "",
+            "pages": "4908--4923",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Structural basis of neutralization by a human anti-severe acute respiratory syndrome spike protein antibody, 80R",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Hwang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Lin",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Santelli",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J Biol Chem",
+            "volume": "281",
+            "issn": "",
+            "pages": "610--616",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Structure of severe acute respiratory syndrome coronavirus receptor-binding domain complexed with neutralizing antibody",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Prabakaran",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Feng",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "J Biol Chem",
+            "volume": "281",
+            "issn": "",
+            "pages": "829--865",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "A single amino acid substitution in the S1 and S2 Spike protein domains determines the neutralization escape phenotype of SARS-sCoV",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Mitsuki",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ohnishi",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Takagi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Microbes Infect",
+            "volume": "10",
+            "issn": "",
+            "pages": "908--923",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Broadening of neutralization activity to directly block a dominant antibody-driven SARS-coronavirus evolution pathway",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Sui",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Aird",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Tamin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "PLoS Pathog",
+            "volume": "4",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Structural studies on viral escape from antibody neutralization",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Bizebard",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Barbey-Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Fleury",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Curr Top Microbiol Immunol",
+            "volume": "260",
+            "issn": "",
+            "pages": "55--64",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Use of monoclonal antibodies to identify four neutralization immunogens on a common cold picornavirus, human rhinovirus 14",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Sherry",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Mosser",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Colonno",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Rueckert",
+                    "suffix": ""
+                }
+            ],
+            "year": 1986,
+            "venue": "J Virol",
+            "volume": "57",
+            "issn": "",
+            "pages": "246--57",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Human monoclonal antibody combination against SARS coronavirus: synergy and coverage of escape mutants",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Ter Meulen",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "N"
+                    ],
+                    "last": "Van Den Brink",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Poon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "PLoS Med",
+            "volume": "3",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Potent cross-reactive neutralization of SARS coronavirus isolates by human monoclonal antibodies",
+            "authors": [
+                {
+                    "first": "Z",
+                    "middle": [],
+                    "last": "Zhu",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Chakraborti",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "He",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Proc Natl Acad Sci U S A",
+            "volume": "104",
+            "issn": "",
+            "pages": "123--131",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Amino acid substitutions in the S2 subunit of mouse hepatitis virus variant V51 encode determinants of host range expansion",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Mcroy",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Baric",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J Virol",
+            "volume": "82",
+            "issn": "",
+            "pages": "1414--1438",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Infectious bronchitis virus S2 gene sequence variability may affect S1 subunit specific antibody binding",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Callison",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Jackwood",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hilt",
+                    "suffix": ""
+                }
+            ],
+            "year": 1999,
+            "venue": "Virus Genes",
+            "volume": "19",
+            "issn": "",
+            "pages": "143--51",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Characterization of neutralizing monoclonal antibodies recognizing a 15-residues epitope on the spike protein HR2 region of severe acute respiratory syndrome coronavirus (SARS-CoV)",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Yeh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Biomed Sci",
+            "volume": "12",
+            "issn": "",
+            "pages": "711--738",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Restoration of virulence of escape mutants of H5 and H9 influenza viruses by their readaptation to mice",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Rudneva",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ilyushina",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Timofeeva",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Webster",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Kaverin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Gen Virol",
+            "volume": "86",
+            "issn": "",
+            "pages": "2831--2839",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Monoclonal antibodies differentially affect the interaction between the hemagglutinin of H9 influenza virus escape mutants and sialic receptors",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Ilyushina",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Rudneva",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Gambaryan",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Bovin",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Kaverin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Virology",
+            "volume": "329",
+            "issn": "",
+            "pages": "33--42",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Human monoclonal antibodies to SARS-coronavirus inhibit infection by different mechanisms",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Coughlin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Babcook",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Prabhakar",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Virology",
+            "volume": "394",
+            "issn": "",
+            "pages": "39--46",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "FIGREF0": {
+            "text": "Neutralization efficacy of wild-type (WT) and neutralization escape mutants, as determined by use of a panel of neutralizing monoclonal antibodies (MAbs). Representative MAbs from previously determined neutralization groups I (A), II (B), III (C), IV (D)",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF1": {
+            "text": "Locations of neutralization escape variant mutations on the structure of the severe acute respiratory syndrome coronavirus (SARS-CoV) receptor-binding domain (RBD). The location of residues critical for monoclonal antibody (MAb) neutralization is mapped onto the structure of the SARS-CoV RBD (green) bound to its receptor angiotensin-converting enzyme 2 (ACE2) (blue). The amino acid changes associated with neutralization escape from MAbs S228.11 (P462A/H), S224.1 (D463G), S3.1 (L443R), S127.6 (D480Y), S110.4 (P462H), S231.2 (F460C), S109.8 (T332I), S215.17 (P462H), S227.14 (K390Q), and S230.15 (L443R) are shown in red. Amino acid Y491 (yellow) interacts with multiple residues on the ACE2 molecule.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF2": {
+            "text": "In vitro growth characteristics of wild-type (WT) and neutralization escape mutant severe acute respiratory syndrome coronavirus (SARS-CoV). Cultures of Vero E6 (A), delayed brain tumor (DBT)-human angiotensin-converting enzyme 2 (ACE2) (B), and DBT-civet ACE2 (C) cells were infected in duplicate with icUrbani WT (icUrbani WT) and neutralization escape mutants T332I (S109.8), L443R (S230.15), L443R+Y777D (S3.1), F460C (S231.2), P462H (S228.11, S110.4, and S215.17), D463G (S224.1), D480Y (S127.6), and Y777D (S111.7) at a multiplicity of infection (MOI) of 0.1, as described in Materials and Methods. Virus titers at different time points were determined by a plaque assay using Vero E6 cells. Error bars denote standard deviations. * , compared with the P ! .01 icUrbani WT, by 2-way analysis of variance.",
+            "latex": null,
+            "type": "figure"
+        },
+        "FIGREF3": {
+            "text": "Effect of neutralization escape on in vivo replication and morbidity. Weight loss (A and C ) and lung titer (B and D ) results for 12-monthold female BALB/c mice infected with neutralization escape mutants T332I (S109.8), L443R (S230.15), L443R+Y777D (S3.1), F460C (S231.",
+            "latex": null,
+            "type": "figure"
+        },
+        "TABREF0": {
+            "text": "Amino Acid Changes in the Severe Acute Respiratory Syndrome Coronavirus (SARS-CoV) Spike Glycoprotein of Neutralization Escape Mutants",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": []
+}

@@ -15,4 +15,20 @@ Forward Index/forward_index_pdf_files.json
 page_rank_results_with_urls.csv
 Forward Index.7z
 Inverted Index/
-Forward Index/*
+
+# Ignore all data files except sample test files
+Data/*
+!Data/Files/
+Data/Files/*
+!Data/Files/raw/
+Data/Files/raw/*
+!Data/Files/raw/sample/
+!Data/Cord 19/
+Data/Cord 19/*
+!Data/Cord 19/metadata_cleaned.csv
+!Data/Cord 19/document_parses/
+Data/Cord 19/document_parses/*
+!Data/Cord 19/document_parses/pdf_json/
+Data/Cord 19/document_parses/pdf_json/*
+!Data/Cord 19/document_parses/pdf_json/sample/
+!Data/ind_to_url.json

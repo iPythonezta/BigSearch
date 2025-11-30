@@ -1,0 +1,2495 @@
+{
+    "paper_id": "c25f2f8f3feac3c0c1968c215dea24dd2f439807",
+    "metadata": {
+        "title": "The Diagnosis of Viral Respiratory Disease in Older Adults",
+        "authors": [
+            {
+                "first": "",
+                "middle": [],
+                "last": "Aging",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "",
+                "middle": [],
+                "last": "Infectious Diseases • Cid",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [
+        {
+            "text": "Viral respiratory disease in older adults has been increasingly recognized as a significant cause of hospitalizations and death. Unfortunately, the recognition and diagnosis of infection due to many viral respiratory pathogens in older adults can be elusive because of atypical clinical presentations and the insensitivity of current laboratory diagnostic tests in this population. For influenza diagnosis, rapid antigen tests followed by viral culture (if antigen test results are negative), can be useful in older adults as long as clinicians are mindful of test limitations. Although specific, rapid antigen tests are insensitive in this population. Erroneous negative results may lead to delays in timely administration of antiviral treatment and institution of appropriate isolation precautions. The increasing availability of new, rapid, and sensitive molecular diagnostics, such as polymerase chain reaction testing, should provide more accurate and timely diagnoses of viral respiratory infections in older adults in the near future.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Abstract"
+        }
+    ],
+    "body_text": [
+        {
+            "text": "The burden of illness due to a variety of viral respiratory pathogens in the elderly population is increasingly being recognized. Influenza and respiratory syncytial virus (RSV), in particular, have most commonly been found to be the leading culprits of viral lower respiratory illness. However, through the use of novel diagnostic methods, other viruses have been added to the list of significant pathogens in older adults, including parainfluenza virus , human rhinoviruses, coronaviruses, and human metapneumovirus (hMPV). Overall, viruses have been implicated in 13%-31% of lower respiratory illnesses in elderly adults [1, 2] . Influenza and RSV alone have been estimated to cause ∼53,800 deaths [3] each year in the Unites States. Older adults may not present with the typical \"common cold\" symptoms that are associated with viral infections [1, 2, [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] . Rather, the clinical picture may be dominated by lower respiratory tract symptoms or decompensation of chronic medical conditions. Illness in this age group represents reinfection, because all persons were infected as children and, thus, many have partial immunity. Because of preexisting mucosal antibodies, lower viral loads may present in respiratory secretions making diagnosis challenging is this age group.",
+            "cite_spans": [
+                {
+                    "start": 624,
+                    "end": 627,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 628,
+                    "end": 630,
+                    "text": "2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 701,
+                    "end": 704,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 848,
+                    "end": 851,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 852,
+                    "end": 854,
+                    "text": "2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 855,
+                    "end": 858,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 859,
+                    "end": 862,
+                    "text": "[5]",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 863,
+                    "end": 866,
+                    "text": "[6]",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 867,
+                    "end": 870,
+                    "text": "[7]",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 871,
+                    "end": 874,
+                    "text": "[8]",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 875,
+                    "end": 878,
+                    "text": "[9]",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 879,
+                    "end": 883,
+                    "text": "[10]",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 884,
+                    "end": 888,
+                    "text": "[11]",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 889,
+                    "end": 893,
+                    "text": "[12]",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 894,
+                    "end": 898,
+                    "text": "[13]",
+                    "ref_id": "BIBREF12"
+                }
+            ],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "The identification of viral infections in older adults is of practical importance for a number of reasons. First and foremost, isolation of subjects with highly contagious viral infections, such as influenza, is crucial in the inpatient and longterm care settings to prevent transmission of disease to frail and debilitated patients, as well as to health care workers. Secondly, the diagnosis of influenza can help guide antiviral treatment for individual patients. Prompt diagnosis of influenza is also critical in long-term care facilities and other closed populations in the event that institutional chemoprophylaxis is needed to limit outbreaks. Although antiviral treatments are not currently available for the other respiratory viruses, diagnosis of infection these agents may also be increasingly important as more efforts are made to curtail unnecessary antibiotic use [13, 14] . Despite recent advances in diagnostic methods, specific viral diagnosis often remains elusive in older populations. This article summarizes what is known about the diagnosis of viral respiratory diseases in elderly adults, with the hope of increasing understanding of the utility and limitations of the currently available diagnostic tests for viral respiratory pathogens, such as culture, rapid antigen testing, polymerase chain reaction (PCR) testing, and serologic analysis. Table 1 summarizes this review.",
+            "cite_spans": [
+                {
+                    "start": 877,
+                    "end": 881,
+                    "text": "[13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 882,
+                    "end": 885,
+                    "text": "14]",
+                    "ref_id": "BIBREF13"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1366,
+                    "end": 1373,
+                    "text": "Table 1",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": ""
+        },
+        {
+            "text": "Children with viral respiratory diseases typically present with classic symptoms, high viral titers, and positive results of viral cultures or rapid antigen tests. However, the elderly individual may present with atypical symptoms (eg, confusion, anorexia, dizziness, and falls) [15] ; may lack fever and be unable to articulate classic symptoms of viral infection, such as sore throat or myalgias; or may experience exacerbations of underlying chronic cardiopulmonary diseases. Classically, influenza presents with the acute onset of fevers, myalgias, and cough [16] , and RSV presents with nasal congestion, wheezing, and cough [17] . For research purposes, influenza-like illness has been defined by the Centers for Disease Control and Prevention as fever with either cough or sore throat [18] , providing very good sensitivity in young adults (86.8%) [19] during periods of high influenza activity. However, this has not held true for older adults, likely as a result of the lack of fever and protean manifestations of influenza infection in older adults [20, 21] . In a prospective study of patients with obstructive lung disease [22] , the presence of fever had a sensitivity of only 26%, compared with culture and serological test results, when used to diagnose influenza in older adults. In a study of hospitalized adults, Babcock et al [23] reported a poor sensitivity of symptoms of influenza-like illness (43%) in adults (approximately one-half of whom were aged у65 years).",
+            "cite_spans": [
+                {
+                    "start": 279,
+                    "end": 283,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 563,
+                    "end": 567,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 630,
+                    "end": 634,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 792,
+                    "end": 796,
+                    "text": "[18]",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 855,
+                    "end": 859,
+                    "text": "[19]",
+                    "ref_id": "BIBREF18"
+                },
+                {
+                    "start": 1059,
+                    "end": 1063,
+                    "text": "[20,",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 1064,
+                    "end": 1067,
+                    "text": "21]",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 1135,
+                    "end": 1139,
+                    "text": "[22]",
+                    "ref_id": "BIBREF21"
+                },
+                {
+                    "start": 1345,
+                    "end": 1349,
+                    "text": "[23]",
+                    "ref_id": "BIBREF22"
+                }
+            ],
+            "ref_spans": [],
+            "section": "CLINICAL DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "Specimen collection. Detection of virus whether by culture, rapid antigen testing, or PCR depends on the collection of an adequate specimen. Nasal washes are traditionally used in children but are not well tolerated in older adults, especially delirious patients or patients with dementia. Nasopharyngeal swabs, which are frequently contained in viral culture kits, can also be difficult to perform properly [24] . We find that a sep-arate nose and throat swab that are combined in a single vial of viral transport media is more acceptable to patients and provides an acceptable sample. To collect an adequate sample, the nasal turbinates should be rubbed gently but firmly for ∼5 s. Specimen collection may be difficult in the older adults because of decreased secretions and nasal dryness associated with the use of nasal cannula supplemental oxygen in hospitalized patients. Culture testing. Traditionally, culture has been the gold standard for the diagnosis of viral respiratory disease. Viral culture usually requires specialized facilities and well-trained staff. Definitive identification of a viral pathogen may take days to even weeks. As noted, older adults generally have lower viral loads in their respiratory secretions, which may affect the sensitivity of cultures. Viral culture is most useful for relatively hardy viruses, such as influenza virus, which can survive transportation to a laboratory, whereas more labile viruses (eg, RSV) cannot [25] . This can be particularly problematic for off-site long-term care facilities where specimen transport to a central laboratory may be delayed.",
+            "cite_spans": [
+                {
+                    "start": 408,
+                    "end": 412,
+                    "text": "[24]",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1460,
+                    "end": 1464,
+                    "text": "[25]",
+                    "ref_id": "BIBREF24"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "No single cell culture line can grow all medically important viruses. Therefore, clinical laboratories require some knowledge of what viruses are suspected and may need to use multiple cell lines to make a diagnosis of viral infection. Recently, shell viral culture techniques have been introduced into clinical laboratories to speed time to detection. This technique requires centrifugation of the specimen onto a cell monolayer with the use of antigen detection to identify pathogens [26] . To increase the number of identifiable pathogens, some shell vial cultures have incorporated mixed cells, such as the R-mix (Diagnostic Hybrids), which uses 2 cell types (mink lung cells and human adenocarcinoma cells) and can simultaneously detect influenza viruses A and B, parainfluenza viruses 1-4, RSV, and adenoviruses. Shell vial culture can decrease the time of diagnosis from 2-5 days to 1-2 days and retains the sensitivity and specificity of conventional culture [27] .",
+            "cite_spans": [
+                {
+                    "start": 486,
+                    "end": 490,
+                    "text": "[26]",
+                    "ref_id": null
+                },
+                {
+                    "start": 967,
+                    "end": 971,
+                    "text": "[27]",
+                    "ref_id": "BIBREF25"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "Influenza can be identified by both conventional and shellvial methods. The conventional cell culture technique requires an additional step of hemadsorption, because the cytopathic effect may be subtle, and results are typically available in 3-5 days. Viral culture is most useful in highly febrile patients who have been ill only 2-3 days [28] . Viral culture is relatively insensitive, compared with serological tests and PCR. In a study of older adults with serologically confirmed influenza, culture only identified approximately one half (22 of 43) of the infections [1] , and studies using PCR as the gold standard have shown the sensitivity of culture to be 21%-50% [29, 30] .",
+            "cite_spans": [
+                {
+                    "start": 340,
+                    "end": 344,
+                    "text": "[28]",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 572,
+                    "end": 575,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 673,
+                    "end": 677,
+                    "text": "[29,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 678,
+                    "end": 681,
+                    "text": "30]",
+                    "ref_id": "BIBREF28"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "Diagnosis of RSV infection by culture is considerably more difficult than diagnosis of influenza, with sensitivities ranging from 17% to 39%, compared with serological tests and PCR [1, 29, 31] . The poor sensitivity of culture is likely due in part to greater lability of RSV, compared with influenza virus. Parainfluenza virus can also be detected by routine viral culture, but like influenza virus, isolation of parainfluenza virus often requires the additional step of hemadsorption. It is likely that, for diagnosis of parainfluenza virus infection, culture is also relatively insensitive versus PCR, although data are limited.",
+            "cite_spans": [
+                {
+                    "start": 182,
+                    "end": 185,
+                    "text": "[1,",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 186,
+                    "end": 189,
+                    "text": "29,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 190,
+                    "end": 193,
+                    "text": "31]",
+                    "ref_id": "BIBREF29"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "hMPV is in the same paramyxoviridae family as RSV but is much more difficult to grow [32] . Currently, only a few research laboratories have been able to successfully grow this virus; thus, culture of hMPV is not available in most clinical laboratories. Coronaviruses, like hMPV, are difficult to grow regardless of the age of the patient [33] . Therefore, most epidemiologic work has depended on serological tests and reverse-transcriptase (RT) PCR and only available in research settings.",
+            "cite_spans": [
+                {
+                    "start": 85,
+                    "end": 89,
+                    "text": "[32]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 339,
+                    "end": 343,
+                    "text": "[33]",
+                    "ref_id": "BIBREF31"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "Enteroviruses and rhinoviruses grow on a variety of fibroblast cell lines and are identified by cytopathic effect and distinguished by acid liability testing. Rhinoviruses have traditionally been divided into 2 species (A and B), with 100 serotypes. Recently, however, a third species (C) has been identified. A and B species of rhinovirus are culturable, but the newly described C species of rhinovirus can only be detected using molecular methods [34] . The sensitivity of viral culture in older adults for these pathogens has not been specifically compared with that of molecular techniques, but insensitivity can be inferred from recent epidemiologic studies using RT-PCR that demonstrate rhinoviruses as common pathogens in this age group [35] [36] [37] .",
+            "cite_spans": [
+                {
+                    "start": 449,
+                    "end": 453,
+                    "text": "[34]",
+                    "ref_id": "BIBREF32"
+                },
+                {
+                    "start": 744,
+                    "end": 748,
+                    "text": "[35]",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 749,
+                    "end": 753,
+                    "text": "[36]",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 754,
+                    "end": 758,
+                    "text": "[37]",
+                    "ref_id": "BIBREF35"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "Rapid antigen testing. Enzyme immunoassays (EIAs) are simple, straightforward tests that can be performed at the point of care, with results available in !15 minutes. EIA, often referred to as rapid antigen tests in the clinical setting, have had great success in the diagnosis of influenza and RSV infection in children [30, 38] . Unfortunately, similar results have not been noted in older adults, likely because most rapid antigen tests require ∼10 3 plaque-forming units of virus to generate a positive test result. As noted with culture testing, adequate collection of the clinical specimen is critical for the optimal sensitivity of these tests.",
+            "cite_spans": [
+                {
+                    "start": 321,
+                    "end": 325,
+                    "text": "[30,",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 326,
+                    "end": 329,
+                    "text": "38]",
+                    "ref_id": "BIBREF36"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "The sensitivities of EIA for influenza depend upon the setting used, and the gold standard is used for comparison. The sensitivity of rapid influenza antigen testing in older adults has been as high as 77% in an outbreak setting in an nursing home when compared with culture [39] but as low as 38%-43% in other settings when compared to PCR [28, 40] . In addition, Steininger et al [41] found that the sensitivity of EIA for the diagnosis of influenza decreases with increasing patient age and can be as low as 8%-22% in patients aged у80 years. Despite the low sensitivities associated with EIA, the test does has good specificity in the older adult population. Therefore, a positive EIA result is likely a true positive test result. However, a negative test result in older adults does not rule out influenza.",
+            "cite_spans": [
+                {
+                    "start": 275,
+                    "end": 279,
+                    "text": "[39]",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 341,
+                    "end": 345,
+                    "text": "[28,",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 346,
+                    "end": 349,
+                    "text": "40]",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 382,
+                    "end": 386,
+                    "text": "[41]",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "The sensitivity of EIA for RSV in older adults is very low; at best, it is р10% when compared with serological testing and PCR [42] . Given the low overall prevalence of RSV infection (5%-10%), these tests have very poor predictive value in older adults and cannot be recommended for general use. Two exceptions that can be considered are immunocompromised patients or those with respiratory failure for whom viral loads may be higher [43] .",
+            "cite_spans": [
+                {
+                    "start": 127,
+                    "end": 131,
+                    "text": "[42]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 435,
+                    "end": 439,
+                    "text": "[43]",
+                    "ref_id": "BIBREF41"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "Fluorescent antibody assays. Fluorescent antibody staining is another rapid method of diagnosing respiratory viral diseases. This technique involves placing a pellet of cells from the sample on a microscope slide followed by staining with viral specific fluorescent antibodies. The procedure requires staff trained in the technique, but results are often available in a matter of hours. In the clinical setting, these tests are either named direct fluorescent antibody assay or immunofluorescent antibody and can be used to test for adenoviruses, influenza viruses A and B, RSV, and parainfluenza virus types 1-3. Currently, a direct fluorescent antibody is being developed for hMPV [44] . The sensitivity of the direct fluorescent antibody to detect influenza in patients of all ages was 68%, compared with viral culture [45] . For RSV, immunofluorescent techniques have sensitivities of 9%-23%, compared with serological testing and PCR in older adults [25, 42] .",
+            "cite_spans": [
+                {
+                    "start": 683,
+                    "end": 687,
+                    "text": "[44]",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 822,
+                    "end": 826,
+                    "text": "[45]",
+                    "ref_id": "BIBREF43"
+                },
+                {
+                    "start": 955,
+                    "end": 959,
+                    "text": "[25,",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 960,
+                    "end": 963,
+                    "text": "42]",
+                    "ref_id": "BIBREF40"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "PCR. PCR, first introduced in 1984 by Kary Mullis [46] , has become a popular tool in the research setting and is being introduced into clinical laboratories. Because PCR can detect minute amounts of viral nucleic acid and does not require infectious organisms for detection, PCR has surmounted the problems of poor sensitivity that have plagued culture and antigen detection in older adults. Extreme care to avoid contamination must be used given the extreme sensitivity of PCR. Most of the common respiratory viruses are RNA viruses and require an addition step of reverse transcription prior to amplification.",
+            "cite_spans": [
+                {
+                    "start": 50,
+                    "end": 54,
+                    "text": "[46]",
+                    "ref_id": "BIBREF44"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "Compared with previous studies that have used viral culture for diagnosis, studies using PCR have more accurately detected the presence of viruses (including influenza virus, RSV, hMPV, parainfluenza virus, rhinoviruses, and coronaviruses) in the lower respiratory tract illness in older adults [5, 13, 31, 36, 40, 42] . The use of PCR has allowed large epidemiologic studies of wellknown pathogens, such as influenza virus [29, 30] and RSV [29] ; has allowed studies of newly discovered pathogens, such as hMPV [47] ; and has also been used successfully in the nursing home setting to identify sources of outbreaks [48] . In addition, PCR is the only currently available method for the diagnosis of disease due to coronaviruses and group C rhinoviruses.",
+            "cite_spans": [
+                {
+                    "start": 295,
+                    "end": 298,
+                    "text": "[5,",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 299,
+                    "end": 302,
+                    "text": "13,",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 303,
+                    "end": 306,
+                    "text": "31,",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 307,
+                    "end": 310,
+                    "text": "36,",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 311,
+                    "end": 314,
+                    "text": "40,",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 315,
+                    "end": 318,
+                    "text": "42]",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 424,
+                    "end": 428,
+                    "text": "[29,",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 429,
+                    "end": 432,
+                    "text": "30]",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 441,
+                    "end": 445,
+                    "text": "[29]",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 512,
+                    "end": 516,
+                    "text": "[47]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 616,
+                    "end": 620,
+                    "text": "[48]",
+                    "ref_id": "BIBREF46"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "PCR can be performed to test for individual viruses (singlevirus assays) or multiple viruses simultaneously (multiplex PCR). These tests require specialized equipment and staff training. Many assays have been \"home brews,\" but the US Food and Drug Administration has recently approved some multiplex assays, including both the xTAG Respiratory Viral Panel (Luminex) and the Hexaplex (Prodesse), for commercial use. The xTAG Respiratory Viral Panel detects influenza viruses A, A subtype H1, A subtype H3, and B; RSV A and B, parainfluenza viruses 1-3, hMPV, rhinovirus, and adenovirus. The Hexaplex can test for RSV, influenza viruses A and B, hMPV, and parainfluenza virus. Some sensitivity for individual pathogens is invariably lost with multiplex assays, but in balance, they retain better sensitivity than do culture and rapid antigen testing.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "Serological diagnosis. Because viral respiratory infections in older adults represent reinfection, a single serum sample to detect viral specific immunoglobulin G is not useful for diagnosis. Instead, a у4-fold increase in antibody is required to identify a recent infection. Unfortunately, immunoglobulin M assays have not proven to be useful for acute diagnosis, despite several older reports suggesting promise [49] . Although the aging immune system may predispose older adults to increased susceptibility to infection and severe disease, the humoral response to respiratory viral infections appears intact. Although counterintuitive, older adults appear to have a more robust antibody response to natural infection than do young healthy, adults [50] . Thus, if baseline serum or an acute blood samples obtained early in illness can be compared with a convalescentphase specimen, detection of a у4-fold increase in viral specific antibody is an excellent method of diagnosis. Obviously, as a result of the delay in diagnosis, serological testing is not useful for clinicians and patient care decisions. However, serological testing may be useful for retrospective analysis of nursing home outbreaks of respiratory disease.",
+            "cite_spans": [
+                {
+                    "start": 414,
+                    "end": 418,
+                    "text": "[49]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 750,
+                    "end": 754,
+                    "text": "[50]",
+                    "ref_id": "BIBREF48"
+                }
+            ],
+            "ref_spans": [],
+            "section": "LABORATORY DIAGNOSIS OF VIRAL RESPIRATORY INFECTION IN OLDER ADULTS"
+        },
+        {
+            "text": "Clinicians should maintain a high index of suspicion for viral respiratory infection in older adults with respiratory illnesses particularly during the winter months. Although diagnosis can be problematic because of atypical presentations and insensitivity of available tests, influenza testing may be important for patient care and infection control. Rapid antigen tests of a properly collected nasal sample especially early in illness can be very useful. However, it is important to recognize the limitations of such tests and understand one cannot eliminate influenza from the differential diagnosis if negative and viral cultures should be performed. PCR appears to overcome the difficulties of traditional methods (better sensitivity and shorter time to diagnosis) and hopefully will be available in clinical laboratories in the near future.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "CONCLUSIONS"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Peetermans WE. Viral lower respiratory tract infection in the elderly: a prospective in-hospital study",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Flamaing",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Engelmann",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Joosten",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Van Ranst",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Verhaegen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Eur J Clin Microbiol Infect Dis",
+            "volume": "22",
+            "issn": "12",
+            "pages": "720--725",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Clinical analysis of community-acquired pneumonia in the elderly",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kobashi",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Okimoto",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Matsushima",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Soejima",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Intern Med",
+            "volume": "40",
+            "issn": "8",
+            "pages": "703--707",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "Mortality associated with influenza and respiratory syncytial virus in the United States",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Thompson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Shay",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Weintraub",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "JAMA",
+            "volume": "289",
+            "issn": "2",
+            "pages": "179--186",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Aetiological role of viral and bacterial infections in acute adult lower respiratory tract infection (LRTI) in primary care",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Creer",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Dilworth",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Gillespie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Thorax",
+            "volume": "61",
+            "issn": "1",
+            "pages": "75--79",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Improved diagnosis of the etiology of community-acquired pneumonia with real-time polymerase chain reaction",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Templeton",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Scheltinga",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Van Den Eeden",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Graffelman",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Van Den Broek",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Claas",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Clin Infect Dis",
+            "volume": "41",
+            "issn": "3",
+            "pages": "345--351",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Epidemiology and clinical outcome of virus-positive respiratory samples in ventilated patients: a prospective cohort study",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Daubin",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Parienti",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Vincent",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Crit Care",
+            "volume": "10",
+            "issn": "5",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Viral community-acquired pneumonia in nonimmunocompromised adults",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "De Roux",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Marcos",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Garcia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Chest",
+            "volume": "125",
+            "issn": "4",
+            "pages": "1343--1351",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Etiology of community-acquired pneumonia in hospitalized patients in chile: the increasing prevalence of respiratory viruses among classic pathogens",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Diaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Barria",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Niederman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Chest",
+            "volume": "131",
+            "issn": "3",
+            "pages": "779--787",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Incidence and characteristics of viral community-acquired pneumonia in adults",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Jennings",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Anderson",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Beynon",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Thorax",
+            "volume": "63",
+            "issn": "1",
+            "pages": "42--48",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Viral infection in adults hospitalized with community-acquired pneumonia: prevalence, pathogens, and presentation",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Johnstone",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Majumdar",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Fox",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Marrie",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Chest",
+            "volume": "134",
+            "issn": "6",
+            "pages": "1141--1148",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Study of community acquired pneumonia aetiology (SCAPA) in adults admitted to hospital: implications for management guidelines",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Macfarlane",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Boswell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Thorax",
+            "volume": "56",
+            "issn": "4",
+            "pages": "296--301",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Frequency of detection of respiratory viruses in the lower respiratory tract of hospitalized adults",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Minosse",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Selleri",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Zaniratti",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J Clin Virol",
+            "volume": "42",
+            "issn": "2",
+            "pages": "215--220",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Impact of rapid detection of viral and atypical bacterial pathogens by real-time polymerase chain reaction for patients with lower respiratory tract infection",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Oosterheert",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Van Loon",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Schuurman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Clin Infect Dis",
+            "volume": "41",
+            "issn": "10",
+            "pages": "1438--1444",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "Impact of rapid diagnosis on management of adults hospitalized with influenza",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Falsey",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Murata",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Arch Intern Med",
+            "volume": "167",
+            "issn": "4",
+            "pages": "354--360",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Pitfalls in the diagnosis and therapy of infections in elderly patients-a mini-review",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Bellmann-Weiler",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Weiss",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Gerontology",
+            "volume": "55",
+            "issn": "3",
+            "pages": "241--249",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Clinical manifestations and consequences of influenza",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Cate",
+                    "suffix": ""
+                }
+            ],
+            "year": 1987,
+            "venue": "Am J Med",
+            "volume": "82",
+            "issn": "6A",
+            "pages": "15--19",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Respiratory syncytial virus infection in adults: clinical, virologic, and serial pulmonary function studies",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Speers",
+                    "suffix": ""
+                }
+            ],
+            "year": 1978,
+            "venue": "Ann Intern Med",
+            "volume": "88",
+            "issn": "2",
+            "pages": "203--205",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Does this patient have influenza?",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Call",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Vollenweider",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hornung",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Simel",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Mckinney",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "JAMA",
+            "volume": "293",
+            "issn": "8",
+            "pages": "987--997",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Predicting influenza infections during epidemics with use of a clinical case definition",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Boivin",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Hardy",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Tellier",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Maziade",
+                    "suffix": ""
+                }
+            ],
+            "year": 2000,
+            "venue": "Clin Infect Dis",
+            "volume": "31",
+            "issn": "5",
+            "pages": "1166--1169",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "The predictive value of influenza symptomatology in elderly people",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Govaert",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Dinant",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Aretz",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Knottnerus",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "Fam Pract",
+            "volume": "15",
+            "issn": "1",
+            "pages": "16--22",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Influence of age on symptoms and laboratory findings at presentation in patients with influenzaassociated pneumonia",
+            "authors": [
+                {
+                    "first": "O",
+                    "middle": [],
+                    "last": "Matsuno",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Kataoka",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Takenaka",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Arch Gerontol Geriatr",
+            "volume": "49",
+            "issn": "2",
+            "pages": "322--325",
+            "other_ids": {}
+        },
+        "BIBREF21": {
+            "ref_id": "b21",
+            "title": "Recognizing influenza in older patients with chronic obstructive pulmonary disease who have received influenza vaccine",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Neuzil",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "Z"
+                    ],
+                    "last": "O&apos;connor",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Gorse",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Nichol",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "Clin Infect Dis",
+            "volume": "36",
+            "issn": "2",
+            "pages": "169--174",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Case-control study of clinical features of influenza in hospitalized patients",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Babcock",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Merz",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Dubberke",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Fraser",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Infect Control Hosp Epidemiol",
+            "volume": "29",
+            "issn": "10",
+            "pages": "921--926",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Identification of respiratory viruses in adults: nasopharyngeal vs. oropharyngeal sampling",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lieberman",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Lieberman",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Shimoni",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Keren-Naus",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Steinberg",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Shemer-Avni",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Clin Microbiol",
+            "volume": "47",
+            "issn": "11",
+            "pages": "3439--3443",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Evaluation of four methods for the diagnosis of respiratory syncytial virus infection in older adults",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Falsey",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Mccann",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Hall",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Criddle",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "J Am Geriatr Soc",
+            "volume": "44",
+            "issn": "1",
+            "pages": "71--73",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Rapid detection of respiratory viruses by shell vial culture and direct staining by using pooled and individual monoclonal antibodies",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Matthey",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Nicholson",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Ruhs",
+                    "suffix": ""
+                }
+            ],
+            "year": 1992,
+            "venue": "J Clin Microbiol",
+            "volume": "30",
+            "issn": "3",
+            "pages": "540--544",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Clinical features of influenza A virus infection in older hospitalized persons",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cox",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Falsey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J Am Geriatr Soc",
+            "volume": "50",
+            "issn": "9",
+            "pages": "1498--1503",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Respiratory syncytial virus infection in elderly and high-risk adults",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Falsey",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Hennessey",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Formica",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Cox",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "N Engl J Med",
+            "volume": "352",
+            "issn": "17",
+            "pages": "1749--1759",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Challenges in diagnosing influenza in older adults",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Talbot",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Poehling",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Williams",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Program and abstracts of the 48th Annual Meeting of the Interscience Conference on Antimicrobial Agents and Chemotherapy-Infectious Diseases Society of American ICAAC/IDSA",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "Diagnosis of respiratory syncytial virus infection: comparison of reverse transcription-PCR to viral culture and serology in adults with respiratory illness",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Falsey",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Formica",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J Clin Microbiol",
+            "volume": "40",
+            "issn": "3",
+            "pages": "817--820",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "A newly discovered human pneumovirus isolated from young children with respiratory tract disease",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Van Den Hoogen",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "De Jong",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Groen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "Nat Med",
+            "volume": "7",
+            "issn": "6",
+            "pages": "719--724",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "Coronavirus infection in acute lower respiratory tract disease of infants",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mcintosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Commentary",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mcintosh",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chao",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Krause",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wasil",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Mocega",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Mufson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1974,
+            "venue": "J Infect Dis",
+            "volume": "130",
+            "issn": "5",
+            "pages": "1033--1041",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Distinguishing molecular features and clinical characteristics of a putative new rhinovirus species, human rhinovirus C (HRV C)",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Mcerlean",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Shackelton",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Andrews",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "PLoS One",
+            "volume": "3",
+            "issn": "4",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Acute viral infections of upper respiratory tract in elderly people living in the community: comparative, prospective, population based study of disease burden",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Nicholson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Kent",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Hammersley",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Cancio",
+                    "suffix": ""
+                }
+            ],
+            "year": 1997,
+            "venue": "BMJ",
+            "volume": "315",
+            "issn": "7115",
+            "pages": "1060--1064",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Influenza-like illness in residential care homes: a study of the incidence, aetiological agents, natural history and health resource utilisation",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Woo",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Hui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Thorax",
+            "volume": "63",
+            "issn": "8",
+            "pages": "690--697",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "A prospective, communitybased study on virologic assessment among elderly people with and without symptoms of acute respiratory infection",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Graat",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Schouten",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Heijnen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "J Clin Epidemiol",
+            "volume": "56",
+            "issn": "12",
+            "pages": "1218--1223",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Comparison of rapid diagnostic techniques for respiratory syncytial and influenza A virus respiratory infections in young children",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Dominguez",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Taber",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Couch",
+                    "suffix": ""
+                }
+            ],
+            "year": 1993,
+            "venue": "J Clin Microbiol",
+            "volume": "31",
+            "issn": "9",
+            "pages": "2286--2290",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Detection and control of influenza outbreaks in well-vaccinated nursing home populations",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Monto",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Rotthoff",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Teich",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Clin Infect Dis",
+            "volume": "39",
+            "issn": "4",
+            "pages": "459--464",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Rapid molecular detection of influenza outbreaks in nursing homes",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Gooskens",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Swaan",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Claas",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kroes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J Clin Virol",
+            "volume": "41",
+            "issn": "1",
+            "pages": "7--12",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "Near-patient assays for diagnosis of influenza virus infection in adult patients",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Steininger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Redlberger",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Graninger",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Kundi",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Popow-Kraupp",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Clin Microbiol Infect",
+            "volume": "15",
+            "issn": "3",
+            "pages": "267--273",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "Lack of sensitivity of rapid antigen tests for the diagnosis of respiratory syncytial virus infection in adults",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Casiano-Colon",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Hulbert",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Mayer",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Falsey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "J Clin Virol",
+            "volume": "28",
+            "issn": "2",
+            "pages": "169--174",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "Risk factors for respiratory failure associated with respiratory syncytial virus infection in adults",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Duncan",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Peterson",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Falsey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Infect Dis",
+            "volume": "200",
+            "issn": "8",
+            "pages": "1242--1246",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "Evaluation of a commercial direct fluorescent-antibody assay for human metapneumovirus in respiratory specimens",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Vinh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Newby",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Charest",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Mcdonald",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "J Clin Microbiol",
+            "volume": "46",
+            "issn": "5",
+            "pages": "1840--1841",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Performance of Directigen flu A+B enzyme immunoassay and direct fluorescent assay for detection of influenza infection during the 2004-2005 season",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Rahman",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Kieke",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Vandermause",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Mitchell",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Greenlee",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Belongia",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Diagn Microbiol Infect Dis",
+            "volume": "58",
+            "issn": "4",
+            "pages": "413--418",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Specific enzymatic amplification of DNA in vitro: the polymerase chain reaction",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Mullis",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Faloona",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Scharf",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Saiki",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Horn",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Erlich",
+                    "suffix": ""
+                }
+            ],
+            "year": 1986,
+            "venue": "Cold Spring Harb Symp Quant Biol",
+            "volume": "51",
+            "issn": "263",
+            "pages": "263--273",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Human metapneumovirus infections in adults: another piece of the puzzle",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Peterson",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Falsey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Arch Intern Med",
+            "volume": "168",
+            "issn": "22",
+            "pages": "2489--2496",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "Respiratory syncytial virus outbreak in a long-term care facility detected using reverse transcriptase polymerase chain reaction: an argument for real-time detection methods",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Caram",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Jodi",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Taggart",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Am Geriatr Soc",
+            "volume": "57",
+            "issn": "3",
+            "pages": "482--485",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Detection of an immunoglobulin M response in the elderly for early diagnosis of respiratory syncytial virus infection",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Vikerfors",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Grandien",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Johansson",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Pettersson",
+                    "suffix": ""
+                }
+            ],
+            "year": 1988,
+            "venue": "J Clin Microbiol",
+            "volume": "26",
+            "issn": "5",
+            "pages": "808--811",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Age related differences in humoral immune response to respiratory syncytial virus infection in adults",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Walsh",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Falsey",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J Med Virol",
+            "volume": "73",
+            "issn": "2",
+            "pages": "295--299",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": "Summary of Test Characteristics of Different Diagnostic Tests for Various Respiratory Viral Pathogens in Older Adults",
+            "latex": null,
+            "type": "table",
+            "html": "<html><body><table><tr><td>Virus </td><td>Culture </td><td>Rapid EIA </td><td>DFA/IFA </td><td>PCR\n</td><td>Serological testing\n</td></tr><tr><td>Influenza virus A </td><td>++ </td><td>+ </td><td>+ </td><td>+++ </td><td>++a\n</td></tr><tr><td>Influenza virus B </td><td>++ </td><td>+ </td><td>+ </td><td>+++ </td><td>++a\n</td></tr><tr><td>RSV </td><td>+ </td><td>+/ </td><td>+/ </td><td>+++ </td><td>+++\n</td></tr><tr><td>hMPV </td><td>+/ </td><td>0 </td><td>+/ </td><td>+++ </td><td>+++\n</td></tr><tr><td>Parainfluenza virus </td><td>+ </td><td>0 </td><td>+/ </td><td>+++ </td><td>+++\n</td></tr><tr><td>Coronaviruses </td><td>0 </td><td>0 </td><td>0 </td><td>+++ </td><td>+++\n</td></tr><tr><td>Adenoviruses </td><td>+ </td><td>0 </td><td>+/ </td><td>+++ </td><td>+b\n</td></tr><tr><td>Rhinoviruses </td><td>+ </td><td>0 </td><td>0 </td><td>+++ </td><td>0c\n</td></tr></table></body></html>"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "Potential conflicts of interest. A.R.F. has received research funding from GSK and Sanofi Pasteur, has received consulting honoraria from Medimmune and Astra Zeneca, and serves on the advisory board of Quidel. H.K.T. has received research funding from Protein Sciences, Sanofi Pasteur, Wyeth, and Vaxxinnate.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Acknowledgments"
+        }
+    ]
+}

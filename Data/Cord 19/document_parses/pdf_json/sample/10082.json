@@ -1,0 +1,3109 @@
+{
+    "paper_id": "e339089e8a46170cd2a7b98ca5308e18e96b8aed",
+    "metadata": {
+        "title": "Adjunctive therapies and immunomodulating agents for severe influenza",
+        "authors": [
+            {
+                "first": "David",
+                "middle": [
+                    "S C"
+                ],
+                "last": "Hui",
+                "suffix": "",
+                "affiliation": {},
+                "email": "dschui@cuhk.edu.hk"
+            },
+            {
+                "first": "Nelson",
+                "middle": [],
+                "last": "Lee",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            },
+            {
+                "first": "S",
+                "middle": [
+                    "C"
+                ],
+                "last": "Hui",
+                "suffix": "",
+                "affiliation": {},
+                "email": ""
+            }
+        ]
+    },
+    "abstract": [],
+    "body_text": [
+        {
+            "text": "The value of adjunctive immunomodulatory therapies in treating severe influenza and other respiratory viral infections remains uncertain. Although often used, systemic corticosteroids may increase the risk of mortality and morbidity (e.g. secondary infections) in severe influenza and other viral infections, especially if there is delay or lack of effective antiviral therapy. Non-randomized studies suggest that convalescent plasma appears useful as add-on therapy for patients with severe acute respiratory syndrome, avian influenza A(H5N1), and influenza A (H1N1) 2009 pandemic [A(H1N1)pdm09), but it is limited by its availability. A recent randomized controlled trial (RCT) comparing hyperimmune globulin prepared from convalescent plasma against normal intravenous gammaglobulin (IVIG) manufactured before 2009 as control in patients with severe A(H1N1)pdm09 infection on standard antiviral treatment has shown that the hyperimmune globulin group who received treatment within 5 days of symptom onset had a lower viral load and reduced mortality compared with the controls. A number of agents with immunomodulatory effects (e.g. acute use of statins, N-acetylcysteine, macrolides, PPAR agonists, IVIG, celecoxib, mesalazine) have been proposed for influenza management. However, more animal and detailed human observational studies and preferably RCTs controlling for the effects of antiviral therapy and disease severity are needed for evaluating these agents. The role of plasmapheresis and hemoperfusion as rescue therapy also merits more investigation.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": ""
+        },
+        {
+            "text": "Respiratory failure is the major complication in patients hospitalized with severe viral infections such as influenza, severe acute respiratory syndrome (SARS), and the novel coronavirus (CoV) infection. Affected patients may progress rapidly to acute respiratory distress syndrome (ARDS) and multi-organ failure. [1] [2] [3] [4] Excessive cytokine and chemokine responses have been proposed as central to disease pathogenesis and end-organ damage in such patients. 2, 4 Dysregulated responses with marked elevations of blood IL-6, CXCL8/IL-8, CCL2/MCP-1, CXCL10/IP-10, and CXCL9/ MIG have been observed in patients infected with avian influenza A(H5N1) virus; these responses are correlated with high levels of viral replication in the respiratory tract. 2, 5 Higher plasma levels of proinflammatory IL-6, CXCL8/IL-8, CCL2/MCP-1, and sTNFR-1 have been observed in patients with severe A(H1N1)pdm09 infection than those with mild disease, and the levels correlate with the extent and progression of pneumonia. 6, 7 While neuraminidase inhibitor (NAI) therapy is useful in improving clinical outcome if administered to patients hospitalized with influenza within 4-5 days of illness onset, there is often delay in initiation of NAI therapy and progressive disease sometimes occurs despite early administration. 8 In SARS, there were marked increases in Th1 cytokine interferon (IFN)-c, inflammatory cytokines IL-1, IL-6 and IL-12, and chemokines IL-8, MCP-1 and IP-10, and these changes confirmed the activation of Th1 cell-mediated immunity (CMI) and hyperinnate inflammatory response through the accumulation of monocytes/ macrophages and neutrophils. 9 This article reviews the potential role of adjunctive therapies and immunomodulating agents in the management of patients hospitalized with severe influenza and other acute respiratory viral infections. Although we focus on clinical reports, animal model studies of relevance are also highlighted.",
+            "cite_spans": [
+                {
+                    "start": 314,
+                    "end": 317,
+                    "text": "[1]",
+                    "ref_id": "BIBREF0"
+                },
+                {
+                    "start": 318,
+                    "end": 321,
+                    "text": "[2]",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 322,
+                    "end": 325,
+                    "text": "[3]",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 326,
+                    "end": 329,
+                    "text": "[4]",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 466,
+                    "end": 468,
+                    "text": "2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 469,
+                    "end": 470,
+                    "text": "4",
+                    "ref_id": "BIBREF3"
+                },
+                {
+                    "start": 756,
+                    "end": 758,
+                    "text": "2,",
+                    "ref_id": "BIBREF1"
+                },
+                {
+                    "start": 759,
+                    "end": 760,
+                    "text": "5",
+                    "ref_id": "BIBREF4"
+                },
+                {
+                    "start": 1010,
+                    "end": 1012,
+                    "text": "6,",
+                    "ref_id": "BIBREF5"
+                },
+                {
+                    "start": 1013,
+                    "end": 1014,
+                    "text": "7",
+                    "ref_id": "BIBREF6"
+                },
+                {
+                    "start": 1310,
+                    "end": 1311,
+                    "text": "8",
+                    "ref_id": "BIBREF7"
+                },
+                {
+                    "start": 1653,
+                    "end": 1654,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "patients hospitalized with community acquired pneumonia (CAP). 10 However, it must be pointed out that these studies recruited patients with predominantly bacterial CAP who had received appropriate antibiotic therapy to contain the infection and the favorable results following the addition of systemic corticosteroids cannot be generalized to CAP with viral etiology. 11 Increasing data indicate that systemic corticosteroids may lead to adverse outcome in patients hospitalized with severe influenza, especially if there is delay in commencing effective antiviral therapy. In a prospective observational study assessing the viral loads and duration of viral shedding in adults hospitalized with seasonal influenza A(H3N2), administration of systemic corticosteroids for acute exacerbations of either asthma or COPD was found to be an independent risk factor associated with prolonged viral shedding beyond 1 week of illness onset. 12 In a retrospective review conducted at a national hospital in Japan where patients with influenza A(H1N1)pdm09 generally received NAI within 2 days from illness onset, the administration of systemic corticosteroids for pneumonia with acute wheezing was not associated with worse outcome when compared to those who did not receive steroid. 13 However, many observational studies have shown that early use of systemic corticosteroids therapy, especially in the absence of NAI therapy or those with NAI initiation beyond 3-4 days of illness onset, was associated with an increased risk of death, increased rate of nosocomial pneumonia, or increased risk of developing critical disease in patients hospitalized with A(H1N1)pdm09-associated pneumonia and/or ARDS, [14] [15] [16] [17] whereas other studies have shown no survival advantage when comparing ICU patients with and without addition of systemic corticosteroids therapy 18, 19 (Table 1) .",
+            "cite_spans": [
+                {
+                    "start": 63,
+                    "end": 65,
+                    "text": "10",
+                    "ref_id": "BIBREF9"
+                },
+                {
+                    "start": 369,
+                    "end": 371,
+                    "text": "11",
+                    "ref_id": "BIBREF10"
+                },
+                {
+                    "start": 933,
+                    "end": 935,
+                    "text": "12",
+                    "ref_id": "BIBREF11"
+                },
+                {
+                    "start": 1275,
+                    "end": 1277,
+                    "text": "13",
+                    "ref_id": "BIBREF12"
+                },
+                {
+                    "start": 1695,
+                    "end": 1699,
+                    "text": "[14]",
+                    "ref_id": "BIBREF13"
+                },
+                {
+                    "start": 1700,
+                    "end": 1704,
+                    "text": "[15]",
+                    "ref_id": "BIBREF14"
+                },
+                {
+                    "start": 1705,
+                    "end": 1709,
+                    "text": "[16]",
+                    "ref_id": "BIBREF15"
+                },
+                {
+                    "start": 1710,
+                    "end": 1714,
+                    "text": "[17]",
+                    "ref_id": "BIBREF16"
+                },
+                {
+                    "start": 1860,
+                    "end": 1863,
+                    "text": "18,",
+                    "ref_id": "BIBREF17"
+                },
+                {
+                    "start": 1864,
+                    "end": 1866,
+                    "text": "19",
+                    "ref_id": "BIBREF18"
+                }
+            ],
+            "ref_spans": [
+                {
+                    "start": 1867,
+                    "end": 1876,
+                    "text": "(Table 1)",
+                    "ref_id": "TABREF0"
+                }
+            ],
+            "section": "Introduction"
+        },
+        {
+            "text": "During the major outbreak of SARS in 2003, plasma IP-10 concentration at the first week was an independent prognostic factor, with an odds ratio (OR) for adverse outcome (ICU admission or death) of 1Á52 (95% CI, 1Á05-2Á55) per fold increase in plasma IP-10 concentration above the median, whereas IP-10 was increased in lung tissue from patients who died of SARS. 20 Systemic corticosteroids were given to patients in efforts to dampen immunopathologic host responses such as activation of Th1 CMI and hyperinnate inflammatory response. 3 In Hong Kong and the mainland of China, progressive respiratory failure in SARS patients was associated with computer tomographic and histopathological evidence of bronchiolitis obliterans organizing pneumonia. 3, 21, 22 The use of systemic corticosteroids was associated with seemingly favorable clinical and immunological responses, as evidenced by marked reductions in IL-8, MCP-1, and IP-10 concentrations from 5 to 8 days after treatment (all P < 0Á001) in 20 patients hospitalized with SARS. 9 However, in a RCT comparing the early use of intravenous systemic corticosteroids versus normal saline as control in patients hospitalized with SARS, the plasma SARS-CoV RNA concentrations were much higher in the second and the third weeks of illness in the former, suggesting that systemic steroid might prolong viremia. 23 Invasive aspergillosis with fatal outcome was reported in patients with SARS, 24 with higher rate of ventilator-associated pneumonia (VAP) during the SARS period than before and after the SARS outbreak, 25 in addition to increasing the risk of other steroid-related complications such as osteonecrosis. 26, 27 Likewise, invasive aspergillosis with fatal outcome also occurred in patients with influenza A(H1N1)pdm09 infection who had received systemic corticosteroids for ARDS. 28 Other RCTs have found that systemic corticosteroids are associated with delayed viral clearance in RSV and rhinovirus illness. [29] [30] [31] [32] These experiences caution against the use of systemic corticosteroids in patients with severe viral pneumonia. The WHO has recommended the use of low-dose systemic corticosteroids (e.g. hydrocortisone 50 mg q6 h) for refractory septic shock related to severe influenza including avian influenza A(H5N1) and A(H1N1)pdm09 infection. 4",
+            "cite_spans": [
+                {
+                    "start": 364,
+                    "end": 366,
+                    "text": "20",
+                    "ref_id": "BIBREF19"
+                },
+                {
+                    "start": 537,
+                    "end": 538,
+                    "text": "3",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 750,
+                    "end": 752,
+                    "text": "3,",
+                    "ref_id": "BIBREF2"
+                },
+                {
+                    "start": 753,
+                    "end": 756,
+                    "text": "21,",
+                    "ref_id": "BIBREF20"
+                },
+                {
+                    "start": 757,
+                    "end": 759,
+                    "text": "22",
+                    "ref_id": "BIBREF22"
+                },
+                {
+                    "start": 1037,
+                    "end": 1038,
+                    "text": "9",
+                    "ref_id": "BIBREF8"
+                },
+                {
+                    "start": 1361,
+                    "end": 1363,
+                    "text": "23",
+                    "ref_id": "BIBREF23"
+                },
+                {
+                    "start": 1442,
+                    "end": 1444,
+                    "text": "24",
+                    "ref_id": "BIBREF24"
+                },
+                {
+                    "start": 1567,
+                    "end": 1569,
+                    "text": "25",
+                    "ref_id": "BIBREF25"
+                },
+                {
+                    "start": 1667,
+                    "end": 1670,
+                    "text": "26,",
+                    "ref_id": "BIBREF26"
+                },
+                {
+                    "start": 1671,
+                    "end": 1673,
+                    "text": "27",
+                    "ref_id": "BIBREF27"
+                },
+                {
+                    "start": 1842,
+                    "end": 1844,
+                    "text": "28",
+                    "ref_id": "BIBREF28"
+                },
+                {
+                    "start": 1972,
+                    "end": 1976,
+                    "text": "[29]",
+                    "ref_id": "BIBREF29"
+                },
+                {
+                    "start": 1977,
+                    "end": 1981,
+                    "text": "[30]",
+                    "ref_id": "BIBREF30"
+                },
+                {
+                    "start": 1982,
+                    "end": 1986,
+                    "text": "[31]",
+                    "ref_id": "BIBREF31"
+                },
+                {
+                    "start": 1987,
+                    "end": 1991,
+                    "text": "[32]",
+                    "ref_id": "BIBREF32"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Introduction"
+        },
+        {
+            "text": "A retrospective analysis has suggested that early administration of convalescent blood products of various types might have reduced the risk of death in patients with influenza pneumonia during the 1918 pandemic, especially those given treatment within 4 days of pneumonia onset. 33 A retrospective review found that the addition of convalescent plasma, donated by SARS patients who had recovered from the illness, to other SARS patients with progressive disease led to a higher day 22 discharge rate among patients (n = 19) who were given convalescent plasma (77Á8% versus 23%; P < 0Á004) and lower mortality (0% versus 23Á8%; P = 0Á049) compared with historical controls (n = 21). 34 Another review showed a higher day 22 discharge rate (58Á3% versus 15Á6%; P < 0Á001) among SARS patients who were given convalescent plasma before day 14 of illness (n = 48) than those receiving convalescent plasma after day 14 (n = 32) and among those who were PCR positive and seronegative for SARS-CoV at the time of plasma infusion (66Á7% versus 20%; P = 0Á001). 35 Convalescent plasma has also been used with favorable response in a patient with severe avian influenza A(H5N1) pneumonia who did not respond to high-dose oseltamivir initially. 36 A prospective multicenter case-control study in Hong Kong has shown that one dose of convalescent plasma with neutralizing antibody titer of >1:160 appeared to be effective in reducing mortality, respiratory tract viral load, and serum level of cytokines in patients with severe H1N1pdm09 infection requiring intensive care support compared with controls. 37 Recently, a RCT involving patients hospitalized with severe H1N1pdm09 infection in Hong Kong compared adjunctive treatment with hyperimmune globulin (n = 17) prepared from convalescent plasma of persons who had recovered from the disease against normal IVIG manufactured before 2009 as control (n = 18). 38 The hyperimmune globulin group had significantly lower day 5 and 7 viral load, whereas a multivariate analysis of patients (n = 22) who received either therapy within 5 days of symptom onset found that hyperimmune globulin treatment was the only factor which independently reduced mortality (OR: 0Á14, 95% CI, 0Á02-0Á92; P = 0Á04). 38 ",
+            "cite_spans": [
+                {
+                    "start": 280,
+                    "end": 282,
+                    "text": "33",
+                    "ref_id": "BIBREF33"
+                },
+                {
+                    "start": 683,
+                    "end": 685,
+                    "text": "34",
+                    "ref_id": "BIBREF34"
+                },
+                {
+                    "start": 1053,
+                    "end": 1055,
+                    "text": "35",
+                    "ref_id": "BIBREF35"
+                },
+                {
+                    "start": 1234,
+                    "end": 1236,
+                    "text": "36",
+                    "ref_id": "BIBREF36"
+                },
+                {
+                    "start": 1593,
+                    "end": 1595,
+                    "text": "37",
+                    "ref_id": "BIBREF37"
+                },
+                {
+                    "start": 1900,
+                    "end": 1902,
+                    "text": "38",
+                    "ref_id": "BIBREF38"
+                },
+                {
+                    "start": 2235,
+                    "end": 2237,
+                    "text": "38",
+                    "ref_id": "BIBREF38"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Convalescent plasma"
+        },
+        {
+            "text": "The antioxidant NAC has been shown to inhibit influenza A (H5N1)-induced production of pro-inflammatory molecules in lung epithelial cells infected with highly pathogenic influenza A (H5N1) virus. 39 High-dose NAC at 100 mg/kg continuous IV infusion daily appeared effective in reducing CRP and oxygen requirement and improving clinical outcome in one 48-year-old previously healthy woman, with severe pneumonia and septic shock due to A(H1N1)pdm09.",
+            "cite_spans": [
+                {
+                    "start": 197,
+                    "end": 199,
+                    "text": "39",
+                    "ref_id": "BIBREF39"
+                }
+            ],
+            "ref_spans": [],
+            "section": "N-acetylcysteine (NAC)"
+        },
+        {
+            "text": "However, interpretation of the efficacy of NAC was limited by the concomitant use of oseltamivir at 150 mg bd in the same patient. 40 In a murine model of lethal influenza infection with the primary endpoint being day 21 survival, NAC alone achieved a survival rate of 20%, whereas survival increased to 60% with oseltamivir and to 100% with oseltamivir and NAC used in combination. 41 In a study of the in vitro effects of NAC in modulating MUC5AC over-expression and release in alveolar type II A549 cells infected with influenza (strains A and B) and RSV, NAC inhibited replication of the three viruses. 42 There was a significant induction of MUC5AC, IL8, IL6, and TNF-a that was strongly inhibited by NAC at the expression and at the release level. NAC also reduced the intracellular hydrogen peroxide concentration and restored the intracellular total thiol contents. Mechanisms of NAC included inhibition of NF-jB translocation to the cellular nucleus and phosphorylation of MAPK p38. 42 These studies support more research to explore the role of antioxidants in ameliorating the inflammatory effects of different viral infections. ",
+            "cite_spans": [
+                {
+                    "start": 131,
+                    "end": 133,
+                    "text": "40",
+                    "ref_id": "BIBREF40"
+                },
+                {
+                    "start": 383,
+                    "end": 385,
+                    "text": "41",
+                    "ref_id": "BIBREF41"
+                },
+                {
+                    "start": 607,
+                    "end": 609,
+                    "text": "42",
+                    "ref_id": "BIBREF42"
+                },
+                {
+                    "start": 992,
+                    "end": 994,
+                    "text": "42",
+                    "ref_id": "BIBREF42"
+                }
+            ],
+            "ref_spans": [],
+            "section": "N-acetylcysteine (NAC)"
+        },
+        {
+            "text": "Polymyxin B-immobilized fiber column was first developed in Japan in 1994 as an extra-corporeal hemoperfusion device that could remove endotoxins and cytokines. 43 Hypercytokinemia due to A(H1N1)pdm09 illness was reported to be treated effectively with polymyxin B-immobilized fiber column hemoperfusion with seemingly favorable clinical outcome in a 16 year old girl, who did not initially respond to inhalation of dry powder Zanamivir 10 mg bd. However, interpretation of the effect of polymyxin B-immobilized fiber column hemoperfusion was confounded by the concomitant use of oseltamivir 150 mg bd and Sivelestat (an inhibitor of human neutrophil elastase). 43",
+            "cite_spans": [
+                {
+                    "start": 161,
+                    "end": 163,
+                    "text": "43",
+                    "ref_id": "BIBREF43"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Polymyxin B-immobilized fiber column hemoperfusion"
+        },
+        {
+            "text": "A pediatric case series has suggested that there may be a role for Therapeutic plasma exchange (TPE) as a strategy for cytokine attenuation in severe shock and acute lung injury related to influenza A(H1N1)pdm09 that has not responded to standard intensive care. Three children (aged 8, 11 and 17 years) with ARDS and hemodynamic compromise requiring invasive mechanical ventilation and inhaled nitric oxide; one received extra-corporeal membrane oxygenation. TPE was provided as a rescue strategy with three exchanges of 35-40 ml/kg on consecutive days. Subsequently, all three patients had dramatic reduction in pediatric logistic organ dysfunction scores and survived with good functional recovery. 44",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Therapeutic plasma exchange"
+        },
+        {
+            "text": "Hong et al. 45 have analyzed the pre-pandemic Intravenous immunoglobulin (IVIG) and sera from Kawasaki disease patients, who had received IVIG, for A(H1N1)pdm09specific microneutralization and hemagglutination inhibition antibodies. All six different IVIG preparations tested had significant levels of cross-reactive-specific antibody at a concentration of 2Á0 g/dl of immunoglobulin, whereas sera from 18 of 19 Kawasaki disease patients had significant increases of cross-reactive-specific antibody after receiving 2Á0 g/kg of pre-pandemic IVIG. 45 IVIG was administered to a patient with ARDS due to A (H1N1)pdm09 with favorable response, but interpretation of data was limited by concomitant use of high-dose oseltamivir. 46 Significant neutralizing activities against influenza A (H2N2) viruses have been observed in human IVIG lots manufactured from 1993 to 2010 in Japan. 47 In aggregate, these observations suggest that evaluation of specific neutralizing antibody titers may provide useful information about IVIGs as potential therapeutics and raise the possibility of using IVIG therapy for severe and/or drugresistant influenza virus infections especially in the immunocompromised. [45] [46] [47] It is important to note that IVIG may increase blood viscosity and hence, the risk of thromboembolic diseases, as it has occurred during treatment of SARS despite the use of prophylactic low-molecular-weight heparin. [48] [49] [50] Statins Statins have some anti-inflammatory and immunomodulating effects (e.g. by repressing induction of MHC-II by IFN-c and subsequent T-lymphocyte activation) and a potential role has been proposed for treatment and prophylaxis of pandemic influenza based on observational studies showing the survival benefits in patients receiving statins who developed bacteremia, sepsis, or CAP. 51 However, in a murine model of influenza A infection, the administration of rosuvastatin had no effect on viral clearance of influenza A after infection, and mortality was unaffected. 52 In a study of BALB/c mice treated with several types of statins intraperitoneally or orally at various concentrations before or after infection with influenza A/Duck/MN/1525/81 (H5N1) virus, influenza A/Vietnam/1203/04 (H5N1) virus, influenza A/Victoria/3/75 (H3N2) virus, influenza A/NWS/ 33 (H1N1) virus or influenza A/CA/04/09 H1N1pdm09 virus, there was no improvement of survival when comparing mice that had received different types of statins at various doses with untreated controls. 53 A population-based cohort study over 10 influenza seasons (1996) (1997) (1998) (1999) (2000) (2001) (2002) (2003) (2004) (2005) (2006) in Ontario, Canada, with propensitybased matching has shown small protective effects of chronic use of statins against pneumonia hospitalization ([OR] 0Á92; 95% CI 0Á89-0Á95), 30-day pneumonia mortality (0Á84; 95% CI 0Á77-0Á91), and all-cause mortality (0Á87; 95% CI 0Á84-0Á89). Furthermore, these protective effects attenuated substantially after multivariate adjustment and when excluding multiple observations for each individual, declined over time, differed across propensity score quintiles and risk groups, and were unchanged during post-influenza season periods. 54 In a retrospective case-control study using the UK Influenza Clinical Information Network database on 1,520 patients hospitalized with confirmed influenza A(H1N1) pdm09 infection between Apr 2009 and Jan 2010, no statistically significant association between pre-admission statin use and severity of outcome was found in those aged 35 years or above [adjusted OR: 0Á81 (95% CI: 0Á46-1Á38); n = 571]. After adjustment for age, sex, obesity, and indication for statin, the association between pre-admission statin use and severe outcome was not statistically significant. 55 Immunomodulation for severe viral illness ª 2013 Blackwell Publishing Ltd",
+            "cite_spans": [
+                {
+                    "start": 12,
+                    "end": 14,
+                    "text": "45",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 547,
+                    "end": 549,
+                    "text": "45",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 725,
+                    "end": 727,
+                    "text": "46",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 878,
+                    "end": 880,
+                    "text": "47",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1192,
+                    "end": 1196,
+                    "text": "[45]",
+                    "ref_id": "BIBREF45"
+                },
+                {
+                    "start": 1197,
+                    "end": 1201,
+                    "text": "[46]",
+                    "ref_id": "BIBREF46"
+                },
+                {
+                    "start": 1202,
+                    "end": 1206,
+                    "text": "[47]",
+                    "ref_id": "BIBREF47"
+                },
+                {
+                    "start": 1424,
+                    "end": 1428,
+                    "text": "[48]",
+                    "ref_id": "BIBREF48"
+                },
+                {
+                    "start": 1429,
+                    "end": 1433,
+                    "text": "[49]",
+                    "ref_id": "BIBREF49"
+                },
+                {
+                    "start": 1434,
+                    "end": 1438,
+                    "text": "[50]",
+                    "ref_id": "BIBREF50"
+                },
+                {
+                    "start": 1825,
+                    "end": 1827,
+                    "text": "51",
+                    "ref_id": "BIBREF51"
+                },
+                {
+                    "start": 2011,
+                    "end": 2013,
+                    "text": "52",
+                    "ref_id": "BIBREF52"
+                },
+                {
+                    "start": 2505,
+                    "end": 2507,
+                    "text": "53",
+                    "ref_id": "BIBREF53"
+                },
+                {
+                    "start": 2566,
+                    "end": 2572,
+                    "text": "(1996)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2573,
+                    "end": 2579,
+                    "text": "(1997)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2580,
+                    "end": 2586,
+                    "text": "(1998)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2587,
+                    "end": 2593,
+                    "text": "(1999)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2594,
+                    "end": 2600,
+                    "text": "(2000)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2601,
+                    "end": 2607,
+                    "text": "(2001)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2608,
+                    "end": 2614,
+                    "text": "(2002)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2615,
+                    "end": 2621,
+                    "text": "(2003)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2622,
+                    "end": 2628,
+                    "text": "(2004)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2629,
+                    "end": 2635,
+                    "text": "(2005)",
+                    "ref_id": null
+                },
+                {
+                    "start": 2636,
+                    "end": 2642,
+                    "text": "(2006)",
+                    "ref_id": null
+                },
+                {
+                    "start": 3214,
+                    "end": 3216,
+                    "text": "54",
+                    "ref_id": "BIBREF54"
+                },
+                {
+                    "start": 3787,
+                    "end": 3789,
+                    "text": "55",
+                    "ref_id": "BIBREF55"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Intravenous immunoglobulin preparations"
+        },
+        {
+            "text": "In another study of hospitalized adults during the 2007-2008 influenza season in ten States in the USA analyzed to evaluate the association between receiving statins and influenza-related death, statins treatment prior to or during hospitalization was associated with a protective adjusted odds of death 0Á59 (95% CI 0Á38-0Á92) when adjusting for age, race, comorbid diseases, influenza vaccination, and antiviral administration in a multivariable logistic regression model. 56 There are currently no RCT data on the acute use of statins in the acute management of severe influenza or other severe viral infections but one ICU-based RCT found acute administration of oral pravastatin (40 mg) to be beneficial in reducing the frequency of VAP and ICU mortality. 57",
+            "cite_spans": [
+                {
+                    "start": 475,
+                    "end": 477,
+                    "text": "56",
+                    "ref_id": "BIBREF56"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Intravenous immunoglobulin preparations"
+        },
+        {
+            "text": "Macrolides (e.g. Clarithromycin, azithromycin)",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Intravenous immunoglobulin preparations"
+        },
+        {
+            "text": "In patients with bronchiolitis due to respiratory syncytial virus (RSV), treatment with clarithromycin had beneficial effects on the duration of hospitalization, the duration of supplemental oxygen, and the need for bronchodilator treatment, in addition to significant reductions in plasma IL-4, IL-8, and eotaxin levels following 3 weeks of treatment. Moreover, readmission to hospital within 6 months after discharge was significantly lower in the clarithromycin group. 58 Clarithromycin has been shown to reduce viral titers and cytokines in supernatant fluids, viral RNA in the cells, and the susceptibility to virus infection in cultured human tracheal epithelial cells infected with influenza A (H3N2) virus. In addition, it can reduce expression of sialic acid a2, 6 Gal on human tracheal mucosal surface, and the number and fluorescence intensity of acidic endosomes in the cells from which viral RNPs enter into the cytoplasm. 59 In an observational study assessing a mixed bag of immunomodulating agents (macrolides, systemic corticosteroids, and statins) on the development of severe disease in hospitalized adults with A(H1N1)pdm09, none of these therapies was found to be associated with a lower risk of developing severe disease. 60 In a RCT of young patients with mild seasonal influenza A infection who had received early NAI therapy in Japan, the addition of clarithromycin did not result in better outcome other than a shorter duration of cough in patients without cough at the onset of pyrexia. 61 In a prospective, observational, multicenter study of 733 patients with primary viral pneumonia due to A(H1N1) pdm09 conducted across 148 ICUs in Spain, macrolide-based treatment (n = 190) was not associated with improved survival in critically ill A(H1N1)pdm09 patients with primary viral pneumonia. 62 A recent Tennessee Medicaid cohort study found that 5 days of azithromycin therapy were associated with a small absolute increase in cardiovascular deaths, especially among patients with a high baseline risk of cardiovascular disease. 63 Nevertheless, more data are needed on the role of macrolides in patients hospitalized with severe influenza to judge its potential value.",
+            "cite_spans": [
+                {
+                    "start": 472,
+                    "end": 474,
+                    "text": "58",
+                    "ref_id": "BIBREF58"
+                },
+                {
+                    "start": 936,
+                    "end": 938,
+                    "text": "59",
+                    "ref_id": "BIBREF59"
+                },
+                {
+                    "start": 1244,
+                    "end": 1246,
+                    "text": "60",
+                    "ref_id": "BIBREF60"
+                },
+                {
+                    "start": 1514,
+                    "end": 1516,
+                    "text": "61",
+                    "ref_id": "BIBREF61"
+                },
+                {
+                    "start": 1818,
+                    "end": 1820,
+                    "text": "62",
+                    "ref_id": "BIBREF62"
+                },
+                {
+                    "start": 2056,
+                    "end": 2058,
+                    "text": "63",
+                    "ref_id": "BIBREF63"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Intravenous immunoglobulin preparations"
+        },
+        {
+            "text": "Peroxisome proliferator-activated receptors (PPAR) agonists AE AMP-activated protein kinase (AMPK) Gemfibrozil, a PPAR-a agonist that inhibits production of pro-inflammatory cytokines, in addition to its clinically useful lipid-lowering activity, increased survival in BALB/c mice that were already ill from infection by influenza virus A/ Japan/305/57 (H2N2). Gemfibrozil was administered intraperitoneally once daily from days 4 to 10 after intranasal exposure to the virus and survival increased from 26% in vehicle-treated mice (n = 50) to 52% in mice given gemfibrozil at 60 mg/kg/day (n = 46) (P = 0Á003). 64 In a study examining the impact of systemic corticosteroid (dexamethasone) and the PPAR-c agonist (pioglitazone) on the outcome of infection in smoke-exposed mice, C57BL/6 mice were exposed to room air or cigarette smoke for 4 days and then inoculated with an H1N1 virus (to mimic influenza and COPD). Smoke-exposed mice were shown to have an exacerbated inflammatory response following infection. Dexamethasone reduced mononuclear cells in the bronchoalveolar lavage (BAL) of smoke-exposed, virally infected mice, whereas pioglitazone reduced mononuclear cells and neutrophils in the BAL and increased peripheral CD4 and CD8 cells. 65 In a study of mice challenged with virulent influenza A viruses including avian A(H5N1) strains, an increased accumulation of dendritic cell (DC) subset known as the TNF/iNOS-producing (tip) DCs was observed in the airways of mice with pneumonia. The study found that treatment with pioglitazone reduced tipDC trafficking, and suggested that this might moderate the potentially lethal consequences of excessive tipDC recruitment, without abrogating CD8 + T-cell expansion or compromising virus control, 66 Aminoimidazole carboxamide ribonucleotide (AICAR) is an activator of AMPK, which is known as a stimulator of PPARs and can complement the action of immunosuppression by pharmacological PPAR agonists. 67 In mice infected with the mouse-adapted influenzaA/Puerto Rico/8/31 (PR8) (H1N1) virus, rosiglitazone treatment provided absolute protection from death, whereas the mice treated with pioglitazone displayed a 20% increase in survival over control animals. AICAR alone provided a 40% increase in protection, whereas the AICAR/pioglitazone combination increased survival by 60%. The results suggest that there is an additive benefit of using the two drugs in combination. 68 These studies suggest that the role of PPAR-c agonists should be further explored in managing severe viral exacerbations.",
+            "cite_spans": [
+                {
+                    "start": 612,
+                    "end": 614,
+                    "text": "64",
+                    "ref_id": "BIBREF64"
+                },
+                {
+                    "start": 1248,
+                    "end": 1250,
+                    "text": "65",
+                    "ref_id": "BIBREF65"
+                },
+                {
+                    "start": 1754,
+                    "end": 1756,
+                    "text": "66",
+                    "ref_id": "BIBREF66"
+                },
+                {
+                    "start": 1957,
+                    "end": 1959,
+                    "text": "67",
+                    "ref_id": "BIBREF67"
+                },
+                {
+                    "start": 2429,
+                    "end": 2431,
+                    "text": "68",
+                    "ref_id": "BIBREF68"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Intravenous immunoglobulin preparations"
+        },
+        {
+            "text": "A study of influenza A viral infection in wild type, cyclooxygenase (COX)-1 deficient, and COX-2 deficient mice has shown that COX-1 deficiency resulted in greater morbidity and inflammation, whereas COX-2 deficiency led to reduced morbidity, inflammation, and mortality in influenza infected mice. 69 However, treatment with a COX-1 inhibitor (SC-560) during influenza A viral infection in the mice model was detrimental to the host, whereas inhibition of COX-2 (celecoxib) did not significantly modulate disease severity. 70 An intro study has shown that COX-2 inhibitors suppressed H5N1 virus replication in human macrophages, and the results suggest that H5N1 virus replication is dependent on activation of COX-2-dependent signaling pathways in host cells. 71 The role of delayed antiviral and combination immunomodulating therapy was tested in BALB/c mice which were challenged with avian influenza A/VN/1194/04 (H5N1). 72 Significant improvements in survival rates and survival time were noted in the group treated at 48 hours after viral challenge with a triple combination of zanamivir, celecoxib, and mesalazine versus zanamivir alone. In addition, significantly higher levels of CD4 + and CD8 + lymphocytes and less pulmonary inflammation were found in the group receiving triple therapy. Mesalazine inhibits lipoxygenase and COX pathways, which can lead to reduction in pro-inflammatory cytokines and eicosanoids and therefore reduced activation of inflammatory cells such as macrophages and neutrophils. Mesalazine also inhibits NF-KB activation and promote synthesis of phosphatidic acid (thus inhibit the stimulatory effects of ceramides on apoptosis). 72 More clinical studies are needed on the therapeutic role of these two agents with immunomodulating properties in severe influenza and other viral infections.",
+            "cite_spans": [
+                {
+                    "start": 299,
+                    "end": 301,
+                    "text": "69",
+                    "ref_id": "BIBREF69"
+                },
+                {
+                    "start": 524,
+                    "end": 526,
+                    "text": "70",
+                    "ref_id": "BIBREF70"
+                },
+                {
+                    "start": 762,
+                    "end": 764,
+                    "text": "71",
+                    "ref_id": "BIBREF71"
+                },
+                {
+                    "start": 926,
+                    "end": 928,
+                    "text": "72",
+                    "ref_id": "BIBREF72"
+                },
+                {
+                    "start": 1668,
+                    "end": 1670,
+                    "text": "72",
+                    "ref_id": "BIBREF72"
+                }
+            ],
+            "ref_spans": [],
+            "section": "Combination of celecoxib and mesalazine"
+        },
+        {
+            "text": "In summary, convalescent plasma appears useful and safe as adjunctive therapy for SARS, influenza A(H5N1), and influenza A(H1N1)pdm09, but it is limited by its availability and timing of administration. Evaluation of specific neutralizing antibody titers in IVIGs for severe and/or drugresistant influenza virus infections is needed especially in the immunocompromised. Systemic corticosteroids should not be used routinely in severe viral infection such as influenza as it may increase the risk of mortality and morbidity (e.g. secondary infections), especially when there is delay or lack of effective antiviral therapy. It is worthwhile to explore the immunomodulating efficacy of NAC, macrolide, acute use of statins, PPAR agonists AE AMPK, and celecoxib AE mesalazine with more animal and detailed human observational studies and preferably RCTs. The role of plasmapheresis and hemoperfusion as rescue therapy is also of interest.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Combination of celecoxib and mesalazine"
+        }
+    ],
+    "bib_entries": {
+        "BIBREF0": {
+            "ref_id": "b0",
+            "title": "Outbreak of avian influenza A(H5N1) virus infection in Hong Kong in 1997",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "Clin Infect Dis",
+            "volume": "34",
+            "issn": "",
+            "pages": "58--64",
+            "other_ids": {}
+        },
+        "BIBREF1": {
+            "ref_id": "b1",
+            "title": "Re-emergence of fatal human influenza A subtype H5N1 disease",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Peiris",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Yu",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Leung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Lancet",
+            "volume": "363",
+            "issn": "",
+            "pages": "617--619",
+            "other_ids": {}
+        },
+        "BIBREF2": {
+            "ref_id": "b2",
+            "title": "A major outbreak of severe acute respiratory syndrome in Hong Kong",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Wu",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "N Engl J Med",
+            "volume": "348",
+            "issn": "",
+            "pages": "1986--1994",
+            "other_ids": {}
+        },
+        "BIBREF3": {
+            "ref_id": "b3",
+            "title": "Clinical aspects of pandemic influenza A (H1N1) 2009",
+            "authors": [
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Who Writing Committee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "N Engl J Med",
+            "volume": "362",
+            "issn": "",
+            "pages": "1708--1719",
+            "other_ids": {}
+        },
+        "BIBREF4": {
+            "ref_id": "b4",
+            "title": "Fatal outcome of human influenza A (H5N1) is associated with high viral load and hypercytokinemia",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "De Jong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Simmons",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Thanh",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Nat Med",
+            "volume": "12",
+            "issn": "",
+            "pages": "1203--1207",
+            "other_ids": {}
+        },
+        "BIBREF5": {
+            "ref_id": "b5",
+            "title": "Viral clearance and inflammatory response patterns in adults hospitalized for pandemic 2009 influenza A(H1N1) virus pneumonia",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Antivir Ther",
+            "volume": "16",
+            "issn": "",
+            "pages": "237--247",
+            "other_ids": {}
+        },
+        "BIBREF6": {
+            "ref_id": "b6",
+            "title": "Delayed clearance of viral load and marked cytokine activation in severe cases of pandemic H1N1 2009 influenza virus infection",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "To",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hung",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Clin Infect Dis",
+            "volume": "50",
+            "issn": "",
+            "pages": "850--859",
+            "other_ids": {}
+        },
+        "BIBREF7": {
+            "ref_id": "b7",
+            "title": "Outcomes of adults hospitalized with severe influenza",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Choi",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Thorax",
+            "volume": "65",
+            "issn": "",
+            "pages": "510--515",
+            "other_ids": {}
+        },
+        "BIBREF8": {
+            "ref_id": "b8",
+            "title": "Plasma inflammatory cytokines and chemokines in severe acute respiratory syndrome",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lam",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Wu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Clin Exp Immunol",
+            "volume": "136",
+            "issn": "",
+            "pages": "95--103",
+            "other_ids": {}
+        },
+        "BIBREF9": {
+            "ref_id": "b9",
+            "title": "Corticosteroids in the treatment of community-acquired pneumonia in adults: a meta-analysis",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [],
+                    "last": "Nie",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Zhang",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Q",
+                    "middle": [],
+                    "last": "Xiu",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "PLoS ONE",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF10": {
+            "ref_id": "b10",
+            "title": "Dexamethasone in community-acquired pneumonia",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Lancet",
+            "volume": "378",
+            "issn": "",
+            "pages": "979--980",
+            "other_ids": {}
+        },
+        "BIBREF11": {
+            "ref_id": "b11",
+            "title": "Viral loads and duration of viral shedding in adult patients hospitalized with influenza",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "J Infect Dis",
+            "volume": "200",
+            "issn": "",
+            "pages": "492--500",
+            "other_ids": {}
+        },
+        "BIBREF12": {
+            "ref_id": "b12",
+            "title": "Systemic corticosteroids and early administration of antiviral agents for pneumonia with acute wheezing due to influenza A(H1N1)pdm09 in Japan",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Kudo",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Takasaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Manabe",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "PLoS ONE",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF13": {
+            "ref_id": "b13",
+            "title": "ESICM H1N1 Registry Contributors. Use of early corticosteroid therapy on ICU admission in patients affected by severe pandemic (H1N1)v influenza A infection",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Martin-Loeches",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Lisboa",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Rhodes",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Intensive Care Med",
+            "volume": "37",
+            "issn": "",
+            "pages": "272--283",
+            "other_ids": {}
+        },
+        "BIBREF14": {
+            "ref_id": "b14",
+            "title": "Early corticosteroids in severe influenza A/H1N1 pneumonia and acute respiratory distress syndrome",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Brun-Buisson",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Richard",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Mercat",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "183",
+            "issn": "",
+            "pages": "1200--1206",
+            "other_ids": {}
+        },
+        "BIBREF15": {
+            "ref_id": "b15",
+            "title": "Korean Society of Critical Care Medicine H1N1 Collaborative. Corticosteroid treatment in critically ill patients with pandemic influenza A/H1N1 2009 infection: analytic strategy using propensity scores",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Kim",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Yun",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Am J Respir Crit Care Med",
+            "volume": "183",
+            "issn": "",
+            "pages": "1207--1214",
+            "other_ids": {}
+        },
+        "BIBREF16": {
+            "ref_id": "b16",
+            "title": "Early use of glucocorticoids was a risk factor for critical disease and death from pH1N1 infection",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Han",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ma",
+                    "suffix": ""
+                },
+                {
+                    "first": "An",
+                    "middle": [
+                        "X"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Clin Infect Dis",
+            "volume": "53",
+            "issn": "",
+            "pages": "326--333",
+            "other_ids": {}
+        },
+        "BIBREF17": {
+            "ref_id": "b17",
+            "title": "Corticosteroid therapy in patients with primary viral pneumonia due to pandemic (H1N1) 2009 influenza",
+            "authors": [
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Diaz",
+                    "suffix": ""
+                },
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Martin-Loeches",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Canadell",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Infect",
+            "volume": "64",
+            "issn": "",
+            "pages": "311--318",
+            "other_ids": {}
+        },
+        "BIBREF18": {
+            "ref_id": "b18",
+            "title": "Corticosteroid therapy in intensive care unit patients with PCR-confirmed influenza A(H1N1) infection in Finland",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Linko",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Pettil€ A V, Ruokonen",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Acta Anaesthesiol Scand",
+            "volume": "55",
+            "issn": "",
+            "pages": "971--979",
+            "other_ids": {}
+        },
+        "BIBREF19": {
+            "ref_id": "b19",
+            "title": "Early enhanced expression of interferon-inducible protein-10 (CXCL-10) and other chemokines predicts adverse outcome in severe acute respiratory syndrome",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Clin Chem",
+            "volume": "51",
+            "issn": "",
+            "pages": "2333--2340",
+            "other_ids": {}
+        },
+        "BIBREF20": {
+            "ref_id": "b20",
+            "title": "Pulmonary pathological features in coronavirus associated severe acute respiratory syndrome (SARS)",
+            "authors": [
+                {
+                    "first": "G",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Tse",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "To",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                }
+            ],
+            "year": null,
+            "venue": "",
+            "volume": "",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF22": {
+            "ref_id": "b22",
+            "title": "Effects of early corticosteroid treatment on plasma SARS-associated Coronavirus RNA concentrations in adult patients",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Hui",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J Clin Virol",
+            "volume": "31",
+            "issn": "",
+            "pages": "304--309",
+            "other_ids": {}
+        },
+        "BIBREF23": {
+            "ref_id": "b23",
+            "title": "Treatment of severe acute respiratory syndrome with glucosteroids: the Guangzhou experience",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Chen",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Tang",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Tan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Chest",
+            "volume": "129",
+            "issn": "",
+            "pages": "1441--1452",
+            "other_ids": {}
+        },
+        "BIBREF24": {
+            "ref_id": "b24",
+            "title": "Fatal aspergillosis in a patient with SARS who was treated with corticosteroids",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Wang",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Ding",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "N Engl J Med",
+            "volume": "349",
+            "issn": "",
+            "pages": "507--508",
+            "other_ids": {}
+        },
+        "BIBREF25": {
+            "ref_id": "b25",
+            "title": "Increase in methicillin-resistant Staphylococcus aureus acquisition rate and change in pathogen pattern associated with an outbreak of severe acute respiratory syndrome",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Yap",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Gomersall",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fung",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Clin Infect Dis",
+            "volume": "39",
+            "issn": "",
+            "pages": "511--516",
+            "other_ids": {}
+        },
+        "BIBREF26": {
+            "ref_id": "b26",
+            "title": "Osteonecrosis of hip and knee in patients with severe acute respiratory syndrome treated with steroids",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Griffith",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Antonio",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Kumta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Radiology",
+            "volume": "235",
+            "issn": "",
+            "pages": "168--175",
+            "other_ids": {}
+        },
+        "BIBREF27": {
+            "ref_id": "b27",
+            "title": "Avascular necrosis of bone in severe acute respiratory syndrome",
+            "authors": [
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "X",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Du",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Clin Radiol",
+            "volume": "59",
+            "issn": "",
+            "pages": "602--608",
+            "other_ids": {}
+        },
+        "BIBREF28": {
+            "ref_id": "b28",
+            "title": "Invasive aspergillosis after pandemic (H1N1)",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Lat",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Bhadelia",
+                    "suffix": ""
+                },
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Miko",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Emerg Infect Dis",
+            "volume": "16",
+            "issn": "",
+            "pages": "971--973",
+            "other_ids": {}
+        },
+        "BIBREF29": {
+            "ref_id": "b29",
+            "title": "A randomized, double-blind, placebo-controlled trial of dexamethasone in severe respiratory syncytial virus (RSV) infection: effects on RSV quantity and clinical outcome",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Buckingham",
+                    "suffix": ""
+                },
+                {
+                    "first": "H",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Jafri",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Bush",
+                    "suffix": ""
+                }
+            ],
+            "year": 2002,
+            "venue": "J Infect Dis",
+            "volume": "185",
+            "issn": "",
+            "pages": "1222--1228",
+            "other_ids": {}
+        },
+        "BIBREF30": {
+            "ref_id": "b30",
+            "title": "Oral prednisone therapy in experimental rhinovirus infections",
+            "authors": [
+                {
+                    "first": "L",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Gustafson",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Proud",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Hendley",
+                    "suffix": ""
+                }
+            ],
+            "year": 1996,
+            "venue": "J Allergy Clin Immunol",
+            "volume": "97",
+            "issn": "",
+            "pages": "1009--1014",
+            "other_ids": {}
+        },
+        "BIBREF31": {
+            "ref_id": "b31",
+            "title": "The common cold: effects of intranasal fluticasone propionate treatment",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Puhakka",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Mj",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Malmstr€",
+                    "suffix": ""
+                }
+            ],
+            "year": 1998,
+            "venue": "J Allergy Clin Immunol",
+            "volume": "101",
+            "issn": "",
+            "pages": "726--731",
+            "other_ids": {}
+        },
+        "BIBREF32": {
+            "ref_id": "b32",
+            "title": "Glucocorticoid administration accelerates mortality of pneumovirus infected mice",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "B"
+                    ],
+                    "last": "Domachowske",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bonville",
+                    "suffix": ""
+                },
+                {
+                    "first": "Ali-Ahmad",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2001,
+            "venue": "J Infect Dis",
+            "volume": "184",
+            "issn": "",
+            "pages": "1518--1523",
+            "other_ids": {}
+        },
+        "BIBREF33": {
+            "ref_id": "b33",
+            "title": "Meta-analysis: convalescent blood products for Spanish influenza pneumonia: a future H5N1 treatment?",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Luke",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Kilbane",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Jackson",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Hoffman",
+                    "suffix": ""
+                }
+            ],
+            "year": 2006,
+            "venue": "Ann Intern Med",
+            "volume": "145",
+            "issn": "",
+            "pages": "599--609",
+            "other_ids": {}
+        },
+        "BIBREF34": {
+            "ref_id": "b34",
+            "title": "Retrospective comparison of convalescent plasma with continuing high-dose methylprednisolone treatment in SARS patients",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Soo",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Clin Microbiol Infect",
+            "volume": "10",
+            "issn": "",
+            "pages": "676--678",
+            "other_ids": {}
+        },
+        "BIBREF35": {
+            "ref_id": "b35",
+            "title": "Use of convalescent plasma therapy in SARS patients in Hong Kong",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Cheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Wong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "O"
+                    ],
+                    "last": "Soo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "Eur J Clin Microbiol Infect Dis",
+            "volume": "24",
+            "issn": "",
+            "pages": "44--46",
+            "other_ids": {}
+        },
+        "BIBREF36": {
+            "ref_id": "b36",
+            "title": "Treatment with convalescent plasma for influenza A (H5N1) infection",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [],
+                    "last": "Zhou",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Zhong",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Guan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "N Engl J Med",
+            "volume": "357",
+            "issn": "",
+            "pages": "1450--1451",
+            "other_ids": {}
+        },
+        "BIBREF37": {
+            "ref_id": "b37",
+            "title": "Convalescent plasma treatment reduced mortality in patients with severe pandemic influenza A (H1N1) 2009 virus infection",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hung",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "To",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Clin Infect Dis",
+            "volume": "52",
+            "issn": "",
+            "pages": "510--519",
+            "other_ids": {}
+        },
+        "BIBREF38": {
+            "ref_id": "b38",
+            "title": "Hyperimmune intravenous immunoglobulin treatment: a multicentre double-blind randomized controlled trial for patients with severe A(H1N1)pdm09 infection",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Hung",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "To",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Chest",
+            "volume": "144",
+            "issn": "",
+            "pages": "464--473",
+            "other_ids": {}
+        },
+        "BIBREF39": {
+            "ref_id": "b39",
+            "title": "N-acetyl-l-cysteine (NAC) inhibits virus replication and expression of pro-inflammatory molecules in A549 cells infected with highly pathogenic H5N1 influenza A virus",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Geiler",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Michaelis",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Naczk",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Biochem Pharmacol",
+            "volume": "79",
+            "issn": "",
+            "pages": "413--420",
+            "other_ids": {}
+        },
+        "BIBREF40": {
+            "ref_id": "b40",
+            "title": "High-dose N-acetylcysteine therapy for novel H1N1 influenza pneumonia",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Lai",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Ng",
+                    "suffix": ""
+                },
+                {
+                    "first": "Osburga",
+                    "middle": [],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Ann Intern Med",
+            "volume": "152",
+            "issn": "",
+            "pages": "687--688",
+            "other_ids": {}
+        },
+        "BIBREF41": {
+            "ref_id": "b41",
+            "title": "N-acetylcysteine synergizes with oseltamivir in protecting mice from lethal influenza infection",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Garozzo",
+                    "suffix": ""
+                },
+                {
+                    "first": "G",
+                    "middle": [],
+                    "last": "Tempera",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Ungheri",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Int J Immunopathol Pharmacol",
+            "volume": "20",
+            "issn": "",
+            "pages": "349--354",
+            "other_ids": {}
+        },
+        "BIBREF42": {
+            "ref_id": "b42",
+            "title": "N-acetyl-L-cysteine (NAC) inhibit mucin synthesis and pro-inflammatory mediators in alveolar type II epithelial cells infected with influenza virus A and B and with respiratory syncytial virus (RSV)",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Mata",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Morcillo",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [],
+                    "last": "Gimeno",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Cortijo",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Biochem Pharmacol",
+            "volume": "82",
+            "issn": "",
+            "pages": "548--555",
+            "other_ids": {}
+        },
+        "BIBREF43": {
+            "ref_id": "b43",
+            "title": "Hypercytokinemia with 2009 pandemic H1N1 (pH1N1) influenza successfully treated with polymyxin B-immobilized fiber column hemoperfusion",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Takeda",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Munakata",
+                    "suffix": ""
+                },
+                {
+                    "first": "Abe",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Intens Care Med",
+            "volume": "36",
+            "issn": "",
+            "pages": "906--907",
+            "other_ids": {}
+        },
+        "BIBREF44": {
+            "ref_id": "b44",
+            "title": "Use of therapeutic plasma exchange as a rescue therapy in 2009 pH1N1 influenza-An associated respiratory failure and hemodynamic shock",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Patel",
+                    "suffix": ""
+                },
+                {
+                    "first": "V",
+                    "middle": [],
+                    "last": "Nadwani",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [],
+                    "last": "Vanchiere",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Pediatr Crit Care Med",
+            "volume": "12",
+            "issn": "",
+            "pages": "87--89",
+            "other_ids": {}
+        },
+        "BIBREF45": {
+            "ref_id": "b45",
+            "title": "Cross-reactive neutralizing antibody against pandemic 2009 H1N1 influenza A virus in intravenous immunoglobulin preparations",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Hong",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "H"
+                    ],
+                    "last": "Tremoulet",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Burns",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Pediatr Infect Dis J",
+            "volume": "30",
+            "issn": "",
+            "pages": "67--69",
+            "other_ids": {}
+        },
+        "BIBREF46": {
+            "ref_id": "b46",
+            "title": "A case of acute respiratory distress syndrome associated with novel H1N1 treated with intravenous immunoglobulin G",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Chong",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Sapari",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kuan",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J Microbiol Immunol Infect",
+            "volume": "44",
+            "issn": "",
+            "pages": "319--322",
+            "other_ids": {}
+        },
+        "BIBREF47": {
+            "ref_id": "b47",
+            "title": "Significant neutralizing activities against H2N2 influenza A viruses in human intravenous immunoglobulin lots manufactured from 1993 to 2010",
+            "authors": [
+                {
+                    "first": "R",
+                    "middle": [],
+                    "last": "Kubota-Koketsu",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yunoki",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Okuno",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Ikuta",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Biologics",
+            "volume": "6",
+            "issn": "",
+            "pages": "245--247",
+            "other_ids": {}
+        },
+        "BIBREF48": {
+            "ref_id": "b48",
+            "title": "Acute respiratory distress syndrome in critically ill patients with severe acute respiratory syndrome",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Lew",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Kwek",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Tai",
+                    "suffix": ""
+                }
+            ],
+            "year": 2003,
+            "venue": "JAMA",
+            "volume": "290",
+            "issn": "",
+            "pages": "374--380",
+            "other_ids": {}
+        },
+        "BIBREF49": {
+            "ref_id": "b49",
+            "title": "Analysis of deaths during the severe acute respiratory syndrome (SARS) epidemic in Singapore: challenges in determining a SARS diagnosis",
+            "authors": [
+                {
+                    "first": "P",
+                    "middle": [
+                        "Y"
+                    ],
+                    "last": "Chong",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Chui",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Ling",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "Arch Pathol Lab Med",
+            "volume": "128",
+            "issn": "",
+            "pages": "195--204",
+            "other_ids": {}
+        },
+        "BIBREF50": {
+            "ref_id": "b50",
+            "title": "Large artery ischemic stroke in severe acute respiratory distress syndrome (SARS)",
+            "authors": [
+                {
+                    "first": "T",
+                    "middle": [],
+                    "last": "Umapathi",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kor",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Venketasubramanian",
+                    "suffix": ""
+                }
+            ],
+            "year": 2004,
+            "venue": "J Neuro",
+            "volume": "251",
+            "issn": "",
+            "pages": "1227--1231",
+            "other_ids": {}
+        },
+        "BIBREF51": {
+            "ref_id": "b51",
+            "title": "Confronting the next influenza pandemic with antiinflammatory and immunomodulatory agents: why they are needed and how they might work",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Fedson",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Influenza Other Respi Viruses",
+            "volume": "3",
+            "issn": "",
+            "pages": "129--142",
+            "other_ids": {}
+        },
+        "BIBREF52": {
+            "ref_id": "b52",
+            "title": "The effect of rosuvastatin in a murine model of influenza A infection",
+            "authors": [
+                {
+                    "first": "K",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Radigan",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Urich",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "V"
+                    ],
+                    "last": "Misharin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "PLoS ONE",
+            "volume": "7",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF53": {
+            "ref_id": "b53",
+            "title": "Effect of statin treatments on highly pathogenic avian influenza H5N1, seasonal and H1N1pdm09 virus infections in BALB/c mice",
+            "authors": [
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Kumaki",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Morrey",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Barnard",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "Future Virol",
+            "volume": "7",
+            "issn": "",
+            "pages": "801--818",
+            "other_ids": {}
+        },
+        "BIBREF54": {
+            "ref_id": "b54",
+            "title": "Influenza morbidity and mortality in elderly patients receiving statins: a cohort study",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Kwong",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Li",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Redelmeier",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "PLoS ONE",
+            "volume": "4",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF55": {
+            "ref_id": "b55",
+            "title": "Pre-admission statin use and in-hospital severity of 2009 pandemic influenza A(H1N1) disease",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Brett",
+                    "suffix": ""
+                },
+                {
+                    "first": "P",
+                    "middle": [],
+                    "last": "Myles",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Lim",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "PLoS ONE",
+            "volume": "6",
+            "issn": "18120",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF56": {
+            "ref_id": "b56",
+            "title": "Association between use of statins and mortality among patients hospitalized with laboratory-confirmed influenza virus infections: a multistate study",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "L"
+                    ],
+                    "last": "Vandermeer",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Thomas",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Kamimoto",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Infect Dis",
+            "volume": "205",
+            "issn": "",
+            "pages": "13--19",
+            "other_ids": {}
+        },
+        "BIBREF57": {
+            "ref_id": "b57",
+            "title": "Effect of pravastatin on the frequency of ventilator-associated pneumonia and on intensive care unit mortality: open-label, randomized study",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Makris",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Manoulakas",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Komnos",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Crit Care Med",
+            "volume": "39",
+            "issn": "",
+            "pages": "2440--2446",
+            "other_ids": {}
+        },
+        "BIBREF58": {
+            "ref_id": "b58",
+            "title": "Clarithromycin in the treatment of RSV bronchiolitis: a double-blind, randomised, placebo-controlled trial",
+            "authors": [
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Tahan",
+                    "suffix": ""
+                },
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Ozcan",
+                    "suffix": ""
+                },
+                {
+                    "first": "N",
+                    "middle": [],
+                    "last": "Koc",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Eur Respir J",
+            "volume": "29",
+            "issn": "",
+            "pages": "91--97",
+            "other_ids": {}
+        },
+        "BIBREF59": {
+            "ref_id": "b59",
+            "title": "Clarithromycin inhibits type a seasonal influenza virus infection in human airway epithelial cells",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Yamaya",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Shinya",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [],
+                    "last": "Hatachi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "J Pharmacol Exp Ther",
+            "volume": "333",
+            "issn": "",
+            "pages": "81--90",
+            "other_ids": {}
+        },
+        "BIBREF60": {
+            "ref_id": "b60",
+            "title": "Effect of immunomodulatory therapies in patients with pandemic influenza A (H1N1) 2009 complicated by pneumonia",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Viasus",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Paño-Pardo",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Cordero",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "J Infect",
+            "volume": "62",
+            "issn": "",
+            "pages": "193--199",
+            "other_ids": {}
+        },
+        "BIBREF61": {
+            "ref_id": "b61",
+            "title": "Clarithromycin has limited effects in non-elderly, non-severe patients with seasonal influenza virus A infection",
+            "authors": [
+                {
+                    "first": "H",
+                    "middle": [],
+                    "last": "Ishii",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Komiya",
+                    "suffix": ""
+                },
+                {
+                    "first": "E",
+                    "middle": [],
+                    "last": "Yamagata",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "J Infect",
+            "volume": "64",
+            "issn": "",
+            "pages": "343--345",
+            "other_ids": {}
+        },
+        "BIBREF62": {
+            "ref_id": "b62",
+            "title": "Macrolide-based regimens in absence of bacterial co-infection in critically ill H1N1 patients with primary viral pneumonia",
+            "authors": [
+                {
+                    "first": "I",
+                    "middle": [],
+                    "last": "Mart In-Loeches",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "F"
+                    ],
+                    "last": "Bermejo-Martin",
+                    "suffix": ""
+                },
+                {
+                    "first": "",
+                    "middle": [],
+                    "last": "Vall",
+                    "suffix": ""
+                }
+            ],
+            "year": 2013,
+            "venue": "Intensive Care Med",
+            "volume": "39",
+            "issn": "",
+            "pages": "693--702",
+            "other_ids": {}
+        },
+        "BIBREF63": {
+            "ref_id": "b63",
+            "title": "Azithromycin and the risk of cardiovascular death",
+            "authors": [
+                {
+                    "first": "W",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Ray",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "T"
+                    ],
+                    "last": "Murray",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [],
+                    "last": "Hall",
+                    "suffix": ""
+                }
+            ],
+            "year": 2012,
+            "venue": "N Engl J Med",
+            "volume": "366",
+            "issn": "",
+            "pages": "1881--1890",
+            "other_ids": {}
+        },
+        "BIBREF64": {
+            "ref_id": "b64",
+            "title": "Increased survival after gemfibrozil treatment of severe mouse influenza",
+            "authors": [
+                {
+                    "first": "A",
+                    "middle": [],
+                    "last": "Budd",
+                    "suffix": ""
+                },
+                {
+                    "first": "L",
+                    "middle": [],
+                    "last": "Alleva",
+                    "suffix": ""
+                },
+                {
+                    "first": "M",
+                    "middle": [],
+                    "last": "Alsharifi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2007,
+            "venue": "Antimicrob Agents Chemother",
+            "volume": "51",
+            "issn": "",
+            "pages": "2965--2968",
+            "other_ids": {}
+        },
+        "BIBREF65": {
+            "ref_id": "b65",
+            "title": "Treating viral exacerbations of chronic obstructive pulmonary disease: insights from a mouse model of cigarette smoke and H1N1 influenza infection",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Bauer",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "C"
+                    ],
+                    "last": "Zavitz",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Botelho",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "PLoS ONE",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF66": {
+            "ref_id": "b66",
+            "title": "TNF/iNOS-producing dendritic cells are the necessary evil of lethal influenza virus infection",
+            "authors": [
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Aldridge",
+                    "suffix": ""
+                },
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Moseley",
+                    "suffix": ""
+                },
+                {
+                    "first": "D",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Boltz",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Proc Natl Acad Sci",
+            "volume": "106",
+            "issn": "",
+            "pages": "5306--5311",
+            "other_ids": {}
+        },
+        "BIBREF67": {
+            "ref_id": "b67",
+            "title": "Pioglitazone reduces monocyte activation in type 2 diabetes",
+            "authors": [
+                {
+                    "first": "D",
+                    "middle": [],
+                    "last": "Pitocco",
+                    "suffix": ""
+                },
+                {
+                    "first": "S",
+                    "middle": [],
+                    "last": "Giubilato",
+                    "suffix": ""
+                },
+                {
+                    "first": "F",
+                    "middle": [],
+                    "last": "Zaccardi",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Acta Diabetol",
+            "volume": "46",
+            "issn": "",
+            "pages": "75--77",
+            "other_ids": {}
+        },
+        "BIBREF68": {
+            "ref_id": "b68",
+            "title": "Peroxisome proliferatoractivated receptor and AMP-activated protein kinase agonists protect against lethal influenza virus challenge in mice",
+            "authors": [
+                {
+                    "first": "C",
+                    "middle": [
+                        "E"
+                    ],
+                    "last": "Moseley",
+                    "suffix": ""
+                },
+                {
+                    "first": "R",
+                    "middle": [
+                        "G"
+                    ],
+                    "last": "Webster",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "R"
+                    ],
+                    "last": "Aldridge",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "Influenza Other Respi Viruses",
+            "volume": "4",
+            "issn": "",
+            "pages": "307--311",
+            "other_ids": {}
+        },
+        "BIBREF69": {
+            "ref_id": "b69",
+            "title": "Contrasting effects of cyclooxygenase-1 (COX-1) and COX-2 deficiency on the host response to influenza A viral infection",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Carey",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bradbury",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Seubert",
+                    "suffix": ""
+                }
+            ],
+            "year": 2005,
+            "venue": "J Immunol",
+            "volume": "175",
+            "issn": "",
+            "pages": "6878--6884",
+            "other_ids": {}
+        },
+        "BIBREF70": {
+            "ref_id": "b70",
+            "title": "Pharmacologic inhibition of COX-1 and COX-2 in influenza A viral infection in mice",
+            "authors": [
+                {
+                    "first": "M",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Carey",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "A"
+                    ],
+                    "last": "Bradbury",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "D"
+                    ],
+                    "last": "Rebolloso",
+                    "suffix": ""
+                }
+            ],
+            "year": 2010,
+            "venue": "PLoS ONE",
+            "volume": "5",
+            "issn": "",
+            "pages": "",
+            "other_ids": {}
+        },
+        "BIBREF71": {
+            "ref_id": "b71",
+            "title": "Antiviral effect of a selective COX-2 inhibitor on H5N1 infection in vitro",
+            "authors": [
+                {
+                    "first": "S",
+                    "middle": [
+                        "M"
+                    ],
+                    "last": "Lee",
+                    "suffix": ""
+                },
+                {
+                    "first": "W",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Gai",
+                    "suffix": ""
+                },
+                {
+                    "first": "T",
+                    "middle": [
+                        "K"
+                    ],
+                    "last": "Cheung",
+                    "suffix": ""
+                },
+                {
+                    "first": "J",
+                    "middle": [
+                        "S"
+                    ],
+                    "last": "Peiris",
+                    "suffix": ""
+                }
+            ],
+            "year": 2011,
+            "venue": "Antiviral Res",
+            "volume": "91",
+            "issn": "",
+            "pages": "330--334",
+            "other_ids": {}
+        },
+        "BIBREF72": {
+            "ref_id": "b72",
+            "title": "Delayed antiviral plus immunomodulator treatment still reduces mortality in mice infected by high inoculum of influenza A/H5N1 virus",
+            "authors": [
+                {
+                    "first": "B",
+                    "middle": [
+                        "J"
+                    ],
+                    "last": "Zheng",
+                    "suffix": ""
+                },
+                {
+                    "first": "K",
+                    "middle": [
+                        "W"
+                    ],
+                    "last": "Chan",
+                    "suffix": ""
+                },
+                {
+                    "first": "Y",
+                    "middle": [
+                        "P"
+                    ],
+                    "last": "Lin",
+                    "suffix": ""
+                }
+            ],
+            "year": 2008,
+            "venue": "Proc Natl Acad Sci",
+            "volume": "105",
+            "issn": "",
+            "pages": "8091--8096",
+            "other_ids": {}
+        }
+    },
+    "ref_entries": {
+        "TABREF0": {
+            "text": "Observational studies: Systemic corticosteroids for H1N1pdm09-related pneumonia SC, systemic corticosteroids; HAP, hospital-acquired pneumonia; IMV, invasive mechanical ventilation; NIV, non-invasive ventilation. *A critical case = any confirmed, patients hospitalized with ≥1 of the following: death, respiratory failure, septic shock, failure of ≥2 extra pulmonary organs, mechanical ventilation, or ICU admission.",
+            "latex": null,
+            "type": "table"
+        }
+    },
+    "back_matter": [
+        {
+            "text": "The authors have no competing interests to declare.",
+            "cite_spans": [],
+            "ref_spans": [],
+            "section": "Conflict of interests"
+        }
+    ]
+}

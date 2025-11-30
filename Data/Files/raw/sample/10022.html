@@ -1,0 +1,1256 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    	
+			<title>Senate of Pakistan</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="stylesheet" href="css/bootstrap.css" />
+			<script src="js/jquery.js"></script>
+			<script src="js/bootstrap.js"></script> 
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" /> 
+			<link rel="stylesheet" href="css/font-awesome.css" />  
+			<link rel="stylesheet" href="css/nav.css" />  
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="table/ResponsiveDataTable.css" />  
+			    <style>
+    #popupModal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 20px 8px 20px 20px rgba(162, 7, 15, 0.5);
+        width: 90%;
+        max-width: 1250px;
+        z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+        overflow: hidden;
+        animation: borderGlow 2s infinite alternate;
+    }
+
+
+
+    #popupModal.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    #popupModal img.banner {
+        width: 100%;
+        height: auto;
+    }
+
+    #popupModal .content {
+        padding: 20px;
+    }
+
+    #popupModal h2 {
+        margin-top: 0;
+        font-size: 1.5em;
+        color: #a2070f;
+    }
+
+    #popupModal p {
+        font-size: 1em;
+        color: #333;
+        margin: 10px 0 20px;
+    }
+
+    .countdown-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .time-box {
+        background: #1d2a57;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 8px;
+        min-width: 60px;
+        animation: flip 1s ease-in-out infinite alternate;
+    }
+
+    .time-box span {
+        display: block;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .time-label {
+        font-size: 0.75em;
+        margin-top: 4px;
+        opacity: 0.8;
+    }
+
+    @keyframes flip {
+        0% {
+            transform: rotateX(0deg);
+        }
+
+        100% {
+            transform: rotateX(15deg);
+        }
+    }
+
+    @keyframes borderGlow {
+        0% {
+            border-color: #1d2a57;
+            box-shadow: 0 0 10px #1d2a57;
+        }
+
+        100% {
+            border-color: #1d2a57;
+            box-shadow: 20px 8px 20px 20px #1d2a57;
+        }
+    }
+
+    .modal-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .modal-buttons button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+
+    .modal-buttons .close-btn {
+        background-color: #999;
+        color: #fff;
+    }
+
+    .modal-buttons .redirect-btn {
+        background-color: #1d2a57;
+        color: #fff;
+    }
+
+    .modal-buttons .redirect-btn:hover {
+        background-color: #fff;
+        color: #1d2a57;
+        border: 2px solid #1d2a57;
+    }
+
+
+
+    #popupModal::before {
+        content: "ISC";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-360deg);
+        font-size: 180px;
+        letter-spacing: 5px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.1);
+        /* Light gray with transparency */
+        pointer-events: none;
+        /* Prevents interaction */
+        z-index: 0;
+        /* Behind everything */
+    }
+
+    @media (max-width: 480px) {
+        #popupModal {
+            width: 95%;
+        }
+
+        .countdown-wrapper {
+            flex-wrap: wrap;
+        }
+
+        .modal-buttons {
+            flex-direction: column;
+        }
+
+        #popupModal img.banner {
+            width: 100%;
+            height: 120px;
+        }
+    }
+    </style>
+    <meta name="google-site-verification" content="D_Cv6a-vC-iKCbmOx_1xzPoLHAgDZaEPiyxRM3aACmc" />
+</head>
+
+<body>
+
+    <!-- POPUP MODAL
+    <div id="popupModal">
+        <div class="popup-content">
+            <img src="images/conference.png" alt="Conference Banner" class="banner" />
+            <div class="content">
+                <div class="countdown-wrapper" id="countdownTimer">
+                    <div class="time-box"><span id="days">00</span>
+                        <div class="time-label">Days</div>
+                    </div>
+                    <div class="time-box"><span id="hours">00</span>
+                        <div class="time-label">Hours</div>
+                    </div>
+                    <div class="time-box"><span id="minutes">00</span>
+                        <div class="time-label">Minutes</div>
+                    </div>
+                    <div class="time-box"><span id="seconds">00</span>
+                        <div class="time-label">Seconds</div>
+                    </div>
+                </div>
+                <div class="modal-buttons">
+
+
+                    <button class="redirect-btn" onclick="window.open('https://www.iscsenatepk.com/')">Visit
+                        Website</button>
+                    <button class="redirect-btn"
+                        onclick="window.open('https://www.iscsenatepk.com/register')">Registration
+                        Form</button>
+                      <button class="redirect-btn" onclick="window.open('ISC/intro.pdf')">Introduction of
+                        ISC</button>
+                    <button class="redirect-btn" onclick="window.open('ISC/cn.pdf')">Concept Note</button>
+
+                    <button class="redirect-btn" onclick="window.open('ISC/IC.pdf')">Information
+                        Circular</button>
+                    <button class="redirect-btn" onclick="window.open('ISC/Pro.pdf')">Conference
+                        Program</button>
+                    
+                    <button class="close-btn" onclick="closePopup()">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     POPUP MODAL -->
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <!---------- blank left side ---------------->
+            <div class="col-sm-1 sidenav"></div>
+
+            <!---------- blank center side ---------------->
+            <div class="col-sm-10 text-left">
+                		
+			<!--Cover -->
+			<div class="jumbotron headcover" >
+   
+				<div class="search-container">
+					<form action="search.php" method="get" >
+						<input type="text" class="search-container searchtxt" placeholder="Search.." name="k">
+						<input type="hidden" name="web_font" id="web_font" value="50660106ffdf0968f8df7a116c13f1e1" />
+						<button class="search-container searchbtn" type="submit"></button>
+					</form>
+					<a href="https://mail.senate.gov.pk/" target="_blank" title="Senate Official Email"><i class="fa fa-envelope-o"></i></a>
+					<a href="https://www.facebook.com/Pakistansenate/" target="_blank" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+					<a href="https://twitter.com/Senatepakistan" target="_blank" title="Twitter"><i class="fa fa-brands fa-x-twitter"></i></a>
+					<a href="https://www.youtube.com/c/senateofpakistanofficial" target="_blank" title="Youtube"><i class="fa fa-youtube-play"></i></a>
+				</div>
+			</div>
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<!-- Go to www.addthis.com/dashboard to customize your tools
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d70df05bf0975e1"></script>
+ -->
+
+			<!--Cover -->
+			
+                <!--Menu -->
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+
+                            			<div class="row">
+			<ul class="nav navbar-nav">
+				<li><a href="index.php">Home</a></li>
+									<li >
+						<a href="messence.php?id=29&catid=186&cattitle=House Business?id=-1&catid=186&cattitle=House Business ">House Business </a></li>
+										<li >
+						<a href="all_committees.php?id=-1?id=-1&catid=90&subcatid=85&cattitle=Senate Committees?id=-1&catid=90&cattitle=Committees">Committees</a></li>
+										<li >
+						<a href="messence.php?id=1085&catid=261&cattitle=Senators?id=-1&catid=261&cattitle=Senators">Senators</a></li>
+										<li >
+						<a href="essence.php?id=58&catid=4&subcatid=138&cattitle=House of  Federation?id=-1&catid=4&cattitle=About the Senate">About the Senate</a></li>
+										<li >
+						<a href="publication.php?id=2&catid=7&subcatid=62&cattitle=Publication?id=-1&catid=7&cattitle=Publications">Publications</a></li>
+										<li >
+						<a href="press_release.php?id=-1&catid=6&cattitle=Media Centre">Media Centre</a></li>
+										<li >
+						<a href="messence.php?id=1114&catid=110&cattitle=Get Involved?id=-1&catid=110&cattitle=Get Involved">Get Involved</a></li>
+					      
+			</ul>
+			</div>
+			                        </div>
+                    </div>
+                </nav>
+                <!-- bar -->
+                <div style=" background-color: #a2070f; margin: 0 12px 12px;height: 15px;">
+                </div>
+                <!-- bar -->
+
+
+
+                <div class="container-fluid text-center">
+                    <div class="row content">
+                        <!--<div class="col-sm-1">
+									</div>-->
+                        <div class="col-sm-12">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+                                    
+                                    <li data-target="#myCarousel" data-slide-to="1" ></li>
+
+                                    
+                                    <li data-target="#myCarousel" data-slide-to="2" ></li>
+
+                                    
+                                    <li data-target="#myCarousel" data-slide-to="3" ></li>
+
+                                    
+                                    <li data-target="#myCarousel" data-slide-to="4" ></li>
+
+                                    
+                                    <li data-target="#myCarousel" data-slide-to="5" ></li>
+
+                                    
+                                    <li data-target="#myCarousel" data-slide-to="6" ></li>
+
+                                    
+                                    <li data-target="#myCarousel" data-slide-to="7" ></li>
+
+                                                                    </ol>
+                                <div class="carousel-inner">
+
+                                                                        <div class="item active">
+                                        <img src="../uploads/images/news_pic/1763045315_870.jpg"
+                                            alt="CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH MR HARKA RAJ RAI, SECRETARY HOUSE OF REPRESENTATIVES OF NEPAL IN ISLAMABAD." style="width:100%;  height: 380px; "
+                                            class="img-fluid">
+                                        <div class="carousel-caption">
+                                            <!-- <h3>Los Angeles</h3> -->
+                                            <div style="background: rgba(43, 60, 67, 0.8);">
+                                                <p>
+                                                    <a style="color:#fff"
+                                                        href="news_content.php?id=NjYyMw==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                        CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH MR HARKA RAJ RAI, SECRETARY HOUSE OF REPRESENTATIVES OF NEPAL IN ISLAMABAD.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                                                        <div class="item ">
+                                        <img src="../uploads/images/news_pic/1763045300_723.jpg"
+                                            alt="CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH NUR JAZLAN BIN MOHAMED DEPUTY PRESIDENT OF THE MALAYSIAN SENATE IN ISLAMABAD." style="width:100%;  height: 380px; "
+                                            class="img-fluid">
+                                        <div class="carousel-caption">
+                                            <!-- <h3>Los Angeles</h3> -->
+                                            <div style="background: rgba(43, 60, 67, 0.8);">
+                                                <p>
+                                                    <a style="color:#fff"
+                                                        href="news_content.php?id=NjYyMg==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                        CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH NUR JAZLAN BIN MOHAMED DEPUTY PRESIDENT OF THE MALAYSIAN SENATE IN ISLAMABAD.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                                                        <div class="item ">
+                                        <img src="../uploads/images/news_pic/1763045457_691.jpg"
+                                            alt="CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH MOHAMMED TAHA AL-AHMAD, CHAIRMAN OF THE SUPREME ELECTIONS COMMISSION OF SYRIA IN ISLAMABAD." style="width:100%;  height: 380px; "
+                                            class="img-fluid">
+                                        <div class="carousel-caption">
+                                            <!-- <h3>Los Angeles</h3> -->
+                                            <div style="background: rgba(43, 60, 67, 0.8);">
+                                                <p>
+                                                    <a style="color:#fff"
+                                                        href="news_content.php?id=NjYyMQ==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                        CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH MOHAMMED TAHA AL-AHMAD, CHAIRMAN OF THE SUPREME ELECTIONS COMMISSION OF SYRIA IN ISLAMABAD.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                                                        <div class="item ">
+                                        <img src="../uploads/images/news_pic/1763045266_476.jpg"
+                                            alt="CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH ABDUL RAHEEM ABDULLA, SPEAKER OF THE PEOPLE'S MAJLIS OF MALDIVES IN ISLAMABAD." style="width:100%;  height: 380px; "
+                                            class="img-fluid">
+                                        <div class="carousel-caption">
+                                            <!-- <h3>Los Angeles</h3> -->
+                                            <div style="background: rgba(43, 60, 67, 0.8);">
+                                                <p>
+                                                    <a style="color:#fff"
+                                                        href="news_content.php?id=NjYyMA==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                        CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH ABDUL RAHEEM ABDULLA, SPEAKER OF THE PEOPLE'S MAJLIS OF MALDIVES IN ISLAMABAD.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                                                        <div class="item ">
+                                        <img src="../uploads/images/news_pic/1763045234_407.jpg"
+                                            alt="CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH DEPUTY SPEAKER OF THE FEDERAL NATIONAL COUNCIL OF THE UNITED ARAB EMIRATES DR. TARIQ HUMAID MATAR MOHAMMED AL TAYER IN ISLAMABAD." style="width:100%;  height: 380px; "
+                                            class="img-fluid">
+                                        <div class="carousel-caption">
+                                            <!-- <h3>Los Angeles</h3> -->
+                                            <div style="background: rgba(43, 60, 67, 0.8);">
+                                                <p>
+                                                    <a style="color:#fff"
+                                                        href="news_content.php?id=NjYxOQ==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                        CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH DEPUTY SPEAKER OF THE FEDERAL NATIONAL COUNCIL OF THE UNITED ARAB EMIRATES DR. TARIQ HUMAID MATAR MOHAMMED AL TAYER IN ISLAMABAD.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                                                        <div class="item ">
+                                        <img src="../uploads/images/news_pic/1763045186_618.jpg"
+                                            alt="CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH ALI NIKZAD SAMARIN MEMBER OF IRANIAN PARLIAMENT IN ISLAMABAD." style="width:100%;  height: 380px; "
+                                            class="img-fluid">
+                                        <div class="carousel-caption">
+                                            <!-- <h3>Los Angeles</h3> -->
+                                            <div style="background: rgba(43, 60, 67, 0.8);">
+                                                <p>
+                                                    <a style="color:#fff"
+                                                        href="news_content.php?id=NjYxOA==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                        CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH ALI NIKZAD SAMARIN MEMBER OF IRANIAN PARLIAMENT IN ISLAMABAD.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                                                        <div class="item ">
+                                        <img src="../uploads/images/news_pic/1763045170_894.jpg"
+                                            alt="CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH MR. FRANCOIS XAVIER KALINDA, PRESIDENT OF THE SENATE OF RWANDA IN ISLAMABAD." style="width:100%;  height: 380px; "
+                                            class="img-fluid">
+                                        <div class="carousel-caption">
+                                            <!-- <h3>Los Angeles</h3> -->
+                                            <div style="background: rgba(43, 60, 67, 0.8);">
+                                                <p>
+                                                    <a style="color:#fff"
+                                                        href="news_content.php?id=NjYxNw==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                        CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH MR. FRANCOIS XAVIER KALINDA, PRESIDENT OF THE SENATE OF RWANDA IN ISLAMABAD.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                                                        <div class="item ">
+                                        <img src="../uploads/images/news_pic/1763044987_194.jpg"
+                                            alt="CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH MR. SAAD ARAOUS, MEMBER OF PARLIAMENT FROM ALGERIA IN ISLAMABAD." style="width:100%;  height: 380px; "
+                                            class="img-fluid">
+                                        <div class="carousel-caption">
+                                            <!-- <h3>Los Angeles</h3> -->
+                                            <div style="background: rgba(43, 60, 67, 0.8);">
+                                                <p>
+                                                    <a style="color:#fff"
+                                                        href="news_content.php?id=NjYxNg==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                        CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH MR. SAAD ARAOUS, MEMBER OF PARLIAMENT FROM ALGERIA IN ISLAMABAD.</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                                                    </div>
+
+                            </div>
+
+                        </div>
+                        <!--<div class="col-sm-1">
+									</div>-->
+                    </div>
+                    <br />
+                    <div class="row content">
+                        <div class="col-sm-9 text-left">
+                            <div class="row content">
+                                <div class="col-sm-12" style="border-radius: 5px;">
+                                                                        <marquee
+                                        style="background-color:#a2070f; text-align:center; color:#FFFFFF; padding:5px 5px 5px 0px; margin:0px 0px 10px 0px; height:27px; text-transform:uppercase; font-weight:bold; letter-spacing:1px;"
+                                        direction="left" scrollamount="5"
+                                        onMouseOver="this.setAttribute('scrollamount', 0, 0);"
+                                        onMouseOut="this.setAttribute('scrollamount', 2, 0);">
+                                        <p>The Senate Session prorogued on Friday the 14<sup>th</sup>&nbsp;November, 2025.</p>                                    </marquee>
+                                    
+                                </div>
+                                <div class="col-sm-12">
+
+                                    <p
+                                        style="text-align:justify;padding:10px;border:1px solid #E2E2E2; background-image:-moz-linear-gradient; background: linear-gradient">
+                                        Senate of Pakistan is the Upper House of the Parliament. Being the House of
+                                        the
+                                        Federation, the Senate of Pakistan gives equal representation to all the
+                                        federating units in order to promote national cohesion and harmony by
+                                        counterbalancing the numerical disparity among provinces in the National
+                                        Assembly. Senate of Pakistan is a permanent House, which symbolizes a
+                                        process of
+                                        continuity in the national affairs. Senate of Pakistan was formed with a
+                                        principle of 'Chamber of continuity.' In order to ensure smooth transition
+                                        of
+                                        power of lower house and government, this house remains in place to oversee
+                                        the
+                                        process. The matters in federal legislative list can be initiated in any of
+                                        the
+                                        Houses, except money bill, which is sent to the Senate only for
+                                        recommendations.
+                                        The term of the Members of Senate is six years, however, one half of its
+                                        members
+                                        retire after every three years.
+                                    </p>
+                                    <!-- <marquee style="border: 2px solid #a2070f; margin-bottom: 5px; padding-top: 8px; border-radius: 10px;"  scrollamount="5" >
+										<p style="font-family: Georgia; font-size: 12pt; color: #a2070f;"> <img  src="images/new.gif"/> Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor!</p></marquee>-->
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row content">
+                                <div class="col-sm-6">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading">Governance of the Senate</div>
+                                        <div class="panel-body"><img src="images/gof.png"
+                                                style="height: 185px; width:100%" alt="Governance of the Senate">
+                                        </div>
+                                        <div class="panel-footer">
+                                            <p style="text-align:justify; padding-left:10px; padding-right:10px;">
+                                                Chairman Senate, Finance Committee, Business Advisory Committee and
+                                                Secretary Senate are collectively responsible for the Senate
+                                                Administration.
+                                            </p>
+                                            <ul style="list-style-type:square">
+                                                <li>
+                                                    <a href="messence.php?id=1105&cattitle=Home">Senate
+                                                        Administration</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#messence.php?id=12&cattitle=Home">Financial
+                                                        Information</a>
+                                                    <!-- <a href="#">Financial Information</a> -->
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="staff.php?id=-1&amp;catid=4&amp;subcatid=162&amp;cattitle=Senate Secretariat">Senate
+                                                        Secretariat</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="panel panel-danger">
+                                        <div class="panel-heading">The work of the Senate</div>
+                                        <div class="panel-body"><img src="images/fos.png"
+                                                style="height: 185px; width:100%" alt="The work of the Senate">
+                                        </div>
+                                        <div class="panel-footer">
+                                            <p style="text-align:justify; padding-left:10px; padding-right:10px;">
+                                                The
+                                                Senate is the second chamber of the Parliament. It is independent
+                                                from,
+                                                and complements the work of, the National Assembly.</p>
+                                            <ul style="list-style-type:square">
+                                                <li>
+                                                    <a href="messence.php?id=1012&amp;cattitle=Home">Role of
+                                                        Senate</a>
+                                                </li>
+                                                <li>
+                                                    <a href="messence.php?id=32&cattitle=Home">Legislation</a>
+                                                </li>
+                                                <li>
+                                                    <a href="messence.php?id=1110&cattitle=Home">Accountability /
+                                                        Oversight of the Executive</a>
+                                                </li>
+                                                <li>
+                                                    <a href="messence.php?id=1147&cattitle=Home">Representation of
+                                                        Federating units</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row content">
+                                <div class="col-sm-6">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading">The Chairman</div>
+                                        <div class="panel-body"><img src="images/chairman.jpg"
+                                                style="height: 185px; width:100%" alt="The Chairman"></div>
+                                        <div class="panel-footer">
+                                            <p style="text-align:justify; padding-left:10px; padding-right:10px;">
+                                                Understand the role, history and current activities of the Chairman.
+                                            </p>
+                                            <ul style="list-style-type:square">
+                                                <li>
+                                                    <a href="#">The Chairman</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Role of the Chairman</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="press_release_ch.php?id=-1&catid=261&subcatid=262&cattitle=Chairman Office">Press
+                                                        Releases of the Chair</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="rulings.php?id=-1&catid=261&subcatid=262&cattitle=Chairman Office">Rulings
+                                                        of the Chair</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="gallery_pictures.php?id=54&catid=6&subcatid=65&cattitle=Picture Gallery">Picture
+                                                        Gallery of the Chair</a>
+                                                </li>
+
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="panel panel-danger">
+                                        <div class="panel-heading">Members of the Senate</div>
+                                        <div class="panel-body"><img src="images/senators-20212r.jpg"
+                                                style="height: 185px; width:100%" alt="Members of the Senate"></div>
+                                        <div class="panel-footer">
+                                            <p style="text-align:justify; padding-left:10px; padding-right:10px;">
+                                                Members of Senate are elected to represent, defend and promote
+                                                national
+                                                interests. </p>
+                                            <ul style="list-style-type:square">
+                                                <li>
+                                                    <a
+                                                        href="current_members.php?id=-1&amp;catid=261&amp;subcatid=2&amp;cattitle=Members of Senate">List
+                                                        of Senators</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#financialInformation.php?id=12&cattitle=Home">Salaries,
+                                                        Allowances and Privileges </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="attendance.php?id=-1&type=1&catid=261&amp;subcatid=301&amp;cattitle=Attendance of Members">Attendance
+                                                        of Members (House)</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="com_attendanceNew.php?id=-1&catid=90&subcatid=302&cattitle=Attendance of Members">Attendance
+                                                        of Members (Committee)</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row content">
+                                <div class="col-sm-12">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#menu2">What's on</a></li>
+                                        <li><a data-toggle="tab" href="#home">Senate News</a></li>
+                                        <li><a data-toggle="tab" href="#menu1">Public Petitions</a></li>
+                                    </ul>
+                                    <br>
+
+                                    <div class="tab-content">
+                                        <div id="menu2" class="tab-pane fade in active">
+                                            <strong>Saturday, 15 November 2025</strong>
+                                            <table class="display" style="width: 100%">
+                                                                                            </table>
+                                                                                        <table class="display" style="width: 100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 10%" scope="col">Sr.No</th>
+                                                        <th style="width: 30%" scope="col">Committee Name</th>
+                                                        <th style="width: 20%" scope="col">Date</th>
+                                                        <th style="width: 20%" scope="col">Time</th>
+                                                        <th style="width: 20%" scope="col">Venue</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                                                                        <tr>
+                                                        <td colspan="6">
+                                                            <i>No committees' meeting is scheduled today</i>
+                                                        </td>
+                                                    </tr>
+                                                                                                        <tr>
+                                                        <td colspan="6" style="font-weight:bold; text-align:right">
+                                                            <a
+                                                                href="meetings.php?id=-1?id=-1&catid=90&subcatid=228&cattitle=Committees%20Notices">Read
+                                                                More...</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- ../What's On -->
+
+                                        <div id="home" class="tab-pane fade">
+                                                                                        <div class="col-sm-6">
+                                                <div class="panel panel-danger">
+                                                    <!-- <a href="news_content.php?id="> -->
+                                                    <div>
+                                                        <img src="../uploads/images/news_pic/1763134962_875.jpeg"
+                                                            class="img-responsive" style="width:100%; height: 220px"
+                                                            alt="Image">
+                                                    </div>
+                                                    <!-- </a> -->
+
+                                                    <div class="panel-footer">
+                                                        A series of important delegations called on Deputy Chairman Senate, Syedal Khan, at the Parliament House....
+                                                                                                                <a
+                                                            href="news_content.php?id=NjYyNw==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                            Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                                                                        <div class="col-sm-6">
+                                                <div class="row">
+                                                    <div class="press-left-img">
+                                                        <img src="../uploads/images/news_pic/thumb/1763115871_616.jpg "
+                                                            class="img-responsive" alt="Image">
+                                                    </div>
+                                                    <div class="press-left-detail" style="margin-bottom: 10px;">
+                                                        Delegation of Students and Faculty Members From The Lake International College, Multan in a Group Photo With Senator Rana Mahmood Ul Hassan at Parliam...
+                                                        <a
+                                                            href="news_content.php?id=NjYyNg==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                            Read More</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                                                                        <div class="col-sm-6">
+                                                <div class="row">
+                                                    <div class="press-left-img">
+                                                        <img src="../uploads/images/news_pic/thumb/1763048531_731.jpg "
+                                                            class="img-responsive" alt="Image">
+                                                    </div>
+                                                    <div class="press-left-detail" style="margin-bottom: 10px;">
+                                                        Deputy Chief of Mission of the U.S. Embassy, Mr. Zachary Harkenrider, and His Parents Visit Parliament House Islamabad....
+                                                        <a
+                                                            href="news_content.php?id=NjYyNA==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                            Read More</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                                                                        <div class="col-sm-6">
+                                                <div class="row">
+                                                    <div class="press-left-img">
+                                                        <img src="../uploads/images/news_pic/thumb/1763045315_870.jpg "
+                                                            class="img-responsive" alt="Image">
+                                                    </div>
+                                                    <div class="press-left-detail" style="margin-bottom: 10px;">
+                                                        CHAIRMAN SENATE, SYED YOUSAF RAZA GILANI EXCHANGING VIEWS WITH MR HARKA RAJ RAI, SECRETARY HOUSE OF REPRESENTATIVES OF NEPAL IN ISLAMABAD....
+                                                        <a
+                                                            href="news_content.php?id=NjYyMw==&catid=6&subcatid=59&cattitle=Press Releases">
+                                                            Read More</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            
+                                            
+                                            <div style="font-weight:bold; text-align:right">
+                                                <a
+                                                    href="press_release.php?id=-1&catid=6&subcatid=59&cattitle=Press Releases?id=-1&catid=6&cattitle=Media Centre">View
+                                                    More...</a>
+                                            </div>
+                                        </div> <!-- ../Senate News -->
+
+                                        <div id="menu1" class="tab-pane fade">
+                                            <p style="line-height:20px; text-align:justify;"> Public petitions may
+                                                be
+                                                presented on any matter connected with the business pending before
+                                                the
+                                                House or a Committee, or any matter of general public interest which
+                                                is
+                                                primarily the concern of the Government, provided that it is not one
+                                                which falls within the cognizance of a court of law or tribunal, and
+                                                it
+                                                shall not directly relate to a matter pending before any court or
+                                                other
+                                                authority performing judicial or quasi-judicial functions. </p>
+                                            <div style="text-align: right"><a
+                                                    href="http://publicpetition.senate.gov.pk/index.php"
+                                                    target="_blank"><strong>File a
+                                                        Petition</strong></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                                                    href="http://publicpetition.senate.gov.pk/Account/"
+                                                    target="_blank"><strong>Track a Petition</strong></a></div>
+                                        </div> <!-- ../Public Petitions -->
+                                    </div> <!-- ../Tab -->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 sidenav">
+                                                        <a href="webcast.php">
+                                <div class="box-outer">
+                                    <div class="main_box">
+                                        <div>
+                                            <!--class="blink_me"-->
+                                            <h3 style="color: white">Live Webcast</h3>
+                            </a>
+                        </div>
+
+                        <div class="bar right delay"></div>
+                        <div class="bar bottom delay"> </div>
+
+
+                    </div>
+                </div>
+                
+                
+
+    
+    <!--  <a href="https://www.senate.gov.pk/en/conference" target="_blank">
+        <div class="box-outer" style="height:120px">
+            <div class="main_box" style="height:120px">
+                <div class="blink_me">
+                    <span style="color: white; font-size:16px; font-weight: bold"> <br>INTER-PARLIAMENTARY SPEAKERS'
+                        CONFERENCE<br /> 10th -
+                        12th November
+                        2025</span>
+                </div>
+                <div class="bar top "></div>
+                <div class="bar left "></div>
+
+            </div>
+        </div>
+    </a>
+    -->
+    <!-- ***************************************************************************************************************  
+	  
+	  ***************************************************************************************************************   -->
+    <div>
+        <!-- <div class="well rightadds" style=" background-color:#fff;">
+
+            <label style="color:#1f2a57 ; text-align: center; font-size:12pt; letter-spacing:0px">
+                INTER-PARLIAMENTARY
+                SPEAKERS'
+                CONFERENCE
+                <div class="blink_me">10th -
+                    12th November
+                    2025</div>
+            </label>
+
+            <div class="holder">
+                <ul style="list-style:circle; padding-left:10px; font-size:12pt; color:#1f2a57;">
+                    <li><a style="color:#1f2a57;  font-weight: bold;" rel="external" target="_blank"
+                            href="https://www.iscsenatepk.com/">Visit Website</a>
+                    </li>
+                    <li><a style="color:#1f2a57; font-weight: bold;" rel="external" target="_blank"
+                            href="https://www.iscsenatepk.com/register">Registration
+                            Form
+                            (Online)</a>
+                    </li>
+                    <li><a style="color:#1f2a57; font-weight: bold;" rel="external" target="_blank"
+                            href="ISC/form.pdf">Registration
+                            Form
+                            (Download PDF)</a></li>
+                    
+                    <li><a style="color:#1f2a57;  font-weight: bold;" rel="external" target="_blank"
+                            href="ISC/intro.pdf">Introduction
+                            of
+                            ISC</a>
+                    </li>
+                    <li><a style="color:#1f2a57; font-weight: bold;" rel="external" target="_blank"
+                            href="ISC/cn.pdf">Concept Note</a>
+                    </li>
+                 
+
+                    <li><a style="color:#1f2a57; font-weight: bold;" rel="external" target="_blank"
+                            href="ISC/IC.pdf">Information
+                            Circular</a>
+                    </li>
+                    <li><a style="color:#1f2a57; font-weight: bold;" rel="external" target="_blank"
+                            href="ISC/Pro.pdf">Conference
+                            Program</a></li>
+   
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div class="bar top "></div>
+        <div class="bar left "></div> -->
+    </div>
+    <div class="well rightadds">
+        <label> Highlights</label>
+
+        <div class="holder">
+
+            <ul id="ticker01">
+                                <li><a href="../2web/performa.pdf" target="_blank"><strong>Performa for Drafting of Private Member's Bills</strong></a>
+                </li>
+                                <li><a href="../2web/sop.pdf" target="_blank"><strong>SOP on handling the RTI (Right to Information) Application</strong></a>
+                </li>
+                                <li><a href="../2web/r13-2.pdf" target="_blank"><strong>Enhancement of Role and Powers of Senate of Pakistan</strong></a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+    <div class="well rightadds">
+        <label>Quick links</label>
+        <ul style="list-style:circle; padding-left:30px;">
+            <!-- <li><a rel="external" href="forthcoming_Business.php?id=-1&cattitle=Home">Members Business for 303 Session</a></li> -->
+            <li><a rel="external"
+                    href="order_of_day.php?id=-1?id=-1&amp;catid=186&amp;subcatid=164&amp;cattitle=Orders of the Day">Orders
+                    of Day</a></li>
+            <li><a href="questions.php?id=-1&amp;catid=186&amp;subcatid=284&amp;cattitle=Questions/Answers">Questions
+                    and Answers</a></li>
+            <li><a rel="external"
+                    href="debates.php?id=-1?id=-1&amp;catid=186&amp;subcatid=15&amp;cattitle=Hansard">Hansards/House
+                    Debates</a></li>
+            <li><a rel="external"
+                    href="bills.php?id=-1?id=-1&amp;catid=186&amp;subcatid=276&amp;cattitle=Bills">Bills</a>
+            </li>
+            <li><a href="acts.php?id=-1&amp;catid=186&amp;subcatid=285&amp;cattitle=Acts">Acts</a></li>
+            <li><a
+                    href="resolutions.php?id=-1?id=-1&amp;catid=186&amp;subcatid=254&amp;cattitle=Resolutions">Resolutions</a>
+            </li>
+            <li><a href="daily_journal.php?id=-1&amp;catid=186&amp;subcatid=311&amp;cattitle=Daily Journal">Daily
+                    Journals</a></li>
+            <li><a href="sj.php?id=-1&amp;catid=186&amp;subcatid=306&amp;cattitle=Synopsis/Journals">Synopsis
+                    Journals</a></li>
+            <li><a href="advertisment.php?id=102&cattitle=Advertisment">Advertisements</a></li>
+            <li><a href="library.php?id=-1&amp;catid=4&amp;subcatid=266&amp;cattitle=Library">Senate Library</a>
+            </li>
+            <li><a href="messence.php?id=20&cattitle=UsefulLinks">Useful Links</a></li>
+            <li><a href="faq.php?id=103&cattitle=FAQ">FAQs</a></li>
+            <li><a href="feedback.php?id=101&cattitle=Feedback">Write to Us</a></li>
+        </ul>
+    </div>
+
+    <div class="well rightadds">
+        <label>Get Involved</label>
+        <ul style="list-style:circle; padding-left:30px;">
+            <li><a href="petition.php?id=-1&amp;catid=110&amp;subcatid=282&amp;cattitle=Public Petition">Public
+                    Petition</a></li>
+            <!--<li> <a href="senate_tour.php?id=-1&amp;catid=110&amp;subcatid=252&amp;cattitle=Virtual Tours">Virtual Tour</a></li> -->
+            <li><a href="cometosenate.php?id=-1&amp;catid=110&amp;subcatid=281&amp;cattitle=Visit to Senate">When
+                    in
+                    Senate</a></li>
+        </ul>
+    </div>
+
+    <div class="well rightadds">
+        <label> Parliamentary Resources</label>
+        <ul style="list-style:circle; padding-left:30px;">
+                        <li><a href="messence.php?id=1145">Asian Parliamentary Assembly</a></li>
+
+                        <li><a href="messence.php?id=1000">Inter-Parliamentary Union</a></li>
+
+                        <li><a href="messence.php?id=1001">Commonwealth Parliamentary Association</a></li>
+
+                    </ul>
+    </div>
+
+    <div class="well rightadds">
+        <label>Designated Official</label>
+        <p>Designated Official/Public Information Officer(PIO) under Section 9 of the Right of Access to
+            Information
+            Act, 2017.<br /><br />
+            For HRM related issues:</p>
+        <ul style="list-style-type:none">
+            <li>Mr. Alamzeb, Deputy Secretary (BPS-19)</li>
+            <li>alamzeb@senate.gov.pk</li>
+            <li>Address: Room No.308 3rd Floor, Block-C, Ataturk Avenue, Islamabad</li>
+
+        </ul>
+
+        <p>For Legislative and Committees matters:</p>
+        <ul style="list-style-type:none">
+            <li>Mr. Muhammad Azam, Deputy Secretary (BPS-19)</li>
+            <li>azamsulahri@senate.gov.pk</li>
+            <li>Address: Room No 5P, First Floor, Parliament House, Islamabad</li>
+
+        </ul>
+
+        <p><a href="../uploads/RTI-RegistrationForm.pdf"> RTI Request Form</a></p>
+
+    </div>
+    <!-- <div class="well rightadds">
+        <label>Information Office</label>
+        <p> The Senate Information Office provides information on the work, history and membership of the Senate.</p>
+        <ul style="list-style-type:none">
+            <li>Telephone: +92-51- 9022022</li>
+            <li>Email: <a href="mailto:info@senate.gov.pk"> info@senate.gov.pk</a></li>
+        </ul>
+    </div> -->
+
+    <!---------- blank right side ---------------->
+    <div class="col-sm-1 sidenav"></div>
+    </div>
+    </div>
+    <!---------- Footer Section ---------------->
+    <div class="container-fluid">
+        <div id="footer-menu" class="row">
+            		
+								<div class="col-sm-2"> <ul style="list-style: none; padding: 0">
+							<li><b>
+									<a href="messence.php?id=29&catid=186&cattitle=House Business?id=-1&catid=186&cattitle=House Business ">House Business </a>
+								</b>		<hr style=" display: block;
+								height: 1px;
+								border: 0;
+								border-top: 1px solid #ccc;
+								margin: 1em 0;
+								padding: 0; ">
+							</li>
+															<li><a href="essence.php?id=1162&catid=186&subcatid=362&cattitle=Provisional Calendar ">Provisional Calendar </a>
+								</li>									<li><a href="session_sum_prog.php?id=-1&catid=186&subcatid=289&cattitle=Summoning/Prorogation">Summoning/Prorogation</a>
+								</li>									<li><a href="order_of_day.php?id=-1?id=-1&catid=186&subcatid=164&cattitle=Orders of the Day">Orders of the Day</a>
+								</li>									<li><a href="questions.php?id=-1&catid=186&subcatid=284&cattitle=Questions/Answers">Questions/Answers</a>
+								</li>									<li><a href="debates.php?id=-1?id=-1&catid=186&subcatid=15&cattitle=Hansards">Hansards</a>
+								</li>									<li><a href="acts.php?id=-1&catid=186&subcatid=285&cattitle=Acts of Parliament">Acts of Parliament</a>
+								</li>									<li><a href="resolutions.php?id=-1?id=-1&catid=186&subcatid=254&cattitle=Resolutions">Resolutions</a>
+								</li>									<li><a href="bills.php??id=-1&catid=186&subcatid=276&cattitle=Bills">Bills</a>
+								</li>									<li><a href="messence.php?id=1053&catid=186&subcatid=288&cattitle=Constitution Amendments?id=-1&catid=186&subcatid=288&cattitle=Constitutional Amendments">Constitutional Amendments</a>
+								</li>									<li><a href="essence.php?id=1094&catid=186&subcatid=259&cattitle=Web Casting">Web Casting</a>
+								</li>									<li><a href="ordinance.php?id=-1&catid=186&subcatid=304&cattitle=Ordinances">Ordinances</a>
+								</li>									<li><a href="rulings.php?id=-1&catid=186&subcatid=305&cattitle=Rulings of the Chair">Rulings of the Chair</a>
+								</li>									<li><a href="sj.php?id=-1&catid=186&subcatid=306&cattitle=Synopsis Journals">Synopsis Journals</a>
+								</li>									<li><a href="daily_journal.php?id=-1?id=-1&catid=186&subcatid=311&cattitle=Daily Journals">Daily Journals</a>
+								</li>							</ul></div>			
+										<div class="col-sm-2"> <ul style="list-style: none; padding: 0">
+							<li><b>
+									<a href="all_committees.php?id=-1?id=-1&catid=90&subcatid=85&cattitle=Senate Committees?id=-1&catid=90&cattitle=Committees">Committees</a>
+								</b>		<hr style=" display: block;
+								height: 1px;
+								border: 0;
+								border-top: 1px solid #ccc;
+								margin: 1em 0;
+								padding: 0; ">
+							</li>
+															<li><a href="all_committees.php?id=-1?id=-1&catid=90&subcatid=85&cattitle=Senate Committees?id=-1&catid=90&subcatid=85&cattitle=Senate Committees">Senate Committees</a>
+								</li>									<li><a href="meetings.php?id=-1?id=-1&catid=90&subcatid=228&cattitle=Committee Meetings">Committee Meetings</a>
+								</li>									<li><a href="committee_report.php?id=-1&catid=90&subcatid=88&cattitle=Committee Reports">Committee Reports</a>
+								</li>									<li><a href="whole.php??id=-1&catid=90&subcatid=293&cattitle=Committee of the Whole">Committee of the Whole</a>
+								</li>									<li><a href="sec_committee_list.php?id=-1&catid=90&subcatid=303&cattitle=Secretary Committees">Secretary Committees</a>
+								</li>									<li><a href="com_attendanceNew.php?id=-1&catid=90&subcatid=302&cattitle=Committees Attendance">Committees Attendance</a>
+								</li>							</ul></div>			
+										<div class="col-sm-2"> <ul style="list-style: none; padding: 0">
+							<li><b>
+									<a href="messence.php?id=1085&catid=261&cattitle=Senators?id=-1&catid=261&cattitle=Senators">Senators</a>
+								</b>		<hr style=" display: block;
+								height: 1px;
+								border: 0;
+								border-top: 1px solid #ccc;
+								margin: 1em 0;
+								padding: 0; ">
+							</li>
+															<li><a href="profile.php?uid=1014&catid=261&subcatid=2&cattitle=Members%20Senate?id=-1&catid=261&subcatid=262&cattitle=Chairman Senate">Chairman Senate</a>
+								</li>									<li><a href="profile.php?uid=1020&catid=261&subcatid=2&cattitle=Members%20Senate?id=-1&catid=261&subcatid=360&cattitle=Deputy Chairman">Deputy Chairman</a>
+								</li>									<li><a href="profile.php?uid=953&catid=261&subcatid=2&cattitle=Members%20Senate?id=-1&catid=261&subcatid=374&cattitle=Leader of the House">Leader of the House</a>
+								</li>									<li><a href="current_members.php?id=-1&catid=261&subcatid=2&leftcatid=71&cattitle=Members of Senate?id=-1&catid=261&subcatid=2&cattitle=Members Senate">Members Senate</a>
+								</li>									<li><a href="attendance.php?id=-1&type=3&id=-1&catid=261&subcatid=301&cattitle=Attendance of Members?id=-1&catid=261&subcatid=301&cattitle=Members Attendance">Members Attendance</a>
+								</li>									<li><a href="friendship.php?id=-1&catid=261&subcatid=310&cattitle=Parliamentary Friendship Groups">Parliamentary Friendship Groups</a>
+								</li>									<li><a href="essence.php?id=1175&catid=261&subcatid=378&cattitle=Party-wise List">Party-wise List</a>
+								</li>							</ul></div>			
+										<div class="col-sm-2"> <ul style="list-style: none; padding: 0">
+							<li><b>
+									<a href="essence.php?id=58&catid=4&subcatid=138&cattitle=House of  Federation?id=-1&catid=4&cattitle=About the Senate">About the Senate</a>
+								</b>		<hr style=" display: block;
+								height: 1px;
+								border: 0;
+								border-top: 1px solid #ccc;
+								margin: 1em 0;
+								padding: 0; ">
+							</li>
+															<li><a href="essence.php?id=58&catid=4&subcatid=138&cattitle=House of  Federation">House of  Federation</a>
+								</li>									<li><a href="staff.php?id=-1&catid=4&subcatid=162&cattitle=Senate Secretariat">Senate Secretariat</a>
+								</li>									<li><a href="essence.php?id=42&catid=4&subcatid=243&cattitle=Research Directorate">Research Directorate</a>
+								</li>									<li><a href="library.php?id=-1&catid=4&subcatid=266&cattitle=Senate Library">Senate Library</a>
+								</li>									<li><a href="essence.php?id=1090&catid=4&subcatid=18&cattitle=International Parliamentary Affairs">International Parliamentary Affairs</a>
+								</li>									<li><a href="essence.php?id=1164&catid=4&subcatid=363&cattitle=Parliamentary Development Unit">Parliamentary Development Unit</a>
+								</li>									<li><a href="essence.php?id=1166&catid=4&subcatid=371&cattitle=Legislative Drafting Unit">Legislative Drafting Unit</a>
+								</li>									<li><a href="parliament.php?id=-1&catid=4&subcatid=267&cattitle=Parliament House">Parliament House</a>
+								</li>							</ul></div>			
+										<div class="col-sm-2"> <ul style="list-style: none; padding: 0">
+							<li><b>
+									<a href="publication.php?id=2&catid=7&subcatid=62&cattitle=Publication?id=-1&catid=7&cattitle=Publications">Publications</a>
+								</b>		<hr style=" display: block;
+								height: 1px;
+								border: 0;
+								border-top: 1px solid #ccc;
+								margin: 1em 0;
+								padding: 0; ">
+							</li>
+															<li><a href="publication.php?id=2?id=-1&catid=7&subcatid=62&cattitle=Publications">Publications</a>
+								</li>									<li><a href="publication.php?id=3?id=-1&catid=7&subcatid=246&cattitle=Rules and Acts">Rules and Acts</a>
+								</li>									<li><a href="committee_report.php?id=-1&catid=7&subcatid=147&cattitle=Committee Reports">Committee Reports</a>
+								</li>							</ul></div>			
+										<div class="col-sm-2"> <ul style="list-style: none; padding: 0">
+							<li><b>
+									<a href="press_release.php?id=-1&catid=6&cattitle=Media Centre">Media Centre</a>
+								</b>		<hr style=" display: block;
+								height: 1px;
+								border: 0;
+								border-top: 1px solid #ccc;
+								margin: 1em 0;
+								padding: 0; ">
+							</li>
+															<li><a href="press_release.php?id=-1&catid=6&subcatid=59&cattitle=Press Releases">Press Releases</a>
+								</li>									<li><a href="picture_gallery.php?id=-1&catid=6&subcatid=65&cattitle=Picture Gallery">Picture Gallery</a>
+								</li>									<li><a href="advertisment.php?id=-1&catid=6&subcatid=61&cattitle=Advertisements">Advertisements</a>
+								</li>									<li><a href="essence.php?id=1172&catid=6&subcatid=372&cattitle=PRAP Website">PRAP Website</a>
+								</li>							</ul></div>			
+										<div class="col-sm-2"> <ul style="list-style: none; padding: 0">
+							<li><b>
+									<a href="messence.php?id=1114&catid=110&cattitle=Get Involved?id=-1&catid=110&cattitle=Get Involved">Get Involved</a>
+								</b>		<hr style=" display: block;
+								height: 1px;
+								border: 0;
+								border-top: 1px solid #ccc;
+								margin: 1em 0;
+								padding: 0; ">
+							</li>
+															<li><a href="cometosenate.php?id=-1&catid=110&subcatid=281&cattitle=Come to Senate">Come to Senate</a>
+								</li>							</ul></div>			
+								        </div>
+
+        		
+				
+			<footer class="container-fluid text-center">
+
+				<a  href="messence.php?id=109&amp;cattitle=Glossary"> Glossary</a> | <a  href="sitemap.php?id=-1&amp;cattitle=SiteMap">Site Map</a> |  <a  href="messence.php?id=111&amp;cattitle=TermsOfUse">Terms of Use </a>| <a  href="messence.php?id=112&amp;cattitle=Disclaimer">Disclaimer </a>| <a  href="messence.php?id=113&amp;cattitle=Privacy">Privacy Policy</a><br>
+				Copyright © 2019-2025. All Rights are Reserved. Senate of Pakistan.
+			</footer>
+			        <!----------------------------------------------------->
+        <script>
+        jQuery.fn.liScroll = function(settings) {
+            settings = jQuery.extend({
+                travelocity: 0.05
+            }, settings);
+            return this.each(function() {
+                var $strip = jQuery(this);
+                $strip.addClass("newsticker")
+                var stripHeight = 40;
+                $strip.find("li").each(function(i) {
+                    stripHeight += jQuery(this, i).outerHeight(
+                        true); // thanks to Michael Haszprunar and Fabien Volpi
+                });
+                var $mask = $strip.wrap("<div class='mask'></div>");
+                var $tickercontainer = $strip.parent().wrap("<div class='tickercontainer'></div>");
+                var containerHeight = $strip.parent().parent().height(); //a.k.a. 'mask' width 	
+                $strip.height(stripHeight);
+                var totalTravel = stripHeight;
+                var defTiming = totalTravel / settings.travelocity; // thanks to Scott Waye		
+                function scrollnews(spazio, tempo) {
+                    $strip.animate({
+                        top: '-=' + spazio
+                    }, tempo, "linear", function() {
+                        $strip.css("top", containerHeight);
+                        scrollnews(totalTravel, defTiming);
+                    });
+                }
+                scrollnews(totalTravel, defTiming);
+                $strip.hover(function() {
+                        jQuery(this).stop();
+                    },
+                    function() {
+                        var offset = jQuery(this).offset();
+                        var residualSpace = offset.top + stripHeight;
+                        var residualTime = residualSpace / settings.travelocity;
+                        scrollnews(residualSpace, residualTime);
+                    });
+            });
+        };
+
+        $(function() {
+            $("ul#ticker01").liScroll();
+        });
+        </script>
+
+
+        <script>
+        // Show popup if it hasn't been closed yet
+        window.addEventListener("load", function() {
+            if (!localStorage.getItem("popupClosed!")) {
+                document.getElementById("popupModal").classList.add("active");
+            }
+        });
+
+        // Close and mark popup as dismissed
+        function closePopup() {
+            document.getElementById("popupModal").classList.remove("active");
+            localStorage.setItem("popupClosed", "true");
+        }
+
+        // Countdown Timer
+        const targetDate = new Date("2025-11-09T23:59:00").getTime();
+
+        const updateTimer = () => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance <= 0) {
+                document.getElementById("countdownTimer").innerHTML =
+                    `<div class="time-box"><span>00</span><div class="time-label">Event Started!</div></div>`;
+                clearInterval(timer);
+                return;
+            }
+
+            const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = String(d).padStart(2, "0");
+            document.getElementById("hours").innerText = String(h).padStart(2, "0");
+            document.getElementById("minutes").innerText = String(m).padStart(2, "0");
+            document.getElementById("seconds").innerText = String(s).padStart(2, "0");
+        };
+
+        const timer = setInterval(updateTimer, 1000);
+        updateTimer();
+        </script>
+
+</body>
+
+</html>
