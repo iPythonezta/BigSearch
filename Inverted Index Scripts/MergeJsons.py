@@ -3,7 +3,7 @@ import os
 from tqdm import tqdm
 from collections import defaultdict
 
-inverted_index_dir = r"C:\Users\windows10\Lexicon\BigSearch\Data\Inverted Index"
+inverted_index_dir = r"C:\Users\windows10\Lexicon\BigSearchInverted Index"
 final_index_path = os.path.join(inverted_index_dir, "final_inverted_index.json")
 
 all_batches = [f for f in os.listdir(inverted_index_dir) if f.startswith("inverted_index_batch_") and f.endswith(".json")]

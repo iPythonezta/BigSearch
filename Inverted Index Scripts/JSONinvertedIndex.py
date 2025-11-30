@@ -139,10 +139,10 @@ def process_json_file(args):
 
 # ------------------ MAIN ------------------
 def main():
-    lexicon_path = r"C:\Users\windows10\Lexicon\BigSearch\Data\Lexicon\lexicons_ids.json"
-    forward_index_path = r"C:\Users\windows10\Lexicon\BigSearch\Data\Forward Index\forward_index_json.json"
+    lexicon_path = r"C:\Users\windows10\Lexicon\BigSearch\Lexicon\lexicons_ids.json"
+    forward_index_path = r"C:\Users\windows10\Lexicon\BigSearch\Forward Index\forward_index_json.json"
     json_files_dir = r"C:\Users\windows10\Lexicon\BigSearch\Data\Cord 19\document_parses\pdf_json"
-    inverted_index_dir = r"C:\Users\windows10\Lexicon\BigSearch\Data\Inverted Index"
+    inverted_index_dir = r"C:\Users\windows10\Lexicon\BigSearch\Inverted Index"
 
     os.makedirs(inverted_index_dir, exist_ok=True)
 
@@ -197,7 +197,7 @@ def main():
         del results
         del batch_args
 
-    print("✔ DONE building inverted index!")
+    print("Done building inverted index")
 
 
 if __name__ == "__main__":
