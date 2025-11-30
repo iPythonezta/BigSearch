@@ -1,131 +1,222 @@
 """
-Inverted Index Generator from Forward Index JSON
-(in_url removed from hit_counter)
-
-Output JSON Structure:
-
-{
-    "word_id_1": [
+Build Inverted Index from JSON documents using multiprocessing.
+"word_id": [
+    [
+        "document_id",
+        [pos1, pos2, ...],
         [
-            "document_id",
-            [pos1, pos2, ...],
-            [
-                title_author_abstract_count,
-                body_text_count,
-                other_section_count,
-                total_count,
-                doc_length
-            ]
-        ],
-        ...
-    ],
-    ...
-}
-"""
-
-import json
-import csv
-from pathlib import Path
-from collections import Counter, defaultdict
-from multiprocessing import Pool, cpu_count
-from tqdm import tqdm
-
-# -------------------- CONFIG PATHS --------------------
-FWD_INDEX_FILE  = Path("C:/Users/windows10/Lexicon/BigSearch/Forward Index/forward_index_json.json")
-LEXICON_FILE    = Path("C:/Users/windows10/Lexicon/BigSearch/Lexicon/lexicons_ids.json")
-OUTPUT_FOLDER   = Path("C:/Users/windows10/Lexicon/BigSearch/Inverted Index")
-DOC_METADATA_CSV = Path("C:/Users/windows10/Lexicon/BigSearch/Data/Cord 19/metadata_cleaned.csv")
-
-CHUNK_SIZE = 2500
-MAX_POSITIONS_STORED = 15
-
-# -------------------- LOAD LEXICON --------------------
-with open(LEXICON_FILE.as_posix(), "r", encoding="utf-8") as f:
-    lexicon = json.load(f)
-
-inverse_lexicon = {v: k for k, v in lexicon.items()}
-
-# -------------------- LOAD DOC_ID → URL FROM CSV --------------------
-def load_doc_urls(csv_path):
-    mapping = {}
-    with open(csv_path.as_posix(), newline="", encoding="utf-8") as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            if row.get("id"):
-                mapping[row["id"]] = row.get("url", "")
-    return mapping
-
-doc_id_to_url = load_doc_urls(DOC_METADATA_CSV)
-print("[INFO] Loaded document URLs from CSV")
-
-# -------------------- PROCESS ONE DOC --------------------
-def process_doc(doc_tuple):
-    doc_id, word_ids_list = doc_tuple
-    doc_length = len(word_ids_list)
-    positions_map = defaultdict(list)
-
-    for idx, wid in enumerate(word_ids_list):
-        if len(positions_map[wid]) < MAX_POSITIONS_STORED:
-            positions_map[wid].append(idx)
-
-    counts = Counter(word_ids_list)
-
-    doc_inv = {}
-    for wid, pos_list in positions_map.items():
-        total = counts.get(wid, 0)
-
-        hit_counter = [
-            0,        # title_author_abstract_count
-            total,    # body_text_count
-            0,        # other_section_count
-            total,    # total_count
+            title_author_abstract_count,
+            body_text_count,
+            other_section_count,
+            total_count,
             doc_length
         ]
+    ]
+]
+"""
 
-        doc_inv[wid] = [[doc_id, pos_list, hit_counter]]
 
-    return doc_inv
+import json
+from collections import defaultdict, Counter
+from multiprocessing import Pool, cpu_count
+from tqdm import tqdm
+import re
+import os
 
-# -------------------- BUILD INVERTED INDEX IN CHUNKS --------------------
-def build_inverted_index_batched():
-    OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
+MAX_POS = 15
+BATCH_SIZE = 5000  # Adjustable
 
-    with open(FWD_INDEX_FILE.as_posix(), "r", encoding="utf-8") as f:
-        fwd = json.load(f)
+# ------------------ Utilities ------------------
+def normalize_and_tokenize(text):
+    """Lowercase, remove excess whitespace, and split into words."""
+    text = re.sub(r"\s+", " ", text).strip()
+    return [w.lower() for w in text.split() if w]
 
-    doc_tuples = list(fwd.items())
-    del fwd
+import json
+from collections import defaultdict, Counter
+from multiprocessing import Pool, cpu_count
+from tqdm import tqdm
+import re
+import os
 
-    batch_num = 1
-    for i in range(0, len(doc_tuples), CHUNK_SIZE):
-        chunk = doc_tuples[i:i + CHUNK_SIZE]
-        print(f"[INFO] Processing batch {batch_num}, docs {i+1} to {i+len(chunk)}")
+MAX_POS = 15
+BATCH_SIZE = 5000   # you asked to reduce from 10k → 5k
 
-        batch_inverted = defaultdict(list)
 
-        with Pool(processes=cpu_count()) as pool:
+# ------------------ Utilities ------------------
+def normalize_and_tokenize(text):
+    if not isinstance(text, str):
+        return []
+    text = re.sub(r"\s+", " ", text).strip()
+    return [w.lower() for w in text.split() if w]
+
+
+# ------------------ Process One File ------------------
+def process_json_file(args):
+    file_path, words = args
+
+    with open(file_path, 'r', encoding='utf-8') as f:
+        doc = json.load(f)
+
+    # Fix docid source
+    docid = os.path.basename(file_path).replace(".json", "")
+    positions_map = defaultdict(list)
+
+    # Section group counters:
+    group1 = Counter()  # title + abstract + authors
+    group2 = Counter()  # body_text
+    group3 = Counter()  # references + ref_entries + back_matter
+
+    pos = 0
+
+    # ----- TITLE -----
+    title = doc.get("metadata", {}).get("title", "")
+    for tok in normalize_and_tokenize(title):
+        if len(positions_map[tok]) < MAX_POS:
+            positions_map[tok].append(pos)
+        group1[tok] += 1
+        pos += 1
+
+    # ----- ABSTRACT -----
+    for item in doc.get("abstract", []):
+        for tok in normalize_and_tokenize(item.get("text", "")):
+            if len(positions_map[tok]) < MAX_POS:
+                positions_map[tok].append(pos)
+            group1[tok] += 1
+            pos += 1
+
+    # ----- AUTHORS -----
+    for author in doc.get("metadata", {}).get("authors", []):
+        fullname = f"{author.get('first', '')} {author.get('last', '')}"
+        for tok in normalize_and_tokenize(fullname):
+            if len(positions_map[tok]) < MAX_POS:
+                positions_map[tok].append(pos)
+            group1[tok] += 1
+            pos += 1
+
+    # ----- BODY TEXT -----
+    for item in doc.get("body_text", []):
+        for tok in normalize_and_tokenize(item.get("text", "")):
+            if len(positions_map[tok]) < MAX_POS:
+                positions_map[tok].append(pos)
+            group2[tok] += 1
+            pos += 1
+
+    # ----- BIB ENTRIES (titles only) -----
+    for ref in doc.get("bib_entries", {}).values():
+        for tok in normalize_and_tokenize(ref.get("title", "")):
+            if len(positions_map[tok]) < MAX_POS:
+                positions_map[tok].append(pos)
+            group3[tok] += 1
+            pos += 1
+
+    # ----- REF ENTRIES (FIGREF, TABREF...) -----
+    for ref in doc.get("ref_entries", {}).values():
+        for tok in normalize_and_tokenize(ref.get("text", "")):
+            if len(positions_map[tok]) < MAX_POS:
+                positions_map[tok].append(pos)
+            group3[tok] += 1
+            pos += 1
+
+    # ----- BACK MATTER -----
+    for item in doc.get("back_matter", []):
+        for tok in normalize_and_tokenize(item.get("text", "")):
+            if len(positions_map[tok]) < MAX_POS:
+                positions_map[tok].append(pos)
+            group3[tok] += 1
+            pos += 1
+
+
+    # ------------------ BUILD HITLISTS ------------------
+    hitlists = {}
+    for word in words:
+
+        g1 = group1[word]
+        g2 = group2[word]
+        g3 = group3[word]
+        total = g1 + g2 + g3
+
+        # DROP empty words
+        if total == 0:
+            continue
+
+        hitlists[word] = [
+            docid,
+            positions_map[word],
+            [
+                g1,     # title + abstract + authors
+                g2,     # body
+                g3,     # references + ref_entries + back_matter
+                total,  # total
+                pos     # doc length
+            ]
+        ]
+
+    return hitlists
+
+
+# ------------------ MAIN ------------------
+def main():
+    lexicon_path = r"C:\Users\windows10\Lexicon\BigSearch\Data\Lexicon\lexicons_ids.json"
+    forward_index_path = r"C:\Users\windows10\Lexicon\BigSearch\Data\Forward Index\forward_index_json.json"
+    json_files_dir = r"C:\Users\windows10\Lexicon\BigSearch\Data\Cord 19\document_parses\pdf_json"
+    inverted_index_dir = r"C:\Users\windows10\Lexicon\BigSearch\Data\Inverted Index"
+
+    os.makedirs(inverted_index_dir, exist_ok=True)
+
+    # Load lexicon
+    with open(lexicon_path, 'r', encoding='utf-8') as f:
+        lexicon = json.load(f)
+
+    inverse_lexicon = {v: k for k, v in lexicon.items()}
+
+    # Load forward index
+    with open(forward_index_path, 'r', encoding='utf-8') as f:
+        forward_index = json.load(f)
+
+    # Prepare args
+    args = []
+    for file_id, word_ids in tqdm(forward_index.items(), desc="Preparing args"):
+        words = [inverse_lexicon[w] for w in word_ids]
+        file_path = os.path.join(json_files_dir, f"{file_id}.json")
+        args.append((file_path, words))
+
+    # Process in batches
+    for i in range(0, len(args), BATCH_SIZE):
+        batch_args = args[i:i+BATCH_SIZE]
+
+        inverted_index = {word_id: [] for word_id in lexicon.values()}
+
+        with Pool(cpu_count()) as pool:
             results = list(
-                tqdm(pool.imap(process_doc, chunk),
-                     total=len(chunk),
-                     desc="Indexing docs",
-                     unit="docs")
+                tqdm(
+                    pool.imap(process_json_file, batch_args),
+                    total=len(batch_args),
+                    desc=f"Batch {i//BATCH_SIZE + 1}"
+                )
             )
 
-        for doc_inv in results:
-            for wid, postings in doc_inv.items():
-                batch_inverted[wid].extend(postings)
+        # Merge
+        for hitlists in results:
+            for word, entry in hitlists.items():
+                wid = lexicon[word]
+                inverted_index[wid].append(entry)
 
-        out_path = OUTPUT_FOLDER / f"inverted_index_batch_{batch_num}.json"
-        with open(out_path.as_posix(), "w", encoding="utf-8") as o:
-            json.dump(batch_inverted, o)
+        # Output file
+        out_file = os.path.join(
+            inverted_index_dir,
+            f"inverted_index_batch_{i//BATCH_SIZE + 1}.json"
+        )
 
-        print(f"[INFO] Saved batch {batch_num} to {out_path}")
+        with open(out_file, 'w', encoding='utf-8') as f:
+            json.dump(inverted_index, f)
 
-        batch_num += 1
-        del results, chunk, batch_inverted
+        del inverted_index
+        del results
+        del batch_args
 
-    del doc_tuples
-    print("[INFO] All batches complete.")
+    print("✔ DONE building inverted index!")
+
 
 if __name__ == "__main__":
-    build_inverted_index_batched()
+    main()

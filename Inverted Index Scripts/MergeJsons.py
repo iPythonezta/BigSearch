@@ -1,33 +1,24 @@
 import json
-from pathlib import Path
+import os
 from tqdm import tqdm
+from collections import defaultdict
 
-# ---------------- CONFIG ----------------
-INPUT_FOLDER = Path("C:/Users/windows10/Lexicon/BigSearch/Inverted Index")
-OUTPUT_FILE = Path("C:/Users/windows10/Lexicon/BigSearch/Inverted Index/inverted_index_final.json")
+inverted_index_dir = r"C:\Users\windows10\Lexicon\BigSearch\Data\Inverted Index"
+final_index_path = os.path.join(inverted_index_dir, "final_inverted_index.json")
 
-# Grab all batch files sorted numerically by batch number
-BATCH_FILES = sorted(INPUT_FOLDER.glob("inverted_index_batch_*.json"),
-                     key=lambda x: int(x.stem.split("_")[-1]))
+all_batches = [f for f in os.listdir(inverted_index_dir) if f.startswith("inverted_index_batch_") and f.endswith(".json")]
 
-# ---------------- MERGE FUNCTION ----------------
-with open(OUTPUT_FILE, "w", encoding="utf-8") as out_f:
-    out_f.write("{\n")  # start of JSON object
-    first = True
+final_index = defaultdict(list)
 
-    for batch_file in tqdm(BATCH_FILES, desc="Merging batches"):
-        with open(batch_file, "r", encoding="utf-8") as f:
-            batch_data = json.load(f)
+for batch_file in tqdm(all_batches, desc="Merging batches"):
+    batch_path = os.path.join(inverted_index_dir, batch_file)
+    with open(batch_path, 'r', encoding='utf-8') as f:
+        batch_data = json.load(f)
+    for word, hits in batch_data.items():
+        final_index[word].extend(hits)
 
-        for word_id, postings in batch_data.items():
-            if not first:
-                out_f.write(",\n")
-            first = False
-            json.dump(word_id, out_f)
-            out_f.write(": ")
-            json.dump(postings, out_f)
-        del batch_data  # free memory
+# Save final index
+with open(final_index_path, 'w', encoding='utf-8') as f:
+    json.dump(final_index, f)
 
-    out_f.write("\n}")  # end of JSON object
-
-print(f"[INFO] All batches merged. Final inverted index saved to {OUTPUT_FILE.name}")
+print(f"Final inverted index saved to {final_index_path}")
