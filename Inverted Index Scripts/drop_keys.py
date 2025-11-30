@@ -59,10 +59,12 @@ def drop_keys_to_list(input_file, output_file):
                 print(f"Error: Missing word_id {current_index}, it will ruin the structure of the inverted index.")
                 break
 
-            new_postings = [
-                [p["document_id"], p["positions"], p["hit_counter"]]
-                for p in postings
-            ]
+            # new_postings = [
+            #     [p["document_id"], p["positions"], p["hit_counter"]]
+            #     for p in postings
+            # ]
+
+            new_postings = postings # Already in desired format for json
 
             if not first:
                 f_out.write(",")
@@ -75,6 +77,6 @@ def drop_keys_to_list(input_file, output_file):
 
 if __name__ == "__main__":
     drop_keys_to_list(
-        "../Inverted Index/inverted_index.json",
-        "../Inverted Index/inverted_index_dropped_keys.json"
+        "../Inverted Index/JsonBatches/inverted_index_json.json",
+        "../Inverted Index/JsonBatches/inverted_index_dropped_keys.json"
     )
