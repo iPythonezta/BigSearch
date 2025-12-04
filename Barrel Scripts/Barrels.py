@@ -10,7 +10,7 @@ current_lexicon_file = r"..\Lexicon\lexicons_ids.json"
 # === Output directory ===
 parent_barrels_folder = "..\\Barrels"
 os.makedirs(parent_barrels_folder, exist_ok=True)
-new_lexicon_file = os.path.join(parent_barrels_folder, "lexicon-Of-Barrels.json")
+new_lexicon_file = os.path.join(parent_barrels_folder, "barrels_index.json")
 
 # === Barrel size limit (approximate in MB) ===
 BARREL_SIZE_MB = 90
@@ -66,11 +66,11 @@ try:
         # Check if adding this word exceeds barrel size
         if current_barrel_size + word_size >= BARREL_SIZE_BYTES:
             # Write current barrel to disk
-            barrel_file_path = os.path.join(parent_barrels_folder, f"barrel_{barrel_number}.json")
+            barrel_file_path = os.path.join(parent_barrels_folder, f"{barrel_number}.json")
             with open(barrel_file_path, 'w', encoding='utf-8') as bf:
                 json.dump(current_barrel, bf, separators=(',', ':'))
             print(
-                f"Written barrel_{barrel_number}.json with {len(current_barrel)} words (~{current_barrel_size / 1024 / 1024:.2f} MB)")
+                f"Written {barrel_number}.json with {len(current_barrel)} words (~{current_barrel_size / 1024 / 1024:.2f} MB)")
 
             # Start a new barrel
             barrel_number += 1
@@ -85,7 +85,7 @@ try:
 
 
         # Print the wordid just appended
-        print(f"Appended wordid {wordid} to barrel_{barrel_number}.json")
+        print(f"Appended wordid {wordid} to {barrel_number}.json")
 
 finally:
     pdf_f.close()
@@ -94,15 +94,14 @@ finally:
 
 # Write the last barrel if it has any words
 if current_barrel:
-    barrel_file_path = os.path.join(parent_barrels_folder, f"barrel_{barrel_number}.json")
+    barrel_file_path = os.path.join(parent_barrels_folder, f"{barrel_number}.json")
     with open(barrel_file_path, 'w', encoding='utf-8') as bf:
         json.dump(current_barrel, bf)
-    print(f"Written final barrel_{barrel_number}.json with {len(current_barrel)} words (~{current_barrel_size/1024/1024:.2f} MB)")
+    print(f"Written final {barrel_number}.json with {len(current_barrel)} words (~{current_barrel_size/1024/1024:.2f} MB)")
 
 # Write new lexicon to disk
 with open(new_lexicon_file, 'w', encoding='utf-8') as lf:
-    json.dump(new_lexicon, lf, indent=2)
+    json.dump(new_lexicon, lf, indent=2, ensure_ascii=False)
 
 print(f"New lexicon saved to {new_lexicon_file}")
 print(f"Total barrels created: {barrel_number + 1}")
-
