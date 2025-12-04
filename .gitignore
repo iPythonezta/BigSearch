@@ -32,3 +32,6 @@ Data/Cord 19/document_parses/*
 Data/Cord 19/document_parses/pdf_json/*
 !Data/Cord 19/document_parses/pdf_json/sample/
 !Data/ind_to_url.json
+Documentation/*
+!Documentation/DSA_Search_Engine_Milestone_Report.md
+Barrels/*

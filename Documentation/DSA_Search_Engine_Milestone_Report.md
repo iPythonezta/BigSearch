@@ -1,8 +1,21 @@
-# DSA Search Engine — Milestone Report
+# Assignment 3: DSA Search Engine — Lexicon, Forward & Inverted Index Implementation
+
+**Course:** CS-250: Data Structures and Algorithms  
+**Program:** Software Engineering  
+**Deadline:** December 1, 2025  
+
+---
 
 **Project Name:** BigSearch  
-**Course:** Data Structures and Algorithms  
-**Semester:** Fall 2025  
+**GitHub Repository:** [https://github.com/iPythonezta/BigSearch](https://github.com/iPythonezta/BigSearch)
+
+### Team Members
+
+| Name | CMS ID | Role | Contributions |
+|------|--------|------|---------------|
+| **Mutee Ullah** | 507482 | Team Leader | Lexicon construction, Forward index implementation |
+| **Huzaifa Azhar** | 522638 | Developer | Inverted index design & implementation (HTML files) |
+| **Asim Shoaib** | 504888 | Developer | Inverted index design & implementation (JSON/PDF files) |
 
 ---
 
@@ -58,11 +71,12 @@ The project follows a modular directory structure to separate concerns:
 BigSearch/
 ├── Data/                           # Raw data and mappings
 │   ├── Files/raw/                  # HTML files from web crawling
+│   │   └── sample/                 # 100 sample HTML files for testing
 │   ├── Cord 19/                    # Research paper dataset
 │   │   ├── metadata.csv            # Paper metadata
-│   │   ├── metadata_cleaned.csv    # Paper metadata (cleaned to leave required 
-│   │   │                           # columns and remove docs with nonexistent urls)
+│   │   ├── metadata_cleaned.csv    # Cleaned metadata (required columns only)
 │   │   └── document_parses/        # Parsed JSON documents
+│   │       └── pdf_json/sample/    # 100 sample JSON files for testing
 │   ├── Page_rank_files/            # PageRank computation data
 │   ├── ind_to_url.json             # Document ID to URL mapping
 │   └── url_map.json                # URL encodings (simhash/crawling)
@@ -78,9 +92,15 @@ BigSearch/
 │
 ├── Inverted Index/                 # Inverted index outputs
 │   ├── inverted_index.json         # Raw inverted index (HTML)
-│   ├── inverted_index_dropped_keys.json  # Cleaned version with keys dropped
+│   ├── inverted_index_dropped_keys.json  # Optimized version (keys dropped)
 │   └── JsonBatches/                # Inverted index batches (Research papers)
 │        └── inverted_index_dropped_keys.json  # Research papers inverted index
+│
+├── Output Samples/                 # Sample outputs for testing/verification
+│   ├── ForwardIndexHTMLs[1-100].json
+│   ├── ForwardIndexPDFs[1-100].json
+│   ├── InvertedIndexHTMLs[1-100].json
+│   └── InvertedIndexPDFs[1-100].json
 │
 ├── Page Rank Results/              # PageRank computation results
 │   ├── page_rank_results_with_urls.csv
@@ -91,6 +111,7 @@ BigSearch/
 ├── Forward Index Scripts/          # Forward index generation code
 ├── Inverted Index Scripts/         # Inverted index generation code
 ├── Page Rank Scripts/              # PageRank algorithm implementation
+├── util_scripts/                   # Utility scripts (sample extraction, etc.)
 └── Notebooks/                      # Jupyter notebooks for exploration
 ```
 
@@ -884,6 +905,65 @@ for word_id, postings in batch_index.items():
 
 ## 5. Sample Outputs
 
+Sample output files are provided in the `Output Samples/` directory for testing and verification purposes. These contain the first 100 entries from each index type.
+
+| File | Description |
+|------|-------------|
+| `ForwardIndexHTMLs[1-100].json` | Forward index for first 100 HTML documents |
+| `ForwardIndexPDFs[1-100].json` | Forward index for first 100 research papers |
+| `InvertedIndexHTMLs[1-100].json` | Inverted index (first 100 term postings) for HTML |
+| `InvertedIndexPDFs[1-100].json` | Inverted index (first 100 term postings) for PDFs |
+
+### Sample Extraction Scripts
+
+Located in `util_scripts/`, these scripts extract sample data from the full indexes:
+
+**Forward Index Extraction (`extractForwardIndex.py`):**
+```python
+import json
+from itertools import islice
+
+INPUT_FILE = "Forward Index/forward_index_html_files.json"
+OUTPUT_FILE = "Output Samples/ForwardIndexHTMLs[1-100].json"
+
+def copy_first_100():
+    with open(INPUT_FILE, "r") as f:
+        data = json.load(f)
+    
+    # Take first 100 entries preserving order
+    first_100_items = dict(islice(data.items(), 100))
+    
+    with open(OUTPUT_FILE, "w") as out:
+        json.dump(first_100_items, out, indent=2)
+
+if __name__ == "__main__":
+    copy_first_100()
+```
+
+**Inverted Index Extraction (`extractInvertedIndex.py`):**
+```python
+import ijson
+import json
+
+index_file = "Inverted Index/inverted_index_dropped_keys.json"
+output_file = "Output Samples/InvertedIndexHTMLs[1-100].json"
+
+max_objects = 100
+count = 0
+extracted = []
+
+with open(index_file, 'rb') as f:
+    for obj in ijson.items(f, 'item'):
+        if obj:  # skip empty objects
+            extracted.append(obj)
+            count += 1
+        if count >= max_objects:
+            break
+
+with open(output_file, 'w', encoding='utf-8') as f:
+    json.dump(extracted, f, indent=2)
+```
+
 ### Sample Lexicon
 
 ```json
@@ -908,26 +988,54 @@ for word_id, postings in batch_index.items():
 }
 ```
 
-### Sample Forward Index
+### Sample Forward Index (HTML)
 
+From `ForwardIndexHTMLs[1-100].json`:
 ```json
 {
-  "0": [189543, 195108, 397621, 641823, 1023456, 1056789, 1122667, 1178934],
-  "1": [195108, 261923, 721456, 811234, 1201567, 1225317, 1356789],
-  "2": [361087, 397621, 576791, 653421, 811234, 1023456, 1122667]
+  "10003": [
+    428034, 368644, 198662, 1069064, 938004, 1069080,
+    1140763, 718875, 1325090, 919592, 526378, 344116,
+    436294, 313415, 1325128, 1067078, 927820, ...
+  ],
+  "10005": [
+    1069064, 526378, 1325090, 344116, 436294, ...
+  ]
 }
 ```
 
-### Sample Inverted Index (Optimized Format)
+### Sample Inverted Index (HTML)
 
+From `InvertedIndexHTMLs[1-100].json` — showing postings for a single term:
 ```json
 [
   [
-    ["H0", [12, 45, 89, 134, 201], [2, 0, 1, 5, 0, 1, 0, 1245]],
-    ["P0", [5, 78, 156, 234], [1, 0, 2, 4, 567]]
+    ["H10002", [837], [0, 0, 0, 1, 0, 0, 0, 4031]],
+    ["H1000", [487, 907, 1151, 1350, 1563, 2108], [0, 0, 0, 6, 0, 0, 1, 2690]],
+    ["H1", [298, 429, 569, 662, 842, 1006, 1210, 1399], [0, 0, 0, 8, 0, 0, 0, 1856]]
   ]
 ]
 ```
+
+**Hit Counter Interpretation (HTML):**
+- `[0, 0, 0, 6, 0, 0, 1, 2690]` = `[title, meta, headings, total, anchors, in_domain, in_url, doc_length]`
+- Document H1000 has 6 occurrences, term appears in URL, document length is 2690 tokens
+
+### Sample Inverted Index (Research Papers)
+
+From `InvertedIndexPDFs[1-100].json`:
+```json
+[
+  [
+    ["P1", [5943, 6024, 6055, 6061, 6096, 6124, 6431, 6728, 7792, 7808], [0, 7, 3, 10, 7902]],
+    ["P10", [1283, 1292, 1801, 1819, 2680, 2727, 3454, 3455, 3486, 3487, 3810, 3838, 3839, 3844, 3894], [0, 55, 1, 56, 7732]]
+  ]
+]
+```
+
+**Hit Counter Interpretation (PDF):**
+- `[0, 55, 1, 56, 7732]` = `[title+abstract+authors, body, refs, total, doc_length]`
+- Document P10 has 55 occurrences in body text, 1 in references, total 56, document length 7732 tokens
 
 ---
 
@@ -1064,6 +1172,8 @@ In the merge phase:
 | `merge_json_batches.py` | Inverted Index Scripts/ | Merge JSON batch index files |
 | `drop_keys.py` | Inverted Index Scripts/ | Optimize index JSON format |
 | `page_rank.cpp` | Page Rank Scripts/ | PageRank algorithm (C++) |
+| `extractForwardIndex.py` | util_scripts/ | Extract sample forward index entries |
+| `extractInvertedIndex.py` | util_scripts/ | Extract sample inverted index entries |
 
 ### Output Files
 
@@ -1077,5 +1187,14 @@ In the merge phase:
 | `page_rank_results_with_urls.csv` | Page Rank Results/ | URL PageRank scores |
 | `domain_rank_results_with_domain_nm.csv` | Page Rank Results/ | Domain PageRank scores |
 | `citation_rank_output.csv` | Page Rank Results/ | Paper citation scores |
+
+### Sample Output Files
+
+| File | Location | Description |
+|------|----------|-------------|
+| `ForwardIndexHTMLs[1-100].json` | Output Samples/ | First 100 HTML forward index entries |
+| `ForwardIndexPDFs[1-100].json` | Output Samples/ | First 100 PDF forward index entries |
+| `InvertedIndexHTMLs[1-100].json` | Output Samples/ | First 100 HTML inverted index postings |
+| `InvertedIndexPDFs[1-100].json` | Output Samples/ | First 100 PDF inverted index postings |
 
 ---
