@@ -2,7 +2,7 @@ import orjson
 import ormsgpack
 import time
 
-for i in range(39):
+for i in range(79):
     start = time.time()
     with open(f'..\\Barrels\\{i}.msgpack', 'rb') as f:
         data_msgpack = ormsgpack.unpackb(f.read())

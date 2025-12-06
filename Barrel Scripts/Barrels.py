@@ -13,7 +13,7 @@ os.makedirs(parent_barrels_folder, exist_ok=True)
 new_lexicon_file = os.path.join(parent_barrels_folder, "barrels_index.json")
 
 # === Barrel size limit (approximate in MB) ===
-BARREL_SIZE_MB = 90
+BARREL_SIZE_MB = 45
 BARREL_SIZE_BYTES = BARREL_SIZE_MB * 1024 * 1024
 
 # ================== FUNCTIONS ==================
