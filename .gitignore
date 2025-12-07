@@ -37,3 +37,4 @@ Documentation/*
 !Documentation/DSA_Search_Engine_Milestone_Report.md
 Barrels/*
 !Barrels/Sample/
+!single_word_query.ipynb
