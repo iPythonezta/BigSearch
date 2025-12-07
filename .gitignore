@@ -1,3 +1,4 @@
+*.txt
 Data/*
 Data.7z
 *.ipynb
@@ -35,3 +36,4 @@ Data/Cord 19/document_parses/pdf_json/*
 Documentation/*
 !Documentation/DSA_Search_Engine_Milestone_Report.md
 Barrels/*
+!Barrels/Sample/
