@@ -21,7 +21,7 @@ def initiaize_worker():
     idf_map  = {}
     with open('..\\Semantic Search Data\\idf_map.json', 'rb') as f:
         idf_map = orjson.loads(f.read())
-    model = KeyedVectors.load_word2vec_format('glove.6B.50d.word2vec.txt', binary=False)
+    model = KeyedVectors.load_word2vec_format('fine_tunned_model.word2vec.txt', binary=False)
     
 
 
@@ -59,8 +59,6 @@ def extract_text_from_json(file_name):
 
     return " ".join(texts)
 
-    return " ".join(texts)
-
 def process_document(file_name):
     tokens = preprocess_text(process_file(file_name)) if file_name.endswith('.html') else preprocess_text(extract_text_from_json(file_name))
     term_counts = Counter(tokens)
@@ -88,20 +86,20 @@ def doc_to_embedding(file_name):
 
 
 def main():
-    corpus_html = os.listdir(os.path.join('..\\Data', 'Files', 'raw'))
-    corpus_html.remove("sample")
+    # corpus_html = os.listdir(os.path.join('..\\Data', 'Files', 'raw'))
+    # corpus_html.remove("sample")
     
-    print(f"Html Embeddings Generation Started for {len(corpus_html)} files")
-    html_embeddings = [None]*len(corpus_html)
-    with Pool(3, initializer=initiaize_worker) as p:
-        for file_name, embedding in tqdm(p.imap_unordered(doc_to_embedding, corpus_html), total=len(corpus_html)):
-            id = int(file_name.split('.')[0])
-            html_embeddings[id] = embedding.tolist()
-    # convert html_embeddings to a list
+    # print(f"Html Embeddings Generation Started for {len(corpus_html)} files")
+    # html_embeddings = [None]*len(corpus_html)
+    # with Pool(3, initializer=initiaize_worker) as p:
+    #     for file_name, embedding in tqdm(p.imap_unordered(doc_to_embedding, corpus_html), total=len(corpus_html)):
+    #         id = int(file_name.split('.')[0])
+    #         html_embeddings[id] = embedding.tolist()
+    # # convert html_embeddings to a list
 
-    with open('..\\Semantic Search Data\\html_embeddings.json', 'wb') as f:
-        f.write(orjson.dumps(html_embeddings))
-    del html_embeddings
+    # with open('..\\Semantic Search Data\\html_embeddings.json', 'wb') as f:
+    #     f.write(orjson.dumps(html_embeddings))
+    # del html_embeddings
 
     corpus_json = os.listdir(os.path.join('..\\Data', 'Cord 19', 'document_parses\\pdf_json'))
     corpus_json.remove("sample")

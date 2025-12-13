@@ -22,7 +22,7 @@ import os
 import math
 import numpy as np
 from urllib.parse import urlparse
-from collections import Counter
+from collections import Counter, defaultdict
 
 print("Loading BigSearch Hybrid Search Engine...")
 
@@ -55,7 +55,7 @@ try:
     idf_map = orjson.loads(open('..\\Semantic Search Data\\idf_map.json', 'rb').read())
     
     from gensim.models import KeyedVectors
-    word2vec_model = KeyedVectors.load_word2vec_format('glove.6B.50d.word2vec.txt', binary=False)
+    word2vec_model = KeyedVectors.load_word2vec_format('fine_tunned_model.word2vec.txt', binary=False)
     
     merged_embeddings = html_embeddings + json_embeddings
     html_docs_count = len(html_embeddings)
@@ -259,185 +259,142 @@ def get_semantic_scores(query):
 
 # ==================== HYBRID SEARCH FUNCTIONS ====================
 
-def perform_single_word_search(query, use_semantic=True, semantic_weight=20):
-    """
-    Perform single-word search with optional semantic enhancement.
-    
-    Args:
-        query: Search query string
-        use_semantic: Whether to include semantic scores
-        semantic_weight: Multiplier for semantic scores (default: 20)
-    
-    Returns:
-        List of tuples: (doc_id, combined_score, url)
-    """
-    tokens = process_query(query, rps=False)
-    if not tokens:
-        return []
-    
-    token = tokens[0]
-    
-    if token not in barrels_index:
-        return []
-    
-    indices = barrels_index[token]
-    hitlist = word_lookup(indices)
-    
-    # Separate HTML and research paper hits
-    html_hits = [hit for hit in hitlist if hit[0].startswith("H")]
-    rps_hits = [hit for hit in hitlist if hit[0].startswith("P")]
-    
-    # Score HTML hits
-    scored_html = []
-    for hit in html_hits:
-        score = score_html_files(hit)
-        url = doc_id_to_url.get(hit[0].replace("H", ""), "")
-        scored_html.append([hit[0], score, url])
-    
-    # Score RPS hits
-    scored_rps = []
-    for hit in rps_hits:
-        score = rank_research_papers(hit)
-        url = rps_info_dict.get(int(hit[0].replace("P", "")), ("", ""))[1]
-        scored_rps.append([hit[0], score, url])
-    
-    combined_results = scored_html + scored_rps
-    
-    # Add semantic scores if enabled
-    if use_semantic and SEMANTIC_AVAILABLE:
-        semantic_scores = get_semantic_scores(query)
-        
-        for result in combined_results:
-            doc_id = result[0]
-            keyword_score = result[1]
-            semantic_score = semantic_scores.get(doc_id, 0)
-            
-            # Combine scores: keyword_score + (semantic_weight * semantic_score)
-            combined_score = keyword_score + (semantic_weight * semantic_score)
-            result[1] = combined_score
-    
-    # Sort by score
-    combined_results.sort(key=lambda x: x[1], reverse=True)
-    
-    return combined_results
-
 
 def perform_multi_word_search(query, use_semantic=True, semantic_weight=20):
-    """
-    Perform multi-word search with optional semantic enhancement.
-    
-    Args:
-        query: Search query string
-        use_semantic: Whether to include semantic scores
-        semantic_weight: Multiplier for semantic scores (default: 20)
-    
-    Returns:
-        List of dictionaries with detailed result information
-    """
-    tokens = process_query(query, rps=True)
-    hitlists = []
-    
-    for token in tokens:
-        if token in barrels_index:
-            barrel_indices = barrels_index[token]
-            htl = word_lookup(barrel_indices)
-            hitlists.append(htl)
-    
-    if not hitlists:
-        return []
-    
-    # Perform intersection
-    hitlists_sorted = sorted(hitlists, key=len)
-    common_doc_ids = {hit[0] for hit in hitlists_sorted[0]}
-    
-    for i in range(1, len(hitlists_sorted)):
-        next_doc_ids = {hit[0] for hit in hitlists_sorted[i]}
-        common_doc_ids.intersection_update(next_doc_ids)
+
+    tokens_rps = [tok for tok in process_query(query, rps=True) if tok in barrels_index]
+    tokens_html = [tok for tok in process_query(query, rps=False) if tok in barrels_index]
+
+    token_hitlists = []  # (token, hitlist, is_rps)
+
+    # ---- Build hitlists ----
+    for token in set(tokens_rps + tokens_html):
+
+        htl = word_lookup(barrels_index[token])
+
+        for hit in htl:
+            doc_id = hit[0]
+            is_rps = doc_id.startswith("P")
+
+            valid_tokens = tokens_rps if is_rps else tokens_html
+            if token in valid_tokens:
+                token_hitlists.append((token, htl, is_rps))
+                break
+
+    # ---------- SEMANTIC ONLY ----------
+    if not token_hitlists:
+        if not (use_semantic and SEMANTIC_AVAILABLE):
+            return []
+
+        semantic_scores = get_semantic_scores(query)
+        results = []
+
+        for doc_id, sem_score in semantic_scores.items():
+            if sem_score <= 0:
+                continue
+
+            url = (
+                rps_info_dict.get(int(doc_id[1:]), ("", ""))[1]
+                if doc_id.startswith("P")
+                else doc_id_to_url.get(doc_id[1:], "")
+            )
+
+            results.append({
+                "doc_id": doc_id,
+                "final_score": semantic_weight * sem_score,
+                "keyword_score": 0,
+                "semantic_score": sem_score,
+                "avg_word_score": 0,
+                "phrase_bonus": 0,
+                "url": url,
+                "positions": []
+            })
+
+        return sorted(results, key=lambda x: x["final_score"], reverse=True)
+
+    # ---------- INTERSECTION ----------
+    token_hitlists.sort(key=lambda x: len(x[1]))
+    common_doc_ids = {hit[0] for hit in token_hitlists[0][1]}
+
+    for _, hitlist, _ in token_hitlists[1:]:
+        common_doc_ids &= {hit[0] for hit in hitlist}
         if not common_doc_ids:
             return []
-    
-    # Reconstruct hit data
-    intersected_data = {}
-    for hitlist in hitlists:
-        for hit in hitlist:
-            doc_id = hit[0]
-            if doc_id in common_doc_ids:
-                if doc_id not in intersected_data:
-                    intersected_data[doc_id] = []
-                intersected_data[doc_id].append(hit)
-    
-    # Get semantic scores if enabled
-    semantic_scores = {}
-    if use_semantic and SEMANTIC_AVAILABLE:
-        semantic_scores = get_semantic_scores(query)
-    
-    # Calculate scores
-    ranked_results = []
-    
-    for doc_id in intersected_data:
-        hits_for_doc = intersected_data[doc_id]
-        
-        # Calculate individual word scores
-        word_scores = []
-        position_vectors = []
-        
-        for hit in hits_for_doc:
-            if doc_id.startswith("P"):
-                word_score = rank_research_papers(hit)
-            else:
-                word_score = score_html_files(hit)
-            
-            word_scores.append(word_score)
-            
-            positions = hit[1]
-            if isinstance(positions, list):
-                position_vectors.extend(positions)
-            else:
-                position_vectors.append(positions)
-        
-        # Average word score
-        avg_word_score = sum(word_scores) / len(word_scores) if word_scores else 0
-        
-        # Count close matches (words within 2 positions)
-        close_count = 0
-        if len(position_vectors) > 1:
-            sorted_positions = sorted(position_vectors)
-            for i in range(len(sorted_positions) - 1):
-                if sorted_positions[i+1] - sorted_positions[i] <= 2:
-                    close_count += 1
-        
-        cluster_range = max(position_vectors) - min(position_vectors) if position_vectors else 0
-        
-        # Calculate keyword-based combined score
-        keyword_combined_score = close_count + avg_word_score
-        
-        # Add semantic score if available
-        semantic_score = semantic_scores.get(doc_id, 0)
-        final_score = keyword_combined_score + (semantic_weight * semantic_score)
-        
-        # Fetch URL
-        if doc_id.startswith("P"):
-            url = rps_info_dict.get(int(doc_id.replace("P", "")), ("", ""))[1]
-        else:
-            url = doc_id_to_url.get(doc_id.replace("H", ""), "")
-        
-        ranked_results.append({
-            'doc_id': doc_id,
-            'final_score': final_score,
-            'keyword_score': keyword_combined_score,
-            'semantic_score': semantic_score,
-            'avg_word_score': avg_word_score,
-            'close_matches': close_count,
-            'cluster_range': cluster_range,
-            'url': url,
-            'positions': position_vectors
-        })
-    
-    # Sort by final score
-    ranked_results.sort(key=lambda x: x['final_score'], reverse=True)
-    
-    return ranked_results
 
+    # ---------- REBUILD ----------
+    intersected = defaultdict(list)
+
+    for token, hitlist, _ in token_hitlists:
+        for hit in hitlist:
+            if hit[0] in common_doc_ids:
+                intersected[hit[0]].append((token, hit))
+
+    semantic_scores = get_semantic_scores(query) if use_semantic and SEMANTIC_AVAILABLE else {}
+
+    ranked = []
+
+    # ---------- SCORING ----------
+    for doc_id, token_hits in intersected.items():
+        tokens = tokens_rps if doc_id.startswith("P") else tokens_html
+        if not tokens:
+            continue
+        word_scores = []
+        token_positions = defaultdict(list)
+        all_positions = []
+        multipliers = []
+
+        for token, hit in token_hits:
+            score = rank_research_papers(hit) if doc_id.startswith("P") else score_html_files(hit)
+            idf_score = idf_map.get(token, 0)
+            word_scores.append(score * idf_score)
+
+            pos = hit[1]
+            token_positions[token].extend(pos)
+            all_positions.extend(pos)
+            multipliers.append(idf_score)
+
+        avg_word_score = sum(word_scores) / (len(word_scores) * np.mean(multipliers)) if word_scores else 0
+
+        # ---- Phrase bonus ----
+        phrase_bonus = 0
+        first_token = tokens[0]
+
+        for start in token_positions[first_token]:
+            curr = start
+            length = 1
+
+            for token in tokens[1:]:
+                nxt = next((p for p in token_positions[token] if 0 < p - curr <= 2), None)
+                if nxt is None:
+                    break
+                curr = nxt
+                length += 1
+
+            phrase_bonus = max(phrase_bonus, sum(range(length)))
+
+        keyword_score = avg_word_score + phrase_bonus
+        semantic_score = semantic_scores.get(doc_id, 0.0)
+
+        final_score = keyword_score + semantic_weight * semantic_score
+
+        url = (
+            rps_info_dict.get(int(doc_id[1:]), ("", ""))[1]
+            if doc_id.startswith("P")
+            else doc_id_to_url.get(doc_id[1:], "")
+        )
+
+        ranked.append({
+            "doc_id": doc_id,
+            "final_score": final_score,
+            "keyword_score": keyword_score,
+            "semantic_score": semantic_score,
+            "avg_word_score": avg_word_score,
+            "phrase_bonus": phrase_bonus,
+            "url": url,
+            "positions": all_positions
+        })
+
+    return sorted(ranked, key=lambda x: x["final_score"], reverse=True)
 
 # ==================== MAIN SEARCH CLASS ====================
 
@@ -462,14 +419,8 @@ class HybridSearchEngine:
         Returns:
             List of results (format depends on query type)
         """
-        tokens = process_query(query, rps=False)
-        
-        if len(tokens) == 1:
-            results = perform_single_word_search(query, use_semantic, semantic_weight)
-            return results[:top_k]
-        else:
-            results = perform_multi_word_search(query, use_semantic, semantic_weight)
-            return results[:top_k]
+        results = perform_multi_word_search(query, use_semantic, semantic_weight)        
+        return results[:top_k]
     
     def display_results(self, results, query=""):
         """
@@ -493,11 +444,11 @@ class HybridSearchEngine:
             for rank, result in enumerate(results, 1):
                 doc_id = result[0]
                 score = result[1]
-                url = result[2][:97] + "..." if len(result[2]) > 100 else result[2]
+                url = result[2]
                 print(f"{rank:<6} {doc_id:<10} {score:<12.2f} {url}")
         else:
             # Multi-word results: dictionaries
-            print(f"{'Rank':<6} {'Doc ID':<10} {'Total':<10} {'Keyword':<10} {'Semantic':<10} {'Close':<7} {'URL':<70}")
+            print(f"{'Rank':<6} {'Doc ID':<10} {'Total':<10} {'Keyword':<10} {'Semantic':<10} {'Phrase':<8} {'URL':<60}")
             print(f"{'-'*130}")
             
             for rank, r in enumerate(results, 1):
@@ -505,11 +456,11 @@ class HybridSearchEngine:
                 total = r['final_score']
                 keyword = r['keyword_score']
                 semantic = r['semantic_score']
-                close = r['close_matches']
-                url = r['url'][:67] + "..." if len(r['url']) > 70 else r['url']
-                
-                print(f"{rank:<6} {doc_id:<10} {total:<10.2f} {keyword:<10.2f} {semantic:<10.4f} {close:<7} {url}")
-        
+                phrase = r.get('phrase_bonus', 0)
+                url = r['url']
+
+                print(f"{rank:<6} {doc_id:<10} {total:<10.2f} {keyword:<10.2f} {semantic:<10.4f} {phrase:<8} {url}")
+
         print(f"{'='*130}\n")
 
 
