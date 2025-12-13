@@ -38,3 +38,6 @@ Documentation/*
 Barrels/*
 !Barrels/Sample/
 !single_word_query.ipynb
+README_HYBRID_SEARCH.md
+*.vec
+HYBRID_SEARCH_SUMMARY.md
