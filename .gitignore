@@ -41,3 +41,4 @@ Barrels/*
 README_HYBRID_SEARCH.md
 *.vec
 HYBRID_SEARCH_SUMMARY.md
+!train_model.ipynb

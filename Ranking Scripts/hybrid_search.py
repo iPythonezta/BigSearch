@@ -24,6 +24,7 @@ import numpy as np
 from urllib.parse import urlparse
 from collections import Counter, defaultdict
 
+CACHE_SIZE = 30
 print("Loading BigSearch Hybrid Search Engine...")
 
 # ==================== DATA LOADING ====================
@@ -68,17 +69,49 @@ except Exception as e:
     print(f"  ⚠ Semantic search unavailable: {e}")
     SEMANTIC_AVAILABLE = False
 
+print(" → Loading barrel cache...")
+with open("cache.txt", "r", encoding="utf-8") as f:
+    barrels_ = f.readlines()
+
+addition_stack = []
+barrels_index_cache = {}
+for line in barrels_:
+    with open(f"..\\Barrels\\{line.strip()}.msgpack", "rb") as f:
+        barrel_data = ormsgpack.unpackb(f.read())
+    barrels_index_cache[int(line.strip())] = barrel_data
+    addition_stack.append(int(line.strip()))
+
+
 print("✓ BigSearch Hybrid Engine loaded successfully!\n")
 
 
+
 # ==================== HELPER FUNCTIONS ====================
+
+def manage_barrel_lookup(barrel_id):
+    """Manage barrel lookup with caching."""
+    if barrel_id in addition_stack:
+        addition_stack.remove(barrel_id)
+        addition_stack.append(barrel_id)
+        return barrels_index_cache[barrel_id]
+    else:
+        with open(f"..\\Barrels\\{barrel_id}.msgpack", "rb") as f:
+            barrel_data = ormsgpack.unpackb(f.read())
+        barrels_index_cache[barrel_id] = barrel_data
+        if len(addition_stack) >= CACHE_SIZE:
+            id_del = addition_stack.pop(0)
+            print(f"Evicting barrel {id_del} from cache.")
+            barrels_index_cache[id_del] = []
+            del barrels_index_cache[id_del]
+        addition_stack.append(barrel_id)
+        print(f"Loaded barrel {barrel_id} into cache.")
+        return barrel_data
 
 def word_lookup(indices):
     """Load a word's posting list from barrel."""
     barrel_id = indices[0]
     word_index = indices[1]
-    with open(f"..\\Barrels\\{barrel_id}.msgpack", "rb") as f:
-        barrel_data = ormsgpack.unpackb(f.read())
+    barrel_data = manage_barrel_lookup(barrel_id)
     return barrel_data[word_index]
 
 
@@ -520,6 +553,9 @@ def main():
             
         except KeyboardInterrupt:
             print("\n\nGoodbye!")
+            with open("cache.txt", "w", encoding="utf-8") as f:
+                for barrel_id in addition_stack:
+                    f.write(f"{barrel_id}\n")
             break
         except Exception as e:
             print(f"Error: {e}")
