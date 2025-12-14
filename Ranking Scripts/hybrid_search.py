@@ -24,7 +24,7 @@ import numpy as np
 from urllib.parse import urlparse
 from collections import Counter, defaultdict
 
-CACHE_SIZE = 30
+CACHE_SIZE = 500  # Cache individual words instead of barrels
 print("Loading BigSearch Hybrid Search Engine...")
 
 # ==================== DATA LOADING ====================
@@ -69,18 +69,25 @@ except Exception as e:
     print(f"  ⚠ Semantic search unavailable: {e}")
     SEMANTIC_AVAILABLE = False
 
-print(" → Loading barrel cache...")
-with open("cache.txt", "r", encoding="utf-8") as f:
-    barrels_ = f.readlines()
+print(" → Initializing word-level cache...")
+# Word-level cache: {word: posting_list}
+word_cache = {}
+word_cache_stack = []  # LRU tracking
 
-addition_stack = []
-barrels_index_cache = {}
-for line in barrels_:
-    with open(f"..\\Barrels\\{line.strip()}.msgpack", "rb") as f:
-        barrel_data = ormsgpack.unpackb(f.read())
-    barrels_index_cache[int(line.strip())] = barrel_data
-    addition_stack.append(int(line.strip()))
-
+# Load cache from disk if exists
+WORD_CACHE_FILE = "word_cache.msgpack"
+try:
+    if os.path.exists(WORD_CACHE_FILE):
+        print(f"  → Loading cached words from {WORD_CACHE_FILE}...")
+        with open(WORD_CACHE_FILE, "rb") as f:
+            cache_data = ormsgpack.unpackb(f.read())
+            word_cache = cache_data.get("cache", {})
+            word_cache_stack = cache_data.get("stack", [])
+        print(f"  ✓ Loaded {len(word_cache)} cached words")
+except Exception as e:
+    print(f"  ⚠ Could not load word cache: {e}")
+    word_cache = {}
+    word_cache_stack = []
 
 print("✓ BigSearch Hybrid Engine loaded successfully!\n")
 
@@ -88,31 +95,60 @@ print("✓ BigSearch Hybrid Engine loaded successfully!\n")
 
 # ==================== HELPER FUNCTIONS ====================
 
-def manage_barrel_lookup(barrel_id):
-    """Manage barrel lookup with caching."""
-    if barrel_id in addition_stack:
-        addition_stack.remove(barrel_id)
-        addition_stack.append(barrel_id)
-        return barrels_index_cache[barrel_id]
-    else:
-        with open(f"..\\Barrels\\{barrel_id}.msgpack", "rb") as f:
-            barrel_data = ormsgpack.unpackb(f.read())
-        barrels_index_cache[barrel_id] = barrel_data
-        if len(addition_stack) >= CACHE_SIZE:
-            id_del = addition_stack.pop(0)
-            print(f"Evicting barrel {id_del} from cache.")
-            barrels_index_cache[id_del] = []
-            del barrels_index_cache[id_del]
-        addition_stack.append(barrel_id)
-        print(f"Loaded barrel {barrel_id} into cache.")
-        return barrel_data
+# Counter for auto-save functionality
+_cache_updates_since_save = 0
+_AUTO_SAVE_INTERVAL = 50  # Save every 50 cache updates
 
-def word_lookup(indices):
-    """Load a word's posting list from barrel."""
+def save_word_cache():
+    """Save word cache to disk for persistence."""
+    try:
+        cache_data = {
+            "cache": word_cache,
+            "stack": word_cache_stack
+        }
+        with open(WORD_CACHE_FILE, "wb") as f:
+            f.write(ormsgpack.packb(cache_data))
+        print(f"✓ Saved {len(word_cache)} words to cache")
+    except Exception as e:
+        print(f"⚠ Could not save word cache: {e}")
+
+
+def word_lookup(word, indices):
+    """Load a word's posting list from barrel with word-level caching."""
+    global _cache_updates_since_save
+    
+    # Check cache first
+    if word in word_cache:
+        # Move to end (most recently used)
+        word_cache_stack.remove(word)
+        word_cache_stack.append(word)
+        return word_cache[word]
+    
+    # Cache miss - load from barrel
     barrel_id = indices[0]
     word_index = indices[1]
-    barrel_data = manage_barrel_lookup(barrel_id)
-    return barrel_data[word_index]
+    
+    with open(f"..\\Barrels\\{barrel_id}.msgpack", "rb") as f:
+        barrel_data = ormsgpack.unpackb(f.read())
+    
+    posting_list = barrel_data[word_index]
+    
+    # Add to cache
+    word_cache[word] = posting_list
+    word_cache_stack.append(word)
+    
+    # Evict if cache is full
+    if len(word_cache_stack) > CACHE_SIZE:
+        evicted_word = word_cache_stack.pop(0)
+        del word_cache[evicted_word]
+    
+    # Auto-save periodically
+    _cache_updates_since_save += 1
+    if _cache_updates_since_save >= _AUTO_SAVE_INTERVAL:
+        save_word_cache()
+        _cache_updates_since_save = 0
+    
+    return posting_list
 
 
 def normalize_title(title):
@@ -303,7 +339,7 @@ def perform_multi_word_search(query, use_semantic=True, semantic_weight=20):
     # ---- Build hitlists ----
     for token in set(tokens_rps + tokens_html):
 
-        htl = word_lookup(barrels_index[token])
+        htl = word_lookup(token, barrels_index[token])
 
         for hit in htl:
             doc_id = hit[0]
@@ -527,6 +563,7 @@ def main():
             
             if query.lower() in ['quit', 'exit', 'q']:
                 print("Goodbye!")
+                save_word_cache()
                 break
             
             if query.lower() == 'nosem':
@@ -553,9 +590,7 @@ def main():
             
         except KeyboardInterrupt:
             print("\n\nGoodbye!")
-            with open("cache.txt", "w", encoding="utf-8") as f:
-                for barrel_id in addition_stack:
-                    f.write(f"{barrel_id}\n")
+            save_word_cache()
             break
         except Exception as e:
             print(f"Error: {e}")
