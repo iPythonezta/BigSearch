@@ -40,6 +40,8 @@ Barrels/*
 !single_word_query.ipynb
 README_HYBRID_SEARCH.md
 *.vec
-HYBRID_SEARCH_SUMMARY.md
 !train_model.ipynb
 BigSearchServer/
+jupyter_env/
+!autocomplete_freq.ipynb
+Semantic Search Data/
