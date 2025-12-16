@@ -45,3 +45,4 @@ BigSearchServer/
 jupyter_env/
 !autocomplete_freq.ipynb
 Semantic Search Data/
+MemoryMapBarrels/
